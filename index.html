@@ -1,0 +1,1246 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#F7F1E3">
+<title>Сила дня · 72 гения, Таро, образы и расчёт по рождению</title>
+<meta name="description" content="Альманах 72 планетарных гениев: основной и дополнительный гений дня, карты Таро, точные смены по Солнцу, расчёт трёх личных гениев и портреты всех 72 гениев.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%23F7F1E3'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%23B07A16' stroke-width='2'/%3E%3Ccircle cx='32' cy='32' r='9' fill='%23B07A16'/%3E%3Cg stroke='%231F4E8C' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M32 4v7M32 53v7M4 32h7M53 32h7M12 12l5 5M47 47l5 5M52 12l-5 5M17 47l-5 5'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+--paper:#F7F1E3;--card:#FFFCF5;--card2:#F2E9D6;--card3:#EADFC7;--line:#E1D4B9;--line2:#C9B896;
+--ink:#241B10;--ink2:#5C4E39;--ink3:#8B7C64;
+--gold:#B07A16;--gold2:#D9A63C;--gold3:#F0C878;--goldink:#8A5E0B;--goldsoft:#F6E9CB;
+--lapis:#1F4E8C;--lapis2:#2E74BE;--lapisink:#1B4478;--lapissoft:#DFEAF8;
+--burg:#8E2436;--burgsoft:#F7E1E4;--verd:#1F6B63;--verdsoft:#DCEDEA;--plum:#6A2E63;--plumsoft:#F0E2EE;
+--ok:#2E7A4F;--oksoft:#DFEFE4;--warn:#A96A05;--warnsoft:#F8EBD3;--danger:#A32424;--dangersoft:#F8E2E2;
+--scrim:rgba(36,27,16,.58);--sh:0 2px 6px rgba(70,52,26,.07),0 12px 28px rgba(70,52,26,.09);--sh2:0 18px 60px rgba(50,36,16,.26);
+--disp:"Playfair Display",Georgia,serif;--ui:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--hh:64px;color-scheme:light}
+html.dark{--paper:#14110C;--card:#1D1913;--card2:#26211A;--card3:#332C22;--line:#3B3327;--line2:#5A4E37;
+--ink:#F6EDDA;--ink2:#CBBDA1;--ink3:#9C8E76;--gold:#D9A63C;--gold2:#F0C878;--gold3:#F7DDA6;--goldink:#E9BE64;--goldsoft:#3A2E15;
+--lapis:#7FB2EE;--lapis2:#9CC8F7;--lapisink:#93C0F3;--lapissoft:#1B2B41;--burg:#E58496;--burgsoft:#3B1F25;--verd:#5FC2B6;--verdsoft:#16302E;--plum:#CB93C4;--plumsoft:#2E1E2C;
+--ok:#63C08A;--oksoft:#17301F;--warn:#E0A445;--warnsoft:#33260F;--danger:#EE8080;--dangersoft:#3A1C1C;--scrim:rgba(6,5,3,.74);
+--sh:0 2px 6px rgba(0,0,0,.4),0 12px 28px rgba(0,0,0,.35);--sh2:0 18px 60px rgba(0,0,0,.6);color-scheme:dark}
+*{box-sizing:border-box;margin:0;padding:0}
+html{font-size:17px;scroll-behavior:smooth}html.big{font-size:19.5px}
+body{background:var(--paper);color:var(--ink);font:500 1rem/1.6 var(--ui);min-height:100vh;overflow-x:hidden;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
+body.lock{overflow:hidden}
+::selection{background:var(--gold2);color:#241B10}
+*{scrollbar-width:thin;scrollbar-color:var(--gold) var(--card2)}
+::-webkit-scrollbar{width:12px;height:12px}::-webkit-scrollbar-track{background:var(--card2)}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--gold2),var(--gold));border:3px solid var(--card2);border-radius:8px}
+::-webkit-scrollbar-thumb:hover{background:var(--goldink)}
+.bg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.glow{position:absolute;border-radius:50%;filter:blur(80px);opacity:.5}
+.g1{width:62vw;height:62vw;left:-18vw;top:-22vw;background:radial-gradient(circle,var(--gold2),transparent 66%);animation:d1 64s ease-in-out infinite alternate}
+.g2{width:54vw;height:54vw;right:-16vw;top:26vh;background:radial-gradient(circle,var(--lapis2),transparent 66%);opacity:.26;animation:d2 78s ease-in-out infinite alternate}
+.g3{width:48vw;height:48vw;left:24vw;bottom:-24vw;background:radial-gradient(circle,var(--burg),transparent 68%);opacity:.16;animation:d3 92s ease-in-out infinite alternate}
+html.dark .glow{opacity:.2}
+@keyframes d1{to{transform:translate(8vw,6vh) scale(1.1)}}@keyframes d2{to{transform:translate(-7vw,-5vh) scale(.92)}}@keyframes d3{to{transform:translate(5vw,-7vh) scale(1.08)}}
+.grain{position:absolute;inset:0;opacity:.3;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")}
+html.dark .grain{mix-blend-mode:screen;opacity:.05}
+.hdr{position:fixed;top:0;left:0;right:0;z-index:70;height:var(--hh);display:flex;align-items:center;gap:.5rem;padding:0 clamp(.5rem,2vw,1.2rem);background:var(--card);border-bottom:1px solid var(--line2);box-shadow:0 1px 0 var(--goldsoft),0 6px 20px rgba(70,52,26,.08)}
+.brand{display:flex;align-items:center;gap:.5rem;background:none;border:0;cursor:pointer;color:inherit;font-family:inherit;padding:.15rem;flex:none}
+.brand b{display:block;font:700 1.28rem var(--disp);line-height:1.05;text-align:left}
+.brand small{display:block;font:800 .58rem var(--ui);letter-spacing:.15em;text-transform:uppercase;color:var(--goldink);text-align:left}
+.nav{display:flex;gap:.1rem;margin-left:.6rem;flex:1;min-width:0;overflow:auto;scrollbar-width:none}.nav::-webkit-scrollbar{display:none}
+.nav button{background:none;border:0;cursor:pointer;font:700 .85rem var(--ui);color:var(--ink2);padding:.55rem .62rem;border-radius:10px;white-space:nowrap;transition:.16s}
+.nav button:hover{background:var(--card2);color:var(--ink)}
+.nav button.on{background:var(--goldsoft);color:var(--goldink);box-shadow:inset 0 -2px 0 var(--gold)}
+.acts{display:flex;gap:.3rem;flex:none}
+.ib{display:inline-flex;align-items:center;justify-content:center;gap:.2rem;min-width:44px;height:44px;padding:0 .5rem;border:1px solid var(--line2);border-radius:11px;background:var(--card);color:var(--ink);font:800 .84rem var(--ui);cursor:pointer;transition:.16s}
+.ib:hover{border-color:var(--gold);background:var(--goldsoft);color:var(--goldink)}.ib:active{transform:scale(.95)}
+.ib.on{background:var(--goldsoft);border-color:var(--gold);color:var(--goldink)}
+main{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:calc(var(--hh) + .9rem) clamp(.6rem,2vw,1.3rem) 5rem}
+.view{display:none}.view.on{display:block}
+.view.on>*{animation:rise .5s cubic-bezier(.2,.7,.2,1) both}
+.view.on>*:nth-child(2){animation-delay:.05s}.view.on>*:nth-child(3){animation-delay:.1s}.view.on>*:nth-child(4){animation-delay:.15s}.view.on>*:nth-child(5){animation-delay:.2s}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh)}
+.pad{padding:clamp(.85rem,2.2vw,1.3rem)}.mb{margin-bottom:1rem}
+.sec{display:flex;align-items:center;gap:.55rem;margin-bottom:.8rem;flex-wrap:wrap}
+.sec h2{font:700 1.3rem var(--disp);white-space:nowrap}.sec i{color:var(--gold);font-style:normal}
+.sec s{flex:1;height:1px;background:linear-gradient(90deg,var(--line2),transparent);text-decoration:none;min-width:20px}
+.lead{color:var(--ink2);font-size:.94rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;min-height:46px;padding:.55rem 1rem;border:1px solid var(--line2);border-radius:12px;background:var(--card);color:var(--ink);font:700 .92rem var(--ui);cursor:pointer;transition:.16s}
+.btn:hover{border-color:var(--gold);background:var(--goldsoft);color:var(--goldink)}.btn:active{transform:scale(.97)}
+.btn.gold{background:linear-gradient(135deg,var(--gold2),var(--gold));border-color:var(--gold);color:#2A1D06;box-shadow:0 4px 14px rgba(176,122,22,.28)}
+.btn.gold:hover{filter:brightness(1.07);color:#2A1D06}
+.btn.blue{background:var(--lapissoft);border-color:var(--lapis);color:var(--lapisink)}
+.btn.red{background:var(--dangersoft);border-color:var(--danger);color:var(--danger)}
+.btn.sm{min-height:40px;padding:.35rem .7rem;font-size:.84rem;border-radius:10px}
+.btn[disabled]{opacity:.45;pointer-events:none}
+.row{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+input,select{font:600 .95rem var(--ui);color:var(--ink);background:var(--card);border:1px solid var(--line2);border-radius:11px;padding:.55rem .7rem;min-height:46px;outline:none;max-width:100%}
+input:focus,select:focus{border-color:var(--lapis);box-shadow:0 0 0 3px var(--lapissoft)}
+select{cursor:pointer}
+input[type=number]{width:5.2rem;text-align:center}
+.lb{display:block;font:800 .74rem var(--ui);letter-spacing:.07em;text-transform:uppercase;color:var(--ink3);margin-bottom:.25rem}
+.chip{display:inline-flex;align-items:center;gap:.25rem;font:700 .78rem var(--ui);padding:.2rem .55rem;border-radius:99px;border:1px solid var(--line2);background:var(--card2);color:var(--ink2);white-space:nowrap}
+.chip.g{background:var(--goldsoft);border-color:var(--gold);color:var(--goldink)}
+.chip.b{background:var(--lapissoft);border-color:var(--lapis);color:var(--lapisink)}
+.chip.r{background:var(--burgsoft);border-color:var(--burg);color:var(--burg)}
+.chip.v{background:var(--verdsoft);border-color:var(--verd);color:var(--verd)}
+.chip.p{background:var(--plumsoft);border-color:var(--plum);color:var(--plum)}
+.chip.ok{background:var(--oksoft);border-color:var(--ok);color:var(--ok)}
+.chip.w{background:var(--warnsoft);border-color:var(--warn);color:var(--warn)}
+.mono{font-variant-numeric:tabular-nums}
+.hero{position:relative;overflow:hidden;display:flex;flex-wrap:wrap;gap:1rem;align-items:flex-end;justify-content:space-between;padding:clamp(1rem,2.4vw,1.5rem);border:1px solid var(--line2);border-radius:14px;background:linear-gradient(140deg,var(--card) 0%,var(--goldsoft) 55%,var(--card) 100%);box-shadow:var(--sh)}
+.hero:before{content:"";position:absolute;inset:6px;border:1px solid var(--line2);border-radius:9px;pointer-events:none}
+.hero>*{position:relative}
+.hk{font:800 .74rem var(--ui);letter-spacing:.16em;text-transform:uppercase;color:var(--goldink)}
+.hd{font:800 clamp(1.7rem,5vw,2.5rem)/1.08 var(--disp);margin:.15rem 0 .3rem}
+.hs{color:var(--ink2);font-size:.94rem;font-weight:600}
+.cdl{font:800 .72rem var(--ui);letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
+.cd{font:800 clamp(1.5rem,4.4vw,2.1rem)/1.15 var(--ui);color:var(--goldink)}
+.cd.soon{color:var(--danger);animation:bl 1.5s ease-in-out infinite}@keyframes bl{50%{opacity:.5}}
+.cds{font:700 .84rem var(--ui);color:var(--ink2)}
+.ctrl{background:var(--card);border:1px solid var(--line2);border-radius:14px;padding:.7rem .8rem;box-shadow:var(--sh);margin-bottom:1rem}
+.cr{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem}.cr+.cr{margin-top:.55rem;padding-top:.55rem;border-top:1px dashed var(--line)}
+.step{width:46px;height:46px;flex:none;border:1px solid var(--line2);border-radius:11px;background:var(--card2);color:var(--ink);font:800 1.25rem var(--ui);cursor:pointer;line-height:1}
+.step:hover{background:var(--goldsoft);border-color:var(--gold);color:var(--goldink)}.step:active{transform:scale(.93)}
+.grow{flex:1;min-width:190px;display:flex;align-items:center;gap:.5rem}
+.grow label{font:800 .76rem var(--ui);color:var(--ink3);white-space:nowrap}
+input[type=range]{-webkit-appearance:none;appearance:none;flex:1;min-width:100px;height:46px;background:none;border:0;padding:0}
+input[type=range]::-webkit-slider-runnable-track{height:10px;border-radius:99px;background:linear-gradient(90deg,var(--lapissoft),var(--goldsoft));border:1px solid var(--line2)}
+input[type=range]::-moz-range-track{height:10px;border-radius:99px;background:linear-gradient(90deg,var(--lapissoft),var(--goldsoft));border:1px solid var(--line2)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;margin-top:-9px;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--gold3),var(--gold));border:2px solid var(--card);box-shadow:0 2px 8px rgba(120,85,20,.45);cursor:grab}
+input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;background:var(--gold2);border:2px solid var(--card);cursor:grab}
+.tv{font:800 1rem var(--ui);color:var(--goldink);min-width:3.5rem;text-align:center}
+.live{display:inline-flex;align-items:center;gap:.35rem;font:800 .8rem var(--ui);color:var(--ok)}
+.live em{width:9px;height:9px;border-radius:50%;background:var(--ok);animation:pu 2.4s infinite}
+.live.view{color:var(--warn)}.live.view em{background:var(--warn);animation:none}
+@keyframes pu{0%{box-shadow:0 0 0 0 var(--oksoft)}70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.banner{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;background:var(--warnsoft);border:1px solid var(--warn);border-radius:12px;padding:.55rem .8rem;margin-bottom:1rem;font:700 .88rem var(--ui);color:var(--warn)}
+.panels{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.gp{position:relative;overflow:hidden}.gp:before{content:"";position:absolute;top:0;left:0;right:0;height:5px}
+.gp.m:before{background:linear-gradient(90deg,var(--gold3),var(--gold),var(--burg))}
+.gp.a:before{background:linear-gradient(90deg,var(--lapis2),var(--lapis),var(--verd))}
+.gph{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.4rem;margin-bottom:.75rem}
+.role{font:800 .8rem var(--ui);letter-spacing:.1em;text-transform:uppercase}
+.gp.m .role{color:var(--goldink)}.gp.a .role{color:var(--lapisink)}
+.sub{font:700 .78rem var(--ui);color:var(--ink3)}
+.top{display:flex;gap:.9rem;align-items:flex-start}
+.art{flex:none;border-radius:13px;overflow:hidden;border:1px solid var(--line2);background:var(--card2);box-shadow:0 4px 12px rgba(70,52,26,.16);position:relative}
+.art svg,.art img{display:block;width:100%;height:100%;object-fit:cover}
+.art.pc{height:auto;aspect-ratio:13/24}
+.a96{width:96px;height:96px}.a76{width:76px;height:76px}.a88{width:88px;height:88px}.a132{width:132px;height:132px}.a64{width:64px;height:64px}.a40{width:40px;height:40px;border-radius:9px}.a180{width:180px;height:180px}
+.num{font:800 .76rem var(--ui);letter-spacing:.1em;text-transform:uppercase;color:var(--ink3)}
+.nm{font:800 clamp(1.45rem,3.4vw,1.9rem)/1.1 var(--disp);margin:.1rem 0 .2rem}
+.gp.m .nm{color:var(--goldink)}.gp.a .nm{color:var(--lapisink)}
+.mean{font:600 italic .9rem var(--disp);color:var(--ink2)}
+.quote{font:600 italic 1.05rem/1.45 var(--disp);color:var(--goldink);border-left:3px solid var(--gold2);padding-left:.65rem;margin:.55rem 0}
+.txt{font-size:.95rem;line-height:1.58}
+.rule{height:1px;background:linear-gradient(90deg,transparent,var(--line2),transparent);margin:.9rem 0}
+.tl{display:flex;gap:.85rem;align-items:flex-start}
+.cart{flex:none;width:104px;aspect-ratio:11/19;border-radius:8px;padding:5px;background:linear-gradient(150deg,var(--gold3),var(--gold) 45%,var(--card3));box-shadow:0 6px 16px rgba(70,52,26,.22)}
+.cart.b{background:linear-gradient(150deg,var(--lapis2),var(--lapis) 45%,var(--card3))}
+.cart img,.cart svg{display:block;width:100%;height:100%;object-fit:cover;border-radius:4px;background:var(--card2)}
+.cart.th{width:38px;padding:2px;border-radius:5px;box-shadow:none}
+.cart.big{width:min(240px,62vw)}
+.ct{font:800 .72rem var(--ui);letter-spacing:.1em;text-transform:uppercase;color:var(--ink3)}
+.cn{font:700 1.2rem var(--disp);margin:.1rem 0 .25rem}
+.cm{font-size:.9rem;color:var(--ink2);line-height:1.5}
+.foot{margin-top:.85rem;padding-top:.7rem;border-top:1px dashed var(--line);display:flex;flex-wrap:wrap;gap:.5rem;justify-content:space-between;align-items:center;font:700 .86rem var(--ui);color:var(--ink2)}
+.ladder{display:grid;grid-template-columns:repeat(5,1fr);gap:.5rem}
+.lad{position:relative;display:flex;flex-direction:column;align-items:center;gap:.3rem;padding:.6rem .45rem;border:1px solid var(--line);border-radius:12px;background:var(--card2);color:var(--ink);font-family:var(--ui);cursor:pointer;text-align:center;transition:.16s}
+.lad:hover{border-color:var(--gold);transform:translateY(-2px)}
+.lad.on{background:var(--goldsoft);border-color:var(--gold);box-shadow:0 0 0 2px var(--goldsoft)}
+.ld{font:800 1.2rem var(--disp);line-height:1}.lm{font:800 .68rem var(--ui);text-transform:uppercase;color:var(--ink3)}
+.lt{font:700 .74rem var(--ui);color:var(--ink2)}.ln{font:700 .8rem var(--ui);line-height:1.25}
+.arts{display:flex;gap:.4rem;justify-content:center;align-items:flex-end}
+.pair{display:flex;flex-direction:column;align-items:center;gap:.12rem}
+.pair span{font:800 .58rem var(--ui);letter-spacing:.05em;text-transform:uppercase;color:var(--ink3)}
+.pair div{display:flex;gap:.18rem}
+.badge{position:absolute;top:-.5rem;left:50%;transform:translateX(-50%);font:800 .6rem var(--ui);letter-spacing:.07em;text-transform:uppercase;background:var(--gold);color:#2A1D06;padding:.08rem .45rem;border-radius:99px;white-space:nowrap}
+.sum{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.sc{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:.85rem}
+.sc h3{font:700 1.05rem var(--disp);margin-bottom:.35rem}.sc.g h3{color:var(--goldink)}.sc.r h3{color:var(--burg)}
+.sc p{font-size:.93rem;line-height:1.6}
+.band{position:relative;border:1px solid var(--line2);border-radius:12px;overflow:hidden;background:var(--card2)}
+.cells{display:grid;grid-template-columns:repeat(12,1fr)}
+.cell{padding:.45rem .1rem;text-align:center;border-right:1px solid var(--line)}.cell:last-child{border:0}
+.cell.on{background:var(--goldsoft)}
+.cell b{display:block;font-size:1.1rem;font-weight:400}.cell span{font:800 .62rem var(--ui);text-transform:uppercase;color:var(--ink3)}
+.sect{position:absolute;top:0;bottom:0;background:rgba(176,122,22,.2);border-left:1px solid var(--gold);border-right:1px solid var(--gold)}
+.mark{position:absolute;top:0;bottom:0;width:2px;background:var(--danger);box-shadow:0 0 8px var(--danger)}
+.mark:before{content:"";position:absolute;top:-1px;left:-5px;border:6px solid transparent;border-top-color:var(--danger)}
+.binfo{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:space-between;margin-top:.55rem;font:700 .87rem var(--ui);color:var(--ink2)}
+.chg{display:flex;gap:.75rem;align-items:center;width:100%;text-align:left;padding:.6rem .75rem;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);font-family:var(--ui);cursor:pointer;transition:.16s}
+.chg+.chg{margin-top:.45rem}.chg:hover{border-color:var(--gold);background:var(--goldsoft)}
+.chg.nm{border-left:5px solid var(--gold)}
+.cw{flex:none;width:6.2rem}.cw b{display:block;font:700 .98rem var(--ui)}.cw i{display:block;font-style:normal;font:800 .86rem var(--ui);color:var(--goldink)}.cw em{display:block;font-style:normal;font:700 .68rem var(--ui);text-transform:uppercase;color:var(--ink3)}
+.cb{flex:1;min-width:0;display:flex;flex-wrap:wrap;gap:.3rem}
+.tools{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-bottom:.7rem}
+.tools input[type=search]{flex:1;min-width:190px}
+.quick{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:.7rem}
+.q{font:700 .84rem var(--ui);padding:.4rem .75rem;min-height:40px;border:1px solid var(--line2);border-radius:99px;background:var(--card);color:var(--ink2);cursor:pointer}
+.q:hover{border-color:var(--gold);color:var(--goldink)}.q.on{background:var(--gold);border-color:var(--gold);color:#2A1D06}
+.meta{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:space-between;font:700 .84rem var(--ui);color:var(--ink3);margin-bottom:.55rem}
+.sr{display:flex;gap:.75rem;align-items:center;width:100%;text-align:left;padding:.7rem .8rem;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);font-family:var(--ui);cursor:pointer;transition:.16s}
+.sr+.sr{margin-top:.45rem}.sr:hover{border-color:var(--gold);background:var(--goldsoft);transform:translateX(3px)}
+.sr.now{border-color:var(--gold);background:var(--goldsoft)}.sr.nm{border-left:5px solid var(--gold)}
+.sb{flex:1;min-width:0}
+.sl{display:flex;flex-wrap:wrap;align-items:baseline;gap:.35rem;font-size:.9rem}.sl+.sl{margin-top:.2rem}
+.sl u{text-decoration:none;font:800 .7rem var(--ui);letter-spacing:.06em;text-transform:uppercase}
+.sl.m u{color:var(--goldink)}.sl.a u{color:var(--lapisink)}
+.sl b{font:700 1rem var(--disp)}.sl span{color:var(--ink2);font-size:.86rem}
+.grid{display:grid;gap:.8rem}
+.gg{grid-template-columns:repeat(auto-fill,minmax(225px,1fr))}
+.gt{grid-template-columns:repeat(auto-fill,minmax(185px,1fr))}
+.gc{display:flex;flex-direction:column;align-items:center;gap:.3rem;padding:.85rem;border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:var(--sh);text-align:center;transition:.18s;cursor:pointer}
+.gc:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:var(--sh2)}
+.gc .nm{font:700 1.2rem var(--disp);color:var(--goldink)}
+.gc .ph{font:600 italic .87rem/1.35 var(--disp);color:var(--ink2)}
+.gc .mt{font:700 .76rem var(--ui);color:var(--ink2)}.gc .dt{font:700 .75rem var(--ui);color:var(--lapisink)}
+.tc{display:flex;flex-direction:column;align-items:center;gap:.4rem;padding:.8rem;border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:var(--sh);cursor:pointer;color:var(--ink);font-family:var(--ui);text-align:center;transition:.18s}
+.tc:hover{border-color:var(--burg);transform:translateY(-3px);box-shadow:var(--sh2)}
+.tc .cart{width:100%;max-width:148px}
+.tc .rn{font:800 .74rem var(--ui);letter-spacing:.14em;color:var(--burg)}
+.tc .nm{font:700 1.1rem var(--disp);color:var(--ink)}
+.tc .ds{font-size:.8rem;color:var(--ink2);line-height:1.45;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.empty{text-align:center;padding:2.2rem 1rem;border:2px dashed var(--line2);border-radius:14px;color:var(--ink2)}
+.empty h3{font:700 1.25rem var(--disp);color:var(--ink);margin-bottom:.35rem}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:.4rem .85rem;margin:.7rem 0;font-size:.92rem;align-items:baseline}
+.kv b{color:var(--goldink);white-space:nowrap}
+.heb{font:400 1.6rem var(--disp);letter-spacing:.06em}
+.prose p{font-size:.97rem;line-height:1.68;margin-bottom:.65rem}.prose p:last-child{margin:0}
+.dark-b{background:var(--dangersoft);border:1px solid var(--danger);border-left:5px solid var(--danger);border-radius:12px;padding:.75rem .9rem;margin:.85rem 0}
+.dark-b h4{font:800 .76rem var(--ui);letter-spacing:.1em;text-transform:uppercase;color:var(--danger);margin-bottom:.3rem}
+.dark-b p{font-size:.92rem;line-height:1.6}
+.prayer{position:relative;background:linear-gradient(160deg,var(--goldsoft),var(--card));border:1px solid var(--gold);border-radius:14px;padding:1.1rem 1.2rem 1.1rem 2rem;font:600 italic 1.08rem/1.75 var(--disp)}
+.prayer:before{content:"\201C";position:absolute;top:.1rem;left:.5rem;font:400 2.4rem var(--disp);color:var(--gold2)}
+.t5{display:flex;flex-wrap:wrap;gap:.5rem}
+.t5 button{display:flex;flex-direction:column;align-items:center;gap:.2rem;width:78px;background:none;border:0;cursor:pointer;color:var(--ink2);font:700 .67rem/1.25 var(--ui);text-align:center}
+.t5 button:hover{color:var(--goldink)}.t5 .cart{width:66px}
+.form{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:.75rem;align-items:end}
+.chk{display:flex;align-items:center;gap:.45rem;font:700 .87rem var(--ui);color:var(--ink2);min-height:46px}
+.chk input{width:22px;height:22px;min-height:0;accent-color:var(--gold)}
+.nat{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.nc{position:relative;overflow:hidden}.nc:before{content:"";position:absolute;top:0;left:0;right:0;height:5px}
+.nc.p:before{background:linear-gradient(90deg,var(--gold3),var(--burg))}
+.nc.a:before{background:linear-gradient(90deg,var(--lapis2),var(--verd))}
+.nc.m:before{background:linear-gradient(90deg,var(--verd),var(--gold2))}
+.nr{font:800 .78rem var(--ui);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.55rem}
+.nc.p .nr{color:var(--goldink)}.nc.a .nr{color:var(--lapisink)}.nc.m .nr{color:var(--verd)}
+.why{font-size:.86rem;color:var(--ink2);line-height:1.55;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:.5rem .65rem;margin:.5rem 0}
+.help h3{font:700 1.22rem var(--disp);color:var(--goldink);margin:1.05rem 0 .35rem}.help h3:first-child{margin-top:0}
+.help p,.help li{font-size:.95rem;line-height:1.65}.help ul,.help ol{margin:.35rem 0 .35rem 1.15rem}.help li{margin-bottom:.25rem}
+.help code{background:var(--card2);border:1px solid var(--line);border-radius:6px;padding:.05rem .3rem;font-size:.85rem}
+footer{margin-top:1.4rem;padding-top:.9rem;border-top:1px solid var(--line);font-size:.82rem;color:var(--ink3);line-height:1.7}
+footer b{color:var(--ink2)}
+.mnav{position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;background:var(--card);border-top:1px solid var(--line2);padding:.25rem .2rem calc(.25rem + env(safe-area-inset-bottom))}
+.mnav button{flex:1;display:flex;flex-direction:column;align-items:center;gap:.1rem;min-height:56px;background:none;border:0;border-radius:11px;color:var(--ink3);font:800 .6rem var(--ui);cursor:pointer;padding:.4rem .1rem}
+.mnav button.on{color:var(--goldink);background:var(--goldsoft)}
+.mnav svg{width:21px;height:21px}
+.scrim{position:fixed;inset:0;z-index:90;background:var(--scrim);opacity:0;transition:.24s}
+.scrim.on{opacity:1}
+.drawer{position:fixed;top:0;right:0;z-index:100;height:100%;width:min(640px,96vw);display:flex;flex-direction:column;background:var(--card);border-left:1px solid var(--line2);box-shadow:var(--sh2);transform:translateX(102%);transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.drawer.on{transform:none}
+.dh{flex:none;display:flex;align-items:center;gap:.6rem;padding:.65rem .85rem;background:var(--card2);border-bottom:1px solid var(--line)}
+.dh h2{flex:1;font:700 1.15rem var(--disp);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.db{flex:1;overflow-y:auto;padding:1rem;padding-bottom:calc(1rem + env(safe-area-inset-bottom))}
+.dnav{display:flex;gap:.5rem;margin-top:1rem}.dnav .btn{flex:1}
+.toast{position:fixed;left:50%;bottom:calc(1rem + env(safe-area-inset-bottom));transform:translate(-50%,20px);z-index:120;display:flex;align-items:center;gap:.7rem;background:var(--ink);color:var(--paper);border-radius:99px;padding:.65rem 1.1rem;font:700 .9rem var(--ui);box-shadow:var(--sh2);opacity:0;pointer-events:none;transition:.25s;max-width:92vw}
+html.dark .toast{background:var(--card3);color:var(--ink);border:1px solid var(--gold)}
+.toast.on{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+.toast button{background:var(--gold2);color:#2A1D06;border:0;border-radius:99px;padding:.3rem .7rem;font:800 .82rem var(--ui);cursor:pointer}
+.fatal{background:var(--dangersoft);border:1px solid var(--danger);color:var(--danger);border-radius:12px;padding:.8rem 1rem;margin-bottom:1rem;font:700 .9rem var(--ui)}
+[hidden]{display:none!important}
+:focus-visible{outline:3px solid var(--lapis);outline-offset:2px;border-radius:6px}
+@media(max-width:1040px){.nav{display:none}.mnav{display:flex}main{padding-bottom:7rem}.panels,.nat{grid-template-columns:1fr}}
+@media(max-width:720px){:root{--hh:58px}.brand b{font-size:1.05rem}.brand small{display:none}.sum{grid-template-columns:1fr}
+.ladder{grid-template-columns:1fr}.lad{flex-direction:row;text-align:left;justify-content:flex-start;gap:.6rem;padding:.55rem .65rem}
+.lad .lhead{flex:none;width:4.4rem;text-align:center}.lad .lmid{flex:1;min-width:0}.arts{margin-left:auto}
+.badge{top:auto;bottom:-.45rem}.hero>div:last-child{text-align:left;width:100%}
+.drawer{top:auto;bottom:0;left:0;width:100%;height:auto;max-height:92vh;border-left:0;border-top:1px solid var(--line2);border-radius:20px 20px 0 0;transform:translateY(102%)}
+.dh{border-radius:20px 20px 0 0}.cell span{display:none}.cw{width:5rem}
+.gg{grid-template-columns:repeat(auto-fill,minmax(158px,1fr))}.gt{grid-template-columns:repeat(auto-fill,minmax(142px,1fr))}
+.a88{width:72px;height:72px}
+.toast{bottom:calc(5rem + env(safe-area-inset-bottom))}}
+@media(max-width:420px){.a96{width:74px;height:74px}.cart{width:84px}.grow{min-width:100%}.sr .th{display:none}
+.pair div .cart.th{width:30px}.a40{width:34px;height:34px}.mnav button{font-size:.55rem}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+@media print{.hdr,.mnav,.ctrl,.banner,.row,.scrim,.drawer,.toast,.bg{display:none!important}main{padding:0;max-width:none}body{background:#fff;color:#000}}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><div class="glow g1"></div><div class="glow g2"></div><div class="glow g3"></div><div class="grain"></div></div>
+
+<header class="hdr">
+  <button class="brand" data-act="tab" data-v="today" type="button" aria-label="На главный экран">
+    <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="none" stroke="currentColor" stroke-opacity=".22"/><circle cx="32" cy="32" r="22" fill="none" stroke="#B07A16" stroke-width="2"/><circle cx="32" cy="32" r="9" fill="#B07A16"/><circle cx="32" cy="32" r="15" fill="none" stroke="#1F4E8C" stroke-width="1.2" stroke-dasharray="2 3"/><g stroke="#1F4E8C" stroke-width="2.3" stroke-linecap="round"><path d="M32 5v6M32 53v6M5 32h6M53 32h6M13 13l4 4M47 47l4 4M51 13l-4 4M17 47l-4 4"/></g></svg>
+    <span><b>Сила дня</b><small>Гении · Таро · Солнце</small></span>
+  </button>
+  <nav class="nav" aria-label="Разделы">
+    <button type="button" data-act="tab" data-v="today" class="on">Сегодня</button>
+    <button type="button" data-act="tab" data-v="schedule">Смены</button>
+    <button type="button" data-act="tab" data-v="genii">Гении</button>
+    <button type="button" data-act="tab" data-v="tarot">Таро</button>
+    <button type="button" data-act="tab" data-v="natal">Мой гений</button>
+    <button type="button" data-act="tab" data-v="help">Справка</button>
+  </nav>
+  <div class="acts">
+    <button class="ib" id="bFont" type="button" data-act="font" title="Крупный шрифт" aria-pressed="false">А<span style="font-size:.7rem">+</span></button>
+    <button class="ib" id="bTheme" type="button" data-act="theme" title="Светлая / тёмная тема"><span id="thIco">☾</span></button>
+    <button class="ib" type="button" data-act="tab" data-v="help" title="Справка">?</button>
+  </div>
+</header>
+
+<main>
+  <div class="fatal" id="fatal" hidden></div>
+  <noscript><div class="fatal">Для работы альманаха включите JavaScript в браузере.</div></noscript>
+
+  <section class="view on" id="v-today">
+    <div id="hero"><div class="hero mb"><div><div class="hk">Альманах</div><div class="hd">Сила дня</div><div class="hs">Загружаем положение Солнца…</div></div></div></div>
+    <div class="ctrl">
+      <div class="cr">
+        <button class="step" type="button" data-act="minus" aria-label="Предыдущий день">−</button>
+        <input type="date" id="dPick" min="2024-01-01" max="2029-12-31" aria-label="Дата">
+        <button class="step" type="button" data-act="plus" aria-label="Следующий день">+</button>
+        <button class="btn gold sm" type="button" data-act="now">Сейчас</button>
+        <button class="btn sm" type="button" data-act="tonext">К смене →</button>
+        <button class="btn sm" type="button" data-act="tostart">Начало периода</button>
+        <span class="live" id="live"><em></em><span id="liveT">в реальном времени</span></span>
+      </div>
+      <div class="cr">
+        <span class="grow"><label for="tRange">Время суток</label><input type="range" id="tRange" min="0" max="1439" step="1" value="720"><span class="tv mono" id="tVal">12:00</span></span>
+        <span style="display:flex;align-items:center;gap:.4rem"><label class="lb" for="tzSel" style="margin:0">Пояс</label><select id="tzSel"><option value="auto">Моё время</option></select></span>
+      </div>
+    </div>
+    <div id="banner"></div>
+    <div id="todayMain"></div>
+  </section>
+
+  <section class="view" id="v-schedule">
+    <div class="box pad mb">
+      <div class="sec"><i>◷</i><h2>Календарь смен</h2><s></s></div>
+      <p class="lead mb">Каждая строка — момент перехода Солнца в новый градус. Золотая полоса слева — смена основного гения (раз в пять дней).</p>
+      <div class="quick" id="schQuick"></div>
+      <div class="tools">
+        <input type="search" id="schQ" placeholder="Поиск: гений, карта, дата…" aria-label="Поиск">
+        <select id="schMonth" aria-label="Месяц"></select>
+        <select id="schGen" aria-label="Гений"></select>
+        <button class="btn sm" type="button" data-act="schsort" id="schSort">Сначала ранние ↑</button>
+      </div>
+      <div class="meta"><span id="schCount"></span><span id="schCycle"></span></div>
+      <div id="schList"></div>
+      <div class="row" style="margin-top:.9rem">
+        <button class="btn gold" type="button" data-act="icsall">Календарь всех смен (.ics)</button>
+        <button class="btn" type="button" data-act="icsmain">Только смены основного (.ics)</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="view" id="v-genii">
+    <div class="box pad mb">
+      <div class="sec"><i>✦</i><h2>72 гения</h2><s></s></div>
+      <p class="lead mb">Каждый гений управляет пятью градусами зодиака (пять дней в году), одним градусом ещё пять раз в году и двадцатью минутами каждых суток. «О гении» — полное описание из сборника, «Обращение» — текст молитвы.</p>
+      <div class="tools">
+        <input type="search" id="genQ" placeholder="Поиск по имени, фразе, описанию…" aria-label="Поиск гения">
+        <select id="genSign" aria-label="Знак"></select>
+        <button class="btn sm" type="button" data-act="gensort" id="genSort">По номеру ↑</button>
+      </div>
+      <div class="meta"><span id="genCount"></span><span>Нажмите карточку — полное описание</span></div>
+      <div class="grid gg" id="genGrid"></div>
+      <div id="genEmpty"></div>
+    </div>
+  </section>
+
+  <section class="view" id="v-tarot">
+    <div class="box pad mb">
+      <div class="sec"><i>❖</i><h2>22 старших аркана</h2><s></s></div>
+      <p class="lead mb">Колода Райдера–Уэйта–Смит (1909). Пять букв имени каждого гения — пять карт его пяти градусов.</p>
+      <div class="tools">
+        <input type="search" id="tarQ" placeholder="Поиск карты…" aria-label="Поиск карты">
+        <button class="btn sm" type="button" data-act="taronly" id="tarOnly" aria-pressed="false">Только встречающиеся в цикле</button>
+      </div>
+      <div class="meta"><span id="tarCount"></span><span>Нажмите карту — дни, когда она выпадает</span></div>
+      <div class="grid gt" id="tarGrid"></div>
+      <div id="tarEmpty"></div>
+    </div>
+  </section>
+
+  <section class="view" id="v-natal">
+    <div class="box pad mb">
+      <div class="sec"><i>✦</i><h2>Мои три гения</h2><s></s></div>
+      <p class="lead mb">По дате, месту и времени рождения рассчитываются три покровителя: <b>физического тела</b> (воля — пятиградусное владение Солнца), <b>астрального плана</b> (чувства — точный градус Солнца) и <b>ментального плана</b> (мысли — минуты рождения). Данные остаются только на этом устройстве.</p>
+      <div class="form">
+        <div><label class="lb" for="bDate">Дата рождения</label><input type="date" id="bDate" min="1900-01-01" max="2100-12-31" style="width:100%"></div>
+        <div><label class="lb" for="bTime">Время рождения</label><input type="time" id="bTime" value="12:00" style="width:100%"></div>
+        <div><label class="lb" for="bPlace">Место рождения</label><select id="bPlace" style="width:100%"></select></div>
+        <label class="chk"><input type="checkbox" id="bUnk"> точное время неизвестно</label>
+        <button class="btn gold" type="button" data-act="calc">Рассчитать гениев</button>
+      </div>
+    </div>
+    <div id="natOut"></div>
+    <div class="box pad mb">
+      <div class="sec"><i>☿</i><h2>Гений планеты по градусу</h2><s></s></div>
+      <p class="lead mb">Сборник предлагает построить натальную карту (например, в Sotis) и посмотреть градус любой планеты: он укажет гения, окрашивающего соответствующую сферу внутренней жизни.</p>
+      <div class="form">
+        <div><label class="lb" for="pPlanet">Планета</label><select id="pPlanet" style="width:100%"></select></div>
+        <div><label class="lb" for="pSign">Знак</label><select id="pSign" style="width:100%"></select></div>
+        <div><label class="lb" for="pDeg">Градус (0–29)</label><input type="number" id="pDeg" min="0" max="29" value="0" style="width:100%"></div>
+        <div><label class="lb" for="pMin">Минуты</label><input type="number" id="pMin" min="0" max="59" value="0" style="width:100%"></div>
+        <button class="btn blue" type="button" data-act="planet">Определить гения</button>
+      </div>
+      <div id="plOut" style="margin-top:.8rem"></div>
+    </div>
+  </section>
+
+
+  <section class="view" id="v-help">
+    <div class="box pad mb help">
+      <div class="sec"><i>ⓘ</i><h2>Как пользоваться</h2><s></s></div>
+      <h3>Что показывает альманах</h3>
+      <p>Солнце проходит по зодиаку примерно один градус в сутки. Каждому градусу соответствует <b>дополнительный гений дня</b> (синий), а каждому отрезку из пяти градусов — <b>основной гений</b> (золотой), управляющий около пяти дней. У каждого из них в этот день своя карта Таро: пять букв имени гения — пять карт его пяти градусов.</p>
+      <h3>Главный экран</h3>
+      <ul>
+        <li>Сверху — дата, время и обратный отсчёт до ближайшей смены.</li>
+        <li>Панель управления не закреплена: <b>− / +</b> листают дни, календарь выбирает дату, <b>«Сейчас»</b> возвращает к текущему моменту, <b>«К смене»</b> и <b>«Начало периода»</b> перескакивают к ключевым моментам, ползунок прокручивает время суток, список меняет часовой пояс.</li>
+        <li>Две карточки — основной и дополнительный гений с образами, фразами, описаниями и картами. Кнопки <b>«О гении»</b>, <b>«Обращение»</b>, <b>«О карте»</b>.</li>
+        <li>«Пять дней основного гения» — четыре картинки на каждый день: оба гения и обе карты.</li>
+        <li>«Где сейчас Солнце» — зодиакальная полоса и ближайшие смены в одном блоке.</li>
+      </ul>
+      <h3>Три личных гения</h3>
+      <ul>
+        <li><b>Физический</b> — знак и градус Солнца при рождении попадают в его пятиградусное владение. Питает волю, задаёт основной мотив. Обращаться можно каждый день.</li>
+        <li><b>Астральный</b> — точный градус Солнца попадает в его одноградусное владение. Окрашивает чувства и проживание обстоятельств; особенно действует пять раз в год.</li>
+        <li><b>Ментальный</b> — минуты рождения попадают в его 20-минутный интервал суток (00:00–00:20 — гений №1 и далее по порядку). Задаёт образ мыслей; обращаться в минуты его правления.</li>
+      </ul>
+      <p>Пример из сборника: 16 марта 1999, 03:00, Пермь. Солнце в 24°57′ Рыб → физический №71 Хайаэль, астральный №67 Айаэль, ментальный №10 Аладийях. Место рождения нужно для перевода времени в мировое; градусы важнее календарных дат, которые смещаются от года к году.</p>
+      <h3>Буквы имени и карты</h3>
+      <p>Имя каждого гения состоит из пяти букв; в карточке гения приведены буквы иврита и их названия по сборнику. В системе Уэйта 21-я буква соответствует карте 0 «Шут», а 22-я — карте XXI «Мир». Карты пяти букв совпадают с картами пяти дней правления — они показаны в блоке «Таро в имени».</p>
+      <h3>О времени и точности</h3>
+      <p>Таблица «Сила дня 2026» составлена для пояса <b>UTC+5</b> (Пермь / Екатеринбург). Моменты хранятся как абсолютные и показываются в выбранном поясе. Строки с точным временем помечены <span class="chip ok">по таблице</span>; с 1 января по 19 марта время в таблице не указано — оно <b>вычислено астрономически</b> (погрешность около ±15 минут) и помечено <span class="chip w">≈ расчёт</span>. Цикл: 20 марта 2026 — 19 марта 2027; соседние циклы построены сдвигом на тропический год и помечены «предварительно».</p>
+      <h3>Напоминания и установка</h3>
+      <p>В разделе «Смены» скачивается файл <code>.ics</code> со всеми сменами и напоминаниями за 15 минут — откройте его, и телефон добавит события в обычный календарь. Меню браузера → «На экран Домой» — альманах откроется как приложение. В шапке: <b>А+</b> — крупный шрифт, <b>☾ / ☀</b> — тема.</p>
+      <footer>
+        <b>Источники:</b> сборник «Имя Бога в подробностях. 72 Планетарных Гения», студия «Нить Ариадны», Пермь, 2025; О. М. Айванхов «Плоды Древа Жизни» и лекция «Внутренняя Синархия»; Н. Колесар «72 Планетарных Ангела» (перев. Д. С. Крюков); Хазиэль-Кабалеб «Большая книга призывов и наставлений» и «Большая книга каббалистического Таро» (перев. Д. С. Крюков); таблица «Сила дня 2026».<br>
+        <b>Карты:</b> Rider–Waite–Smith, 1909, общественное достояние. <b>Расчёт Солнца:</b> упрощённая теория по J. Meeus, «Astronomical Algorithms», гл. 25.
+      </footer>
+    </div>
+  </section>
+</main>
+
+<nav class="mnav" aria-label="Разделы">
+  <button type="button" data-act="tab" data-v="today" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4.2" fill="currentColor" stroke="none"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M18.4 5.6L17 7M7 17l-1.4 1.4"/></svg>Сегодня</button>
+  <button type="button" data-act="tab" data-v="schedule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10M17 16v5M14.5 18.5h5"/></svg>Смены</button>
+  <button type="button" data-act="tab" data-v="genii"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 3l2.5 5.4 5.9.7-4.4 4 1.2 5.9L12 16.2 6.8 19l1.2-5.9-4.4-4 5.9-.7z"/></svg>Гении</button>
+  <button type="button" data-act="tab" data-v="tarot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M6 3h9l3 3v15H6zM9 8h6M9 12h6M9 16h3"/></svg>Таро</button>
+  <button type="button" data-act="tab" data-v="natal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>Мой гений</button>
+</nav>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" hidden role="dialog" aria-modal="true" aria-labelledby="dTitle">
+  <div class="dh"><h2 id="dTitle">Подробно</h2><button class="ib" type="button" data-act="close" aria-label="Закрыть">✕</button></div>
+  <div class="db" id="dBody"></div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+"use strict";
+var $=function(id){return document.getElementById(id);};
+function fatal(m){var f=$("fatal");if(f){f.hidden=false;f.textContent="Не удалось запустить альманах: "+m;}}
+window.addEventListener("error",function(e){if(e&&e.message&&e.message.indexOf("ResizeObserver")<0)fatal(e.message);});
+
+/* ═════ ДАННЫЕ ═════ */
+var NAMES="Вехуйях Йелиэль Ситаэль Елемийях Махасийях Лелахэль Ахайях Кахетэль Хазиэль Аладийях Ловийях Хахайях Йезалэль Мебахэль Хариэль Хекамийях Лаувийях Калиэль Лёвийях Пахалийях Нэлькаэль Йейаэль Мелахэль Хахуйях Нитхайях Хаайях Йератэль Сехейях Реиэль Омаэль Лекабэль Васарийях Йехуйях Лехахийях Хавакийях Менадэль Аниэль Хаамийях Рехаэль Йейазэль Хахахэль Микаэль Вёлийях Йелахийях Сеалийях Ариэль Азалийях Михаэль Вехуэль Даниэль Хахасийях Имамийях Нанаэль Нитхаэль Мебахийях Поиэль Немамийях Йейалэль Харахэль Митцраэль Умабэль Йах-Хэль Анауэль Мехиэль Дамабийях Манакэль Айаэль Хабухийях Рахаэль Йабамийях Хайаэль Мумийях".split(" ");
+var TIN=[[6,11,6,10,5],[10,12,10,1,12],[15,10,9,1,12],[16,12,13,10,5],[13,11,0,10,5],[12,12,5,1,12],[1,8,1,10,5],[8,5,21,1,12],[5,7,10,1,12],[1,12,4,10,5],[12,1,6,10,5],[5,5,16,10,5],[10,7,12,1,12],[13,2,5,1,12],[5,20,10,1,12],[5,19,13,10,5],[12,1,6,10,5],[8,12,10,1,12],[12,6,6,10,5],[17,5,12,10,5],[14,12,8,1,12],[10,10,10,1,12],[13,12,5,1,12],[5,5,6,10,5],[14,21,5,10,5],[5,1,1,10,5],[10,20,21,1,12],[0,1,5,10,5],[20,10,10,1,12],[6,13,1,1,12],[12,8,2,1,12],[6,0,20,10,5],[10,5,6,10,5],[12,5,5,10,5],[8,6,19,10,5],[13,14,4,1,12],[1,14,10,1,12],[5,16,13,10,5],[20,5,16,1,12],[10,10,7,1,12],[5,5,5,1,12],[13,10,8,1,12],[6,6,12,10,5],[10,12,5,10,5],[15,1,12,10,5],[16,20,10,1,12],[16,0,12,10,5],[13,10,5,1,12],[6,5,6,1,12],[4,14,10,1,12],[5,5,0,10,5],[16,13,13,10,5],[14,14,1,1,12],[14,10,21,1,12],[13,2,5,10,5],[17,6,10,1,12],[14,13,13,10,5],[10,10,12,1,12],[5,20,5,1,12],[13,18,20,1,12],[6,13,2,1,12],[10,5,5,1,12],[16,14,6,1,12],[13,5,10,1,12],[4,13,2,10,5],[13,14,19,1,12],[1,10,16,1,12],[5,2,6,10,5],[20,1,5,1,12],[10,2,13,10,5],[5,10,10,1,12],[13,6,13,10,5]];
+var TAR=[
+["Шут (Дурак)","Я есть! Потенциал без границ. Внутренний поиск, оптимизм, доверие, готовность начать новый путь с открытым сердцем."],
+["Маг","Я осознан! Я владею приборами и инструментами для использования своего потенциала. Воля спокойно действовать, принять вызов судьбы, быть проводником добродетелей, трансформировать энергии в себе."],
+["Жрица","Я осознан о своём наследии! Сокрытый потенциал в подробностях, мудрость на основе божественных законов. Двойственность, возможность познать сокрытое."],
+["Императрица","Плодородие и рождение формы: забота, изобилие, творческая сила природы, взращивание замысла."],
+["Император","Упорядочить материю согласно высоким образам, иерархии, синархии. Порядок, структура, осознанность, ответственность, самообладание, власть."],
+["Верховный жрец","Подчинение мыслей и чувств высшему принципу, связь с Господом через интуицию, умение видеть божественное в себе, вера. Поиск Истины, имея сокрытые знания и вдохновение спасти душу."],
+["Влюблённые","Познать суть всех вещей: два принципа в гармонии выражают божественную волю. Перекрёсток, выбор пути, овладение персональностью."],
+["Колесница","Стремление к самопознанию, активный поиск своего пути."],
+["Сила","Энергия, страсть действовать. Спокойная уверенность или тяга к плотским удовольствиям."],
+["Отшельник","Движение вглубь себя, поиск Истины, аскеза во имя мудрости."],
+["Колесо Фортуны","Судьба, удача, перемены, завершение цикла и выход на новый уровень."],
+["Справедливость","Установить гармонию и нести ответственность."],
+["Повешенный","Внутренняя жертва ради высшей цели, принятие судьбы, новый, нестандартный взгляд на обстоятельства."],
+["Смерть","Разрушение старого, перерождение, обновление."],
+["Умеренность","Умение соединять противоположности, находить равновесие, обновление сил."],
+["Дьявол","Искушение персональности, теневая сторона всех вещей, слабоволие, зависимость."],
+["Башня","Разрушение иллюзий и ложных целей материального мира на пути к духовному восхождению."],
+["Звезда","Цикл: разрушение — сомнения — созидание. Надежда на возрождение."],
+["Луна","Сумерки, сомнения, мир образов. Нужно связать воображение с духовным миром, чтобы избежать заблуждений. Самоанализ."],
+["Солнце","Осознание в себе высших энергий, света, ясности, овладение персональностью, обновление разума, завершение цикла."],
+["Страшный Суд","Суд, итог, прорыв, обновление сил и высвобождение новых возможностей."],
+["Мир","Покой души после долгих испытаний, обновление."]];
+var ROM=["0","I","II","III","IV","V","VI","VII","VIII","IX","X","XI","XII","XIII","XIV","XV","XVI","XVII","XVIII","XIX","XX","XXI"];
+var TEN=["Fool","Magician","High_Priestess","Empress","Emperor","Hierophant","Lovers","Chariot","Strength","Hermit","Wheel_of_Fortune","Justice","Hanged_Man","Death","Temperance","Devil","Tower","Star","Moon","Sun","Judgement","World"];
+var SIGNS=[["Овен","Овна","♈"],["Телец","Тельца","♉"],["Близнецы","Близнецов","♊"],["Рак","Рака","♋"],["Лев","Льва","♌"],["Дева","Девы","♍"],["Весы","Весов","♎"],["Скорпион","Скорпиона","♏"],["Стрелец","Стрельца","♐"],["Козерог","Козерога","♑"],["Водолей","Водолея","♒"],["Рыбы","Рыб","♓"]];
+var ELEM=["Огонь","Земля","Воздух","Вода"],ELC=["#B4552C","#4E7A3A","#2F6BA8","#2A7C86"];
+var CHOIR=["Серафимы","Херувимы","Престолы","Господства","Силы","Добродетели","Начала","Архангелы","Ангелы"];
+var PLANETS=[["Солнце","Воля и основной мотив жизни: знак и градус Солнца задают гения физического тела."],["Луна","Чистота, святость."],["Меркурий","Интеллект, целостность, гибкость ума."],["Венера","Красота, доброта, мягкость, нежность, любовь."],["Марс","Смелость быть бесстрашным, активным и динамичным."],["Юпитер","Милосердие, доброта, щедрость — быть образцом милосердия."],["Сатурн","Стабильность, терпение, стойкость, неизменность в духовной жизни, чтобы ничто не могло поколебать вас."]];
+
+/* фраза · имя · сефира · субстанция · буквы · описание · противоположный гений · обращение */
+var D=[
+["Защити Священное","Господь Возвышенный, Превознесённый над всеми","Кетер – Хокма","Воля Творца","היוחו|Вав Хет Вав Йод Хе",
+"Вехуйях — первый посланник Господа, начало начал. Он устанавливает в нас первую обитель и поддерживает заполненными резервуары Воли.\nЕго Воля — внутренний огонь, помогающий найти выход из путаницы, сделать движение к новому опыту, покинуть повседневную рутину и вступить в творческий цикл. Эта Воля может унести старые потоки, чтобы установились новые, но для этого важно корректно завершить предыдущие опыты.",
+"Неиспользованная энергия приведёт к противоположному гению, который предложит свою категоричную волю. Гнев и тревога, как бешеные кони, понесут человека воевать. Он окажется в крайне катастрофичных ситуациях, если не сможет корректно потратить эту мощнейшую энергию.",
+"О, Вехуйях, я хочу быть вместилищем Твоего семени. Пошли мне Огонь Твоей Воли и помоги использовать его наилучшим образом. Пусть Свет Твой станет трансформирующей силой для моего сознания, чтобы я мог почувствовать огонь Жизни внутри своей жизни и стать Знаменосцем Господа!"],
+["Твой партнёр даст тебе мир","Господь Помогающий","Кетер – Бина","Фонтан любви, вдохновения","לאילי|Йод Ламед Йод Алеф Ламед",
+"Йелиэль помогает устранить внутренние разногласия, установить гармонию между мужским и женским началом, объединяет в нас мудрость и любовь. Благодаря его квинтэссенции мы можем стать Путеводной звездой и движущей силой для других.\nОн делает нас плодовитыми на ангельских детей — на светлые, творческие, красивые, целебные мысли на благо всего человечества. Под его влиянием открывается фонтан альтруистической любви, стремление служить людям, умение видеть самые лучшие решения.",
+"Если эта энергия не использована по назначению, противоположный гений приведёт человека к абсолютной стерильности, невозможности творить, разладу в паре, враждебности или развратности.",
+"О, Йелиэль, управляй оркестром моей жизни. Сделай так, чтобы мой разум был чист и бескорыстно руководил моими эмоциями. Пропитай меня Священным Огнём истинного работника Храма Духа и помоги всегда помнить, что Свет исходит не от меня, а от Тебя. Я Твой проводник!"],
+["Ты победишь ложь","Надежда всех Творений, Конструктор и Архитектор Вселенной","Кетер – Хесед","Конструирование Синархии","לאטיס|Самех Йод Тет Алеф Ламед",
+"Ситаэль помогает справиться с проявлениями персональности для конструирования Синархии, действовать согласно критериям внутренней Божественности, а не персональных чувств и видений. Он закладывает материалы, помогающие построить «эфирный город» — основу гармоничного общества.\nДоминирует над честностью и великодушием, помогает оставаться верным своему слову. Обращаясь к Ситаэлю, можно увидеть, как в любой ситуации проявить благородство и служить другим.",
+"Противоположный гений управляет бесчестием, пренебрежением к людям, персональными чувствами и желаниями.",
+"О, Ситаэль, прошу коренным образом преобразовать мои персональные желания и помочь мне полностью сменить ориентиры, породить новые чувства и мысли, чтобы я смог действовать в соответствии с критериями внутренней Божественной природы и стать истинным архитектором Синархии."],
+["Ты далеко пойдёшь, заглянув внутрь себя","Господь Сокрытый","Кетер – Гебура","Потенциал возможностей, внутренняя точность","היםלע|Айн Ламед Мем Йод Хе",
+"Елемийях позволяет реализовывать первые добродетели души, заложенные в нас как семена во фрукте. Его энергия помогает конструировать на Земле Божественный мир, постепенно исправляя совершённые ошибки.\nОн задаёт ориентиры, согласующиеся с критериями Высшего Я: духовный «огонь» должен быть перевезён по «воде» эмоций посредством «воздуха» — корабля высокой идеи. К нему обращаются, когда мучают угрызения совести: он помогает обнаружить внутренних предателей души через внешних людей-раздражителей, показывающих, что именно мы должны трансформировать в себе.",
+"Противоположный гений управляет внутренними бурями, разрушительными изобретениями, деструктивными результатами, отказом от духовного развития.",
+"О, Елемийях, прошу, помоги мне раскрыть весь потенциал заложенных во мне божественных добродетелей, исправить в себе все ошибки. Помоги мне выстроить прочный корабль высокой идеи, чтобы пройти сквозь все бури и потрясения и достичь состояния сознания Рая."],
+["В исследовании вы найдёте ключ","Господь Спаситель","Кетер – Тиферет","Витриоль — элемент, способный всё скорректировать","הישחם|Мем Хет Шин Йод Хе",
+"Махасийях устанавливает в нас осознание нашей силы и способности найти и исправить в себе всё, что некорректно согласно Божественным законам, чтобы все семь тел были в гармонии со Вселенной. Всё определяет манера жить: нужно сформировать программу духовной жизни и непрестанно следовать ей.\nОн помогает скорректировать «ошибку», пока она находится в чувствах и ещё не спустилась в действия, даёт понимание иерархии, чтобы мы выбрались из внутреннего болота заблуждений, и помогает совершить внутреннюю алхимию — стать философским камнем.",
+"Противоположный гений даёт невежество, нежелание учиться, распущенность, сексуальные желания как образец удовольствий.",
+"О, Махасийях, помоги мне скорректировать моё использование Творческой Силы. Надели меня духовным озарением и способностью оплатить свои кармические счета с близкими и со всеми, кто когда-либо были моими спутниками. Помоги мне не оскорбляться, не мрачнеть в испытаниях. Скорректируй во мне все ошибки. Надели меня экстраординарной Моральной Силой, способностью извлекать исцеляющую квинтэссенцию из всех опытов моей жизни согласно Абсолютному Закону Синархии и Золотого Сечения! Помоги мне воссоздать Новый Эдем в себе!"],
+["Небеса дают тебе силу исцелять","Господь Хвалимый","Кетер – Нетцах","Свет, который позволяет понять все вещи","לאהלל|Ламед Ламед Хе Алеф Ламед",
+"Лелахэль исцеляет светом, изгоняя «нежелательных». Мы способны принять его энергии, только если позвоночный столб прямой и все внутренние системы в гармонии: тогда мы можем накапливать, хранить и передавать его гармонизирующий свет.\nВажно понять значимость данных обстоятельств: только в них мы наработаем нужные качества. Работа, усилия, время! «Когда мы заслужим корону, нас найдут, чтобы её надеть».",
+"Противоположный гений управляет амбициями, даёт желание быть выше текущих обстоятельств, взять то, что ещё не заслужил.",
+"О, Лелахэль, пошли Свет в моё сознание, чтобы я мог ясно видеть все вещи и больше не совершать ошибок. Помоги мне гармонизировать и исцелить всё в себе, чтобы золото текло в крови моей, а эфирные клеточки стали алмазами, чтобы я смог стать источником чистого знания о душе для других людей и стабилизирующим фактором в сложных ситуациях. Защити меня от чрезмерных амбиций, чтобы я смог смиренно работать там, куда меня определили 24 Старца."],
+["Природа — твой советчик","Господь Добрый и Терпеливый","Кетер – Ход","Терпение — активная творческая сила","היאכא|Алеф Каф Алеф Йод Хе",
+"Ахайях помогает проникнуть в секреты творения, овладеть методом созерцания как создания новых миров в сознании. Он даёт осознать, что терпение — это нить, ведущая к истинному видению вещей.\nПри корректно сформированной привычке ожидания он капля за каплей открывает секреты Природы, учит извлекать пользу из всех ситуаций. Управляет пятью чувствами, особенно вкусом, вызывает влечение к тому, что может нас продвинуть, и подталкивает делиться результатами внутренних поисков для продвижения окружающих.",
+"Противоположный гений управляет ленью, небрежностью, распущенностью, неосознанностью в обучении и неразумностью, нежеланием слышать и понимать.",
+"О, Ахайях, надели меня безграничным терпением, чтобы я мог видеть алхимию живой природы и использовать её ежедневно для внутренней работы. Открой во мне творческие, креативные способности для решения всех задач, чтобы я следовал замыслу Создателя, возвышаясь на эмоциональном и ментальном уровнях. Помоги мне найти оружие против лени и распущенности, и установи ясность там, где была тьма."],
+["Работа принесёт изобилие","Господь Любимый, Благословляющий","Кетер – Иезод","Благословения Господа","לאתהכ|Каф Хе Тав Алеф Ламед",
+"Кахетэль управляет урожаями во «внутренней природе» человека — качествами характера, которые являются пищей для Души, резюмируются в ауре в виде цветов и стоят на службе дальнейших Божественных реализаций.\nДля наилучшего урожая в равновесии должны находиться три фактора: Солнце (воля), Вода (чувства) и Земля (благодарность Создателю за все блага на нашей внешней и внутренней земле). Душа выражает себя через акт творения, оставаясь проводником замыслов Источника без присвоения персонального авторства.",
+"Противоположный гений негативно влияет на продукты, произведённые землёй, размножение хищников, управляет разрушающей волей и чрезмерной чувственностью, желанием командовать.",
+"О, Кахетэль, помоги мне навсегда отречься от негативных наклонностей и изменить манеру жизни, освободиться от сомнений, чтобы обрести свободу. Пусть исчезнет во мне всё, что негармонично. Даруй мне Благословения Господа и помоги стать моим землям плодородными, чтобы я мог находиться в постоянном расцвете и развитии. Надели меня работоспособностью и активностью, чтобы я стал достойным инструментом в работе Господа и мог участвовать в реализации Его высокого замысла."],
+["Не нарушай своё слово","Господь Милосердный","Хокма – Хокма","Милосердие Господа","לאיזה|Хе Зайн Йод Алеф Ламед",
+"Хазиэль представляет в нас наивысшие добродетели: позволяет растворить все злобы сердца и принять Божественное Милосердие. Пока наша «почва» ядовита и засорена, его семена не прорастут; но достаточно попросить от всего сердца, чтобы начать новую жизнь и получить возможность освободиться от кармы.\nМилосердие — первоимпульс, который появляется ещё до того, как нас оскорбили; он даёт прогрессировать свету и помогает пройти в следующий цикл. «Не защищайтесь, чтобы ангелы могли защитить вас».",
+"Противоположный гений даёт склонность к предательству, лицемерию, злобу, ненависть, непримиримость врагов, обман и неприязнь.",
+"О, Хазиэль, помоги мне освободиться от злобы сердца, от кармы, чтобы вновь обрести невинность и начать новую жизнь. Пусть примирение и чистосердечность растворят во мне все плохие наклонности, чтобы я смог выполнить свои обещания и сформировать новую привычку, препятствующую иметь любые злобы. Я готов трудиться, чтобы поток Твоего милосердия беспрерывно лился через меня на благо других людей."],
+["Ты исцеляешь, чтобы стать лучше","Господь Благосклонный","Хокма – Бина","Божественная благодать, Милость","הידלא|Алеф Ламед Далет Йод Хе",
+"Аладийях учит уважительно и с любовью относиться к Божественным законам. Когда мы понимаем законы и принципы мироздания, мы не обижаемся на людей и обстоятельства, а меняем привычку действовать, чувствовать и мыслить.\nСоциальная жизнь — отражение внутренней: она показывает, насколько подавлена в нас Милость. Милость прощает, не ожидая раскаяния, и позволяет «писать новую музыку без груза прошлого». Важно практиковаться в прощении себя и других — это готовит почву для Милости.",
+"Противоположный гений управляет пренебрежением и безразличием.",
+"О, Аладийях, научи меня уважительно относиться к Божественным законам и всегда помнить, что всё находится на своих местах. Помоги мне простить моих внутренних преступников и всех людей в веках, чтобы я мог исцелиться и жить в милости Твоей, быть добрым и великодушным к другим и к себе."],
+["Спокойствие — твоя сила","Господь Прославленный и Возвышенный","Хокма – Хесед","Победа","היואל|Ламед Алеф Вав Йод Хе",
+"Ловийях даёт желание Победы. Его субстанция — комбинация Хокмы (возвышенной любви для Божественного творения) и Хеседа (Божественной силы, порождённой добротой).\nНам необходимы цель и желание преуспеть, чтобы по закону притяжения привлечь Победу, накапливать её и использовать в нужные моменты. Он помогает стать Победителем и готовит благоприятные обстоятельства только тогда, когда человек хочет взять верх над своей низшей природой.",
+"Противоположный гений управляет гордыней, амбициями, ревностью, злословием и клеветой.",
+"О, Ловийях, помоги мне осознать смысл слова «Победа», надели меня жгучим желанием слиться с нею, обуздать свою низшую природу и стать истинным Триумфатором. Пусть любовь, мудрость и доброта станут основой верховной власти над моими внутренними тенденциями и проявятся в виде альтруизма и осознанности в мыслях, чувствах и жестах."],
+["Во снах тебя ждут откровения","Господь Крепость","Хокма – Гебура","Крепость","היעהה|Хе Хе Айн Йод Хе",
+"Хахайях блокирует наши внутренние деструктивные тенденции, давая шанс исправить ошибки; над ними необходимо медитировать, даже если они кажутся непоправимыми. Зло причиняют не люди извне, а наши собственные деструктивные вибрации.\nОн помогает выстроить внутренний город-крепость, изолирующий негативные тенденции от проявления во внешний мир, и способен открыть мистерии Вселенной во снах — откровения для алхимических трансформаций и ключи к будущему, если научиться расшифровывать послания.",
+"Противоположный гений управляет бестактностью, нескромностью и ложью; приводит в ситуации, в которых человек может стать жертвой обмана.",
+"О, Хахайях, помоги мне распознать и исправить ошибки, чтобы я мог стать камертоном гармонии. Надели меня силой и крепостью, чтобы я смог нейтрализовать мои собственные внутренние деструкции и стать убежищем для встревоженных душ. Открой во мне канал для Твоих откровений днём и ночью, чтобы я мог получить ключи к будущему."],
+["Будь верен всему, что любишь","Господь Прославленный","Хокма – Тиферет","Верность","לאלזי|Йод Заин Ламед Алеф Ламед",
+"Йезалэль даёт субстанцию Верности — преданности высшим принципам и свободу создавать, используя Любовь и Мудрость. Верность Христа — это верность Отцу и Матери.\nЕсли нам что-то не нравится вовне, мы должны найти это в себе и исправить, чтобы принять его энергии. Потоки фонтанируют из Хокмы и проходят через Тиферет в Малькут, помогая не сбиться с пути; они приносят желание созерцать, чтобы прийти к общему видению, дружбе, примирению и верности.",
+"Противоположный гений наделяет человека невежеством, нежеланием учиться, склонностью к ошибкам, лжи, неверностью в дружбе и супружестве; приводит к расстройствам нервной системы, депрессии.",
+"О, Йезалэль, укрепи меня в верности к высоким ценностям, к Любви и Мудрости, к Отцу и Матери. Сделай так, чтобы я смог выковать прочные связи дружбы, как в семейных отношениях, так и со всеми людьми. Помоги в примирении и воссоединении, чтобы я стал человеком Любви!"],
+["Истина станет твоим компасом","Господь Хранитель","Хокма – Нетцах","Истина, Свобода","לאהבם|Мем Бет Хе Алеф Ламед",
+"Мебахэль приносит Истину, которая может всё исправить. Когда Божественная Истина нисходит из плана эманаций в план творения, нужна Свобода, чтобы её реализовать, а в плане формирования — справедливость и точность, чтобы Истина стала реальной.\nИстина в нас становится компасом божественного принципа, позволяя создавать и совершать правильный выбор. Мебахэль раздаёт энергии щедро, не спрашивая, как мы их используем, поэтому наша задача — различать, что мы выбираем и культивируем, и установить в себе Синархию.",
+"Противоположный гений подталкивает человека сделать неправильный выбор из-за отсутствия критериев различения, подчинить творческую силу персональным желаниям, стать их рабом, чтобы в нём установилась анархия.",
+"О, Мебахэль, освободи меня от лжи и заблуждений, помоги мне стать человеком Золотой середины. И пусть моё равновесие исходит из завета Истинно Истинной Истины. Прошу, наставь меня, чтобы я смог стать мастером Твоей справедливости, твёрдым и решительным конструктором структуры Твоего Царства."],
+["Возрождение наработанного","Господь Очиститель","Хокма – Ход","Чистота каналов интуиции","לאירה|Хе Реш Йод Алеф Ламед",
+"Хариэль становится связующим звеном между нашей низшей природой и Божественной индивидуальностью посредством интуиции. Для её развития необходимо очищение в ментальном плане: свет интеллекта должен стать теплотой сердца и освободить его от отрицательных чувств.\nОн помогает развить «третий глаз» — ясность и точность, и «третье ухо» — умение уловить эссенции Глагола. Хариэль ведёт к пониманию пропорции Золотого сечения и помогает превратить жизнь в произведение искусства, наполненное красотой, порядком и великолепием.",
+"Противоположный гений управляет агрессией, революционными настроениями, бунтами.",
+"О, Хариэль, помоги очистить каналы моей интуиции, чтобы я смог соединиться с Высшим Я. Освободи моё сердце от нечистот и наполни светом мой интеллект, чтобы он взял курс к высшим принципам. Помоги примирить мысли и чувства, развить активное слушание, чтобы услышать голос интуиции. Пусть всё моё существо подчинится призывам души, чтобы моя жизнь стала произведением искусства: красотой, порядком и великолепием, а речь — носителем исцеляющей истины."],
+["Управляй своей энергией","Господь, Конструирующий Вселенную","Хокма – Иезод","Верность и преданность Божественным законам","היםקה|Хе Коф Мем Йод Хе",
+"Хекамийях помогает стать Королём, доминирующим над своими внутренними «народами», установить Божественный порядок и построить Новый Иерусалим на основе внутренней Синархии.\nКак только человек хочет реализовать Божественный проект, активизируются его внутренние и внешние предатели. Если целью является Высокий идеал, нет эгоизма и есть смирение, низшая природа получает Освящение: свет гения помогает победить старые тенденции и превратить предателей в истинных служителей. Необходимо абсолютное согласие всех внутренних обитателей до единого.",
+"Противоположный гений покровительствует предательству, преступлениям, бунтам, маргинальным личностям, провоцирует потери.",
+"О, Хекамийях, помоги мне окончательно освободиться от деструктивных тенденций, стать истинным Королём над моими внутренними народами и быть преданным Божественным законам. Пусть Божественный порядок установится во мне, чтобы я мог конструировать Новый Иерусалим вместе с Тобой."],
+["Вдохновение ведёт тебя дальше","Господь Чудесный","Бина – Хокма","Откровение через сны","היואל|Ламед Алеф Вав Йод Хе",
+"Лаувийях открывает сначала Божественную Любовь, затем Божественную Мудрость: всё во Вселенной соткано из Любви. Благодаря ему мы понимаем, что страдание — это борьба высшей и низшей природы, когда Божественное не может реализоваться.\nОн работает ночью, через сны, устанавливая в нас Синархию, если внутренние «аппараты» готовы. Чтобы улавливать образы-откровения, нужно успокоить интеллект, иметь беспристрастную концентрацию и развить мистическое чувство. «Мочь. Знать. Хотеть служить другому. Молчать».",
+"Противоположный гений завладевает нашей речью, провоцирует говорить невовремя и шутить о божественном. С ним человек живёт в «ошибках», становится жертвой обманов.",
+"О, Лаувийях, помоги мне выкорчевать все духовные сорняки. Позволь мне услышать Музыку Сфер, быть вдохновенным носителем божественной красоты, обожествлять материю и уметь говорить своей аурой. Позволь стать Нитью Ариадны, которая поможет другим выйти из лабиринта их персональности, и открыть им мистерии их душ."],
+["Вернуть правосудие невинным","Господь быстро Отвечающий","Бина – Бина","Справедливость через наблюдение","לאילכ|Каф Ламед Йод Алеф Ламед",
+"Калиэль приносит чистую божественную справедливость, позволяющую различать, выбирать и сонастраиваться с тем, что по-настоящему справедливо.\nДостичь состояния сознания Рая невозможно, пока не усвоена справедливость: мы не примем его энергии, пока судим тех, кто отличается от наших норм и мер. Нужно научиться не судить, а наблюдать, видеть Высшее Я людей и уважать их выбор, уравновесить в себе все чувства.",
+"Противоположный гений управляет скандальными процессами, обвинениями, лестью, пусканием пыли в глаза и желанием «купить справедливость».",
+"О, Калиэль, прошу, научи меня распознавать Истинное в самом себе и в других, помоги всегда осознавать важность последовательности на своём пути и наблюдения вместо осуждения, помоги сонастроиться со всем, что соответствует Божественной справедливости, чтобы стать праведником и посланцем Твоей воли! Дай мне достичь эмоциональной мудрости, чтобы разоблачать виновников, оставаясь в вечной доброте."],
+["Продвигать жизнь","Господь Внемлющий Грешникам","Бина – Хесед","Плодоносящий разум","היוול|Ламед Вав Вав Йод Хе",
+"Лёвийях помогает выйти из анархии, установить в себе Синархию и занять истинное место в жизни. Он требует уважения законов Бины, но очень мягко, с любовью разъясняя, для чего это нужно.\nОн даёт три ключа: активный рассуждающий интеллект, упорядоченные чувства и радость жизни, выраженную в действии. При корректном использовании этих ключей чистый Божественный разум позволяет творить согласно законам, а плодоносящие действия открывают доступ к памяти Бины — Хроникам Акаши.",
+"Противоположный гений управляет потерями, безнадёжностью, бесконечными сложностями, отсутствием радости.",
+"О, Лёвийях, помоги мне извлечь пользу из всего, что Господь вложил в мою жизнь на Земле. Принеси мне чистый Божественный Разум, который умеет различать и упорядочивать чувства и мысли, Сердце — доброе, нежное, готовое любить, и Волю решиться выполнить замыслы Господа в должное время и в должном месте. Помоги мне найти ключ к памяти прошлых жизней, чтобы я мог направить эту энергию к созданию будущих Миров."],
+["Обрати свои народы в веру","Господь Искупитель","Бина – Гебура","Мораль, Целомудрие","הילהפ|Пе Хе Ламед Йод Хе",
+"Пахалийях делает более гибкими законы Божественной Матери, находящейся в Бине. После первородного греха люди перестали следовать Божественным Законам и проистекать по отношению к другим Христической Любовью.\nЕго субстанция воздействует напрямую на чувства, освобождая их от персональных желаний: чувства должны стать кристально чистыми, чтобы ощутить вкус желаний Высшего Я. На внутреннем плане человек должен стать священником и обращать внутренние народы в Веру; во внешнем это выражается благочестием и целомудрием.",
+"Противоположный гений поощряет атеизм, поиск удовольствий, отречение от высоких убеждений и идей.",
+"О, Пахалийях, научи меня вновь следовать Божественным законам. Помоги стать моральным существом, исправить свои ошибки, заменить персональные желания желаниями моего Высшего Я, чтобы Божественные Законы смогли отразиться в моих чувствах. Принеси в мою философскую обитель мораль, целомудрие, чистоту, знания, истину, мудрость, энергию для подчинения своих собственных народов, вдохновения других и корректного исполнения Божественной инструкции."],
+["Вы разгадаете загадку","Господь Единый","Бина – Тиферет","Желание изучать и учить","לאכלנ|Нун Ламед Каф Алеф Ламед",
+"Нэлькаэль приходит уравновесить всё в нас, подталкивает повторить уроки и углубить знание, чтобы измениться. Структура и функционирование Вселенной должны стать главным предметом нашего изучения.\nВажно не настаивать на своём мнении, а захотеть узнать, как всё устроено на самом деле, и выстроить всё в себе по тому же принципу. Нужно иметь хотя бы четыре точки зрения — по четырём сторонам света, и для этого необходимо Терпение.",
+"Противоположный гений покровительствует лжепророкам, формирует устоявшееся общественное мнение, лишающее других способов видения вещей; подавляет разумные суждения, мешает уловить смысл и понять очевидные противоречия, блокируя поиск истины.",
+"О, Нэлькаэль, заложи в меня стремление к познанию и способность к концентрации, помоги мне усомниться в своём мнении и захотеть узнать Истину. Помоги ухватить смысл любой вещи и понимать очевидные противоречия, иметь терпение согласовать всё в себе с Божественными законами."],
+["Удача в твоих путешествиях","Господь Правдивый","Бина – Нетцах","Реноме, внутренняя слава","לאייי|Йод Йод Йод Алеф Ламед",
+"Йейаэль работает с чистотой, красотой, любовью и Сатурном, который строг и хочет привести нас к Божественным Законам. Он даёт возможность вспомнить, что мы дети Отца Небесного, и обрести репутацию у своих внутренних народов.\nЕдинственная способность, которую мы переносим с собой, — умение концентрироваться. Следует постоянно концентрироваться на возвышенном, аккумулируя в тонких телах частички того, на чём сосредоточены; тогда мы приближаемся к вибрациям Имени Господа и обретаем стабильность.",
+"Противоположный гений питает желание славы внешней, осуждение правителей, руководителей, покровительствует узурпаторам.",
+"О, Йейаэль, помоги мне обрести славу перед моими внутренними народами, чтобы вибрации имени Господа записались в моих клетках, чтобы Божественный дух во мне был стабилен даже в период бури. Вдохнови меня проделать внутреннюю работу, обрести дисциплину и следовать внутреннему режиму."],
+["Здоровье процветает в смелых","Господь, Освобождающий от страданий","Бина – Ход","Добродетели и целебные растения","לאהלמ|Мем Ламед Хе Алеф Ламед",
+"Мелахэль сначала пробуждает желание исцелиться и устранить внутренние войны, а затем приводит в нужное место, где есть элементы для восстановления внутреннего мира и порядка. После собственного «выздоровления» человек способен передать знания о целительных элементах и стать центром излучения гармоничных энергий.\nОн формирует нежные мысли, создающие новую ткань в чувствах, способную принять Божественную мысль и прийти к тотальному исцелению.",
+"Противоположный гений даёт нам ментальное оружие — бранные и осудительные речи, сподвигает держаться за эгоистические желания и потакать жадности и амбициям. Оружие нужно, чтобы сохранить то, что нам не принадлежит; тогда в судьбе встретятся внешние оружия и существа, к которым мы не готовы.",
+"О, Мелахэль, помоги мне обезвредить «залежи оружия» в моём ментальном плане, вернуться на праведный путь, полностью исцелиться, чтобы стать исцеляющим элементом для других, установить в себе Божественный порядок, чтобы распространять его вокруг. Сделай так, чтобы каждое утро я просыпался с мыслью о благополучии людей."],
+["Вы будете в безопасности от преступлений","Господь Хороший, Хранитель Законов","Бина – Иезод","Связь с Божественным законом","היוהה|Хе Хе Вав Йод Хе",
+"Хахуйях — защитник, которого Небо отправляет, потому что бессознательно мы уже нарушили Божественный закон. Будучи милосердным, он указывает праведный путь через внешние подсказки, сны и советы, чтобы тенденция не переросла в сознательные преступления.\nОн убеждает оставить пагубные тенденции в прошлом, пробуждает внутренние народы для подчинения Божественной Любви, Воле и Милосердию. Если мы не слышим посланий, нам дают суровые уроки; чтобы слышать, нужно хранить чистоту и не вводить ум в заблуждение.",
+"Противоположный гений закладывает в нас семена преступности и зла, которые прорастают в чувствах и проявляются через действия; мы пожинаем отравленные плоды, продолжая судить и осуждать, привлекая тех, кто осудит нас, и находясь в постоянной тревоге.",
+"О, Хахуйях, прошу, принеси Твой священный огонь во все мои бессознательные клеточки, защити меня от необдуманных поступков и помоги жить согласно Божественному закону. Помоги мне с любовью принимать любые жизненные обстоятельства и возлюбить ближних, быть бдительным и стремиться познать Истину, чтобы реализовать её через все мои проявления."],
+["Сны знают о будущем","Господь, Дающий Мудрость","Хесед – Хокма","Духовная Мудрость","היהתנ|Нун Тав Хе Йод Хе",
+"Нитхайях отвечает за первую реализацию Божественного порядка в нас. Процесс подобен циклу жизни растения: подготовка психической почвы и посев семян мудрости; орошение и согревание светом сознания; укоренение; поддержание плодов через слова и жесты; извлечение квинтэссенции для новых семян.\nМудрость = Знание + Проживание на опыте. Принимая её субстанцию, мы учимся видеть сокрытые Истины вещей и конструировать будущие Вселенные.",
+"Противоположный гений занимается чёрной магией, сделками со злом, переворачивает порядок вещей.",
+"О, Нитхайях, помоги мне подчиниться Высшему порядку, чтобы семена Божественной Мудрости проросли и укоренились во мне. Пусть я смогу проявить эту Мудрость всем своим существом и посеять её семена. Помоги мне открывать Великие Мистерии в моих снах."],
+["Разум зажжёт новую жизнь","Господь Сокровенный","Хесед – Бина","Делает нас Человеком с большой буквы","היאאה|Хе Алеф Алеф Йод Хе",
+"Хаайях помогает ввести в Закон Любви нашу волю, чувства и мысли, понять Божественные Законы Бины через резонанс и рассуждение.\nОн помогает лучше организовать наши внутренние народы. Когда проявится внутренний политик — хранитель Храма, — это будет начало Синархии; пока его нет, мы управляемы «законом более сильного». Как только человек понимает, что он коллективное существо, маленькая «ч» в слове человек превращается в большую букву.",
+"Противоположный гений вдохновляет человека на аморальные акты, предательство и питает политические амбиции.",
+"О, Хаайях, помоги мне осознать, что я являюсь коллективным существом, и помоги мне ввести в закон любви все мои внутренние тенденции, стать политиком, известным Небу, стать Человеком с большой буквы, чтобы я мог служить становлению мира и порядка в себе, в обществе и на всей Земле."],
+["Будет наказание и примирение","Господь, Наказывающий злых","Хесед – Хесед","Специальный Свет для чувственного мира","לאתרי|Йод Реш Тав Алеф Ламед",
+"Йератэль глубоко воздействует на чувства, проникает в них Светом и пробуждает истинные творческие силы; его Свет могуществен, так как представляет резюме первых трёх Сефир.\nОн приносит энергию Цивилизации, побуждая действовать не по «закону более сильного», а в соответствии с Божественным порядком. Помогает поддерживать связь с Ангельскими иерархиями и пробуждает бескорыстные желания, отсекая жадность и алчность, чтобы мы пришли к понятию служения.",
+"Противоположный гений удерживает человека в путанице, окружает трудностями и врагами, чтобы тот не мог установить связь с существами, способными помочь ему, всё больше погружаясь в болото чувственных желаний и противоречий.",
+"О, Йератэль, освети мой чувственный мир и сделай так, чтобы мои желания стали бескорыстными. Помоги сознательно связаться со всем, что Божественно, и поддерживать постоянную связь с Ангельскими иерархиями, чтобы я мог окончательно освободиться от внутренних предателей и наилучшим образом служить на благо человечества."],
+["Время не закончит твою молодость","Господь Целитель всех болезней","Хесед – Гебура","Божественная гармония, Духовный озон","היהאש|Шин Алеф Хе Йод Хе",
+"Сехейях даёт энергии, чтобы уравновесить Божественную Волю «сверху» и иную волю нежелательных существ «снизу», проникшую в наше сознание: потоки Божественного Огня и «пожирающего» огня страстей.\nОн приносит Гармонию, устанавливающую циркуляцию Божественных энергий, что проявляется в здоровье и благостном состоянии, а затем — в различении и понимании всего происходящего в нашей судьбе. Любая физическая болезнь есть следствие дисгармонии мыслей и чувств.",
+"Противоположный гений поощряет человека действовать не подумав. Такие люди становятся носителями катастроф, пожаров, несчастий.",
+"О, Сехейях, изгони из меня тех, кто вторгся в моё сознание и разжигает в нём испепеляющий огонь. Убереги меня от осуждений и помоги увидеть скрытую сторону вещей, чтобы сохранить состояние гармонии, равновесия и стать целителем для себя и окружающих."],
+["Ты будешь призван возродиться","Господь, Быстро Помогающий","Хесед – Тиферет","Соединение с Высшим Я","לאייר|Реш Йод Йод Алеф Ламед",
+"Реиэль приносит субстанцию, способную освободить нас от собственных отходов, накопленных из-за персональных желаний, которые приводят к анархии и неподчинению порядку.\nОн ткёт нить, связывающую нас с Высшим Я. Если эта нить не соткана, мы слепы: нет света, чтобы различать и найти верный путь. Его цель — вести нас вверх по иерархической лестнице; эта связь формируется через медитации и молитвы.",
+"Противоположный гений питает лицемерие и религиозный фанатизм, доводя их до катастрофических последствий.",
+"О, Реиэль, помоги мне очистить мои чувства от всех отходов и персональных желаний. Помоги установить прочную связь с Высшим Я, с регионами чистой Истины, чтобы я мог стать её служителем и проявить её через свой образ жизни."],
+["Природа даст вам жизненную силу","Господь Терпеливый","Хесед – Нетцах","Преумножение жизни и живых клеток","לאאמו|Вав Мем Алеф Алеф Ламед",
+"Омаэль приносит субстанцию преумножения всего светлого: жизни, живых клеток, частиц счастья. Он обладает «таблетками» против грусти, печали и чувства, что вас не любят и вы покинуты всеми.\nЕго терпение — это циклы жизней, чтобы дать прорасти и расширить всё, что приносит жизнь. Работая с Ахайях (7), Сехейях (28) и Омаэлем, мы делаем тела невероятной красоты. Упражнение Учителя: «Пусть все мои клеточки намагнетизируются, исцелятся и воскреснут во Славу нашего Отца Небесного».",
+"Противоположный гений питает нетерпимость, критику, недовольство, печаль, скорбь, порождающие смерть в нас.",
+"О, Омаэль, помоги мне с помощью духовной любви исцелять и оживлять мои собственные клетки, стать источником счастья, чтобы процесс преумножения был непрерывен для создания духовного ребёнка — Царства Господа."],
+["Разум заставляет чувствовать себя сильным","Господь Вдохновляющий","Хесед – Ход","Разрешительный талант","לאבכל|Ламед Каф Бет Алеф Ламед",
+"Лекабэль даёт невероятную силу рассуждения и ведёт к Мудрости, которая постепенно устанавливается в нас и позволяет резонировать Божественным законам — так мы перестаём подчиняться зову чувственных страстей.\nОн работает с точностью и мерами, наделяя талантом находить решения, и влияет на миссию человека, выраженную через профессию. Нужно полюбить свою работу: через неё мы предлагаем миру свои качества и эманации — это первое служение.",
+"Противоположный гений питает мошенников, которые не хотят проявлять волю, стремятся получить всё быстро, жадно, алчно, обманным путём.",
+"О, Лекабэль, помоги мне обрести полную ясность суждений, пребывать в резонансе с моей Божественной природой и в полной гармонии. Одари меня вдохновением на ежедневные труды и отдали искушения обогащаться за счёт внутренних талантов."],
+["Твоя память хранит справедливость","Господь Справедливого Милосердия","Хесед – Иезод","Милосердие Божественной Матери","הירשו|Вав Шин Реш Йод Хе",
+"Васарийях приносит Милосердие Божественной Матери при условии, что мы приняли Её справедливость и освободились от всего несправедливого в себе. Разумное принятие делает нас благодарными за возможность оплатить то, что мы должны исправить.\nМы не должны судить слишком строго: он приносит понятие справедливой дозировки и науку о семени — в какой дозировке и в каких условиях заложить внутренние семена в себе и других, чтобы они дали лучшие плоды.",
+"Противоположный гений даёт очень суровое, строгое, чрезмерное осуждение.",
+"О, Васарийях, помоги мне принять справедливость Космических Законов, научи меня быть милосердным ко всем божественным созданиям, видеть и использовать всё справедливым образом, согласно Божественному порядку. Помоги прорасти во мне семени Божественной Справедливости, чтобы я смог закладывать добрые семена в других."],
+["Твоё послушание — сила","Господь, Знающий все вещи","Гебура – Хокма","Субординация и подчинение","היוהי|Йод Хе Вав Йод Хе",
+"Йехуйях приносит энергии субординации и подчинения Божественному закону, показывает Иерархию и важность знать своё место в ней, помогает исправить всё, где мы ослушались Отца.\nСтрадание помогает захотеть обратиться с молитвой, которая открывает дверцу для Христического импульса. Если он найдёт в чувствах единомышленников, все остальные чувства подчинятся ему, и он станет Христическим Принципом в нас; тогда сформируется лестница Иакова, по которой спустится Высшее Я.",
+"Противоположный гений питает предателей души, восстающих против порядка и иерархии, порождает конфликты, питает гордыню.",
+"О, Йехуйях, помоги мне сонастроить свои чувства и желания с божественным порядком, законом Отца, чтобы я смог принять Христическое семя, прорастить его и превратить в Христический принцип! Помоги обнаружить и обезвредить всех внутренних предателей, чтобы понять суть всех вещей и слиться с нею!"],
+["Божественное помогает вам управлять собой","Господь Милосердный","Гебура – Бина","Подчинение рецепту Божественной Матери","היההל|Ламед Хе Хе Йод Хе",
+"Лехахийях приводит к пониманию верной дозировки божественных мер через подчинение и послушание: каждый раз, подчиняясь, мы укрепляемся, протестуя — слабеем.\nПервая алхимия Вселенной — принятие импульса без его понимания, доверяя Отцу, который даёт продукты, и Матери, которая знает рецепты. В основе лежит поведение: рассуждение и сравнение с более одухотворёнными существами, чувство долга и ответственности за то, что порождаешь внутри и вовне. Так подчинение становится идентификацией.",
+"Противоположный гений питает бунты, неподчинение, раздор, войну, измену, предательство, уничтожение наций.",
+"О, Лехахийях, помоги мне стать примером великодушия и самоотречения, помоги во всём обрести верную дозировку и укрепиться через подчинение Божественным законам. Помоги мне установить в себе истинный порядок, сформировать корректное поведение, чтобы овладеть внутренними тенденциями и сделать их достойными служителями Господа!"],
+["Соберите мир из прошлого","Господь, Дающий Радость","Гебура – Хесед","Исправление ошибок прошлого","היקוכ|Каф Вав Коф Йод Хе",
+"Хавакийях помогает сгармонизировать то, что приведено в беспорядок, и исправить ошибки. Он предлагает семена, которые нужно посадить и культивировать, чтобы получить плоды и поделиться ими; Высшее Я подбирает для этого благоприятные условия — семью и страну.\nЕсли не приложить усилий, семена «падают» в подсознание и становятся «компостом», отталкивающим ангелов: так формируется внутренний ад, внешне выраженный в трудностях с мужчинами (семена-мысли), женщинами (семена-чувства) и детьми (семена-действия).",
+"Противоположный гений поощряет лень, семейные конфликты, разногласия, бунты.",
+"О, Хавакийях, позволь мне исправить ошибки прошлого, всё расчистить, примирить и трансформировать. Помоги мне наладить взаимопонимание с родителями и детьми, установить гармонию в семье. Вдохнови меня вовремя использовать Твои семена на трёх планах, чтобы щедро делиться их плодами и стать истинным сыном Господа."],
+["Ищите работу, которая приносит освобождение","Господь Милейший, Очаровательный","Гебура – Гебура","Справедливое понятие работы","לאדנמ|Мем Нун Далет Алеф Ламед",
+"Менадэль приносит энергию совершенствования — стремление работать над своими качествами и добродетелями, которые станут плодами для мира. Отказываясь от этой работы, мы отдаляем существ, способных вдохновить нас, и вынуждены много работать физически: каждая профессия показывает, над чем мы не доработали внутри.\nОн смягчает внутреннюю оппозицию, освобождает сосланные народы, наделяет нежностью, позволяющей принять и исправить текущую ситуацию, и даёт продегустировать Истину, обрести уверенность и избавиться от сомнений.",
+"Противоположный гений через недовольства деморализует нас и окружающих, чтобы мы не могли работать.",
+"О, Менадэль, прошу, освободи меня от порочных привычек, научи использовать Твои энергии корректным образом и в надлежащий момент. Расположи в моих чувствах справедливое понятие Работы. Помоги смягчить внутренние оппозиции и освободить заключённые народы, которые хотят следовать Божественному Порядку и помогут реализовать план Высшего Я."],
+["Ваши работы раскроют истоки","Господь Добродетелей","Гебура – Тиферет","Возможность разорвать круг материи","לאינא|Алеф Нун Йод Алеф Ламед",
+"Аниэль начинает вторую половину Гениев и приходит пробудить нас, если мы были глухи к подсказкам предыдущих: время требует дальнейших шагов, а мы не сделали предыдущих.\nУ души два способа получать материалы для развития добродетелей: гомеопатически — через послушание законам, когда она непрерывно получает питание; аллопатически — через непослушание, когда Небо использует удары судьбы. Аниэль призван разбить застой методом шока и открыть двери новым идеям.",
+"Противоположный гений питает идеи материализма, идолопоклонничества, порочности, шарлатанства.",
+"О, Аниэль, помоги разорвать круг, останавливающий движение духа, испепели все накопления отходов прошлого во мне. Пробуди моё сознание, чтобы я мог приступить к работе над добродетелями, и моя душа непрерывно получала материалы для этого. Открой во мне двери для новых идей, чтобы я стал триумфатором над старым, а моё сознание стало солнечным."],
+["Вы вступите в контакт с Абсолютом","Господь Надежда всех детей Земли","Гебура – Нетцах","Энергия обрядов, ритуалов, церемоний","הימצה|Хе Айн Мем Йод Хе",
+"Хаамийях приносит надежду, питающую желание стать однажды ангельским существом. Наша задача — одухотворить эмоции и чувства, чтобы выражать Истинно Истинную Истину всем своим существом; для этого нужно постоянно связываться с обитателями Древа Сефирот через ритуалы, содержащие священную мысль.\nЕго сокровища: воля и вдохновение дают вкус к жизни и инициативу; мудрость и уважение рождают Духовную Любовь; разум и различение дают понимание законов и механизма Вселенной. «Желайте знать мало, в сто раз больше проживать на опыте».",
+"Противоположный гений приводит к ошибкам, заблуждениям, лжи, беспринципности и атеизму.",
+"О, Хаамийях, одухотвори мои чувства, чтобы я смог затем одухотворить все материи в себе, вне себя и саму Землю настолько, что она станет Солнцем. Настрой мой внутренний компас на Истинно Истинную Истину. Помоги проживать каждый день поэтично, осознанно, чтобы вся моя жизнь стала ритуалом соединения со светлыми духами. Помоги моим клеточкам вибрировать на определённой частоте, чтобы я смог обрести мудрость в своём поведении и состояние сознания Рая."],
+["Будь милосерден к своей семье","Господь, Принимающий грешников","Гебура – Ход","Подчинение, послушание Отцу","לאעהר|Реш Хе Айн Алеф Ламед",
+"Рехаэль приходит установить порядок, чтобы всё подчинялось Божественным законам и было по плану Отцу; он ведёт к наиболее верному использованию всех материалов и энергий.\nПодчинение Небесному Отцу выражается через физического отца: только через подчинение в малом мы получим благословение из Кетера на большое. Зерно непослушания находится в интеллекте — именно его нужно предоставить Рехаэлю как почву будущего сада; принятый порядок в ментальном мире переносится и в область чувств.",
+"Противоположный гений не признаёт правил и иерархии, питает идеи ненависти, моральной распущенности, желание следовать за ужасными лидерами, избавиться от отца.",
+"О, Рехаэль, установи во мне порядок, подчинение Божественным законам и послушание Отцу, чтобы я смог однажды в точности выполнить Его архитекторский план."],
+["Примите руководство в кризис","Господь, Восхищающийся, Радующий","Гебура – Иезод","Финализация работы в чувствах","לאזיי|Йод Йод Заин Алеф Ламед",
+"Йейазэль представляет резюме всех энергий, принесённых предыдущими ангелами: на основе плачевных опытов мы понимаем, что нужно сообразовать чувства с разумом.\nОн приносит Утешение, наполняет рассудок солнечными мыслями и помогает установить в них высокий идеал, если мы смогли осушить слёзы и научились сознательно находить радость в каждом дне. Именно утешение приводит к Радости — стабильной солнечной энергии, благодаря которой мы восхищаемся Творением.",
+"Противоположный гений удерживает нас в печали, горе, желании оплакивать свою судьбу, ведёт к болезни, смерти, разложению.",
+"О, Йейазэль, пошли мне утешение, успокоение и радость, наполни мои мысли солнечными материями, чтобы высвободились во мне тенденции — служители Неба. Прошу, помоги мне остановить потоп в чувствах, чтобы выйти из моего ковчега на твёрдую землю светлого разума и положить начало солнечной цивилизации."],
+["Тайна твоей веры спасёт тебя","Господь Триликий (Святая Троица)","Тиферет – Хокма","Священничество, духовенство","לאההה|Хе Хе Хе Алеф Ламед",
+"Хахахэль сеет Веру в души и даёт возможность начать новый цикл; он несёт энергии духовенства. Чтобы проявить Высшее Я на трёх планах, необходимо во всякий момент из всего делать Причастие.\nМетоды Учителя для ежедневного причастия: встреча восхода Солнца, дыхание, гимнастические упражнения, пение, молитва, питание, паневритмия, медитация; для продвинутых — изучение мистерий, сублимация, созерцание и идентификация. Мы должны стать Королём на физическом плане, Учителем на ментальном и Священником на астральном.",
+"Противоположный гений настраивает против божественности, питает лжепророков, отречение от клятв, ненависть, разрозненность.",
+"О, Хахахэль, помоги мне реорганизовать всё в себе на трёх планах и поставить в согласии с божественным замыслом, чтобы Твоя энергия установилась во мне. Помоги мне начать новый цикл, где внутренняя жизнь примет праведное направление, и я буду видеть истинные ценности. Установи во мне связь с божественным и помоги из всего во всякий момент моей жизни сделать причастие, чтобы божественная любовь проявилась через меня, и я мог стать королём, учителем и священником."],
+["Несёт мирную мудрость","Господь Добродетелей, Подобный Господу","Тиферет – Бина","Политический порядок","לאכימ|Мем Йод Каф Алеф Ламед",
+"Микаэль приносит энергию, синхронизирующую нас с Божественной Волей (Кетер), Мудростью, выраженной через Любовь (Хокма), и Разумом (Бина). Это и есть Синархия.\nОн приносит ясновидение разуму, чтобы правильно видеть замысел Господа, энергию сердцу, чтобы оно не прекращало выполнять волю Высшего Я, и силу воле, чтобы исполнить Божественный план. Он даёт меры для построения Нового Иерусалима — нашего внутреннего Храма.",
+"Противоположный гений питает предателей, тех, кто приносит хаос, разрозненность, ложь; они завладевают властью, чтобы уничтожить порядок.",
+"О, Микаэль, помоги мне установить Синархию в себе, чтобы я смог стать Землёй Мира. Пусть Твоя мера проявится через меня. Пусть я буду подчинён Золотому правилу, чтобы суметь освободиться от всех нечистот и стать Храмом Бога Живого. Прошу, поработай сегодня ночью над моими телами, чтобы днём я смог лучше служить Тебе!"],
+["Ваш успех в силе","Король Господствующий, Властелин","Тиферет – Хесед","Нежная сила","הילוו|Вав Вав Ламед Йод Хе",
+"Вёлийях даёт силу процветания, возвращаемую в виде «урожая» после вклада наших энергий в проживаемые опыты; его сила помогает стать солдатом Христа, имеющим орудие против любых трудностей.\nОн — дверь, через которую приходит положительная карма, добрые результаты прошлых жизней. Он принесёт экстраординарный урожай, если мы посадим семя в психическую почву, будем благодарны, услышим план жизни от Высшего Я, усмирим персональность и сделаем выводы после «жатвы».",
+"Противоположный гений использует клевету как оружие, поощряет злословие, ложные новости, предательство, махинации с целью захвата власти.",
+"О, Вёлийях, помоги мне уравновесить в себе два принципа, чтобы я смог победить своих внутренних преступников. Помоги мне сделать правильные выводы из прожитых опытов, чтобы энергия процветания установилась во мне. Вдохнови меня всегда быть благодарным Господу за урожай и пребывать в состоянии гармонии и мира."],
+["Ваше мужество послужит невинным","Господь Вечный, Всевышний","Тиферет – Гебура","Жажда справедливости","היהלי|Йод Ламед Хе Йод Хе",
+"Йелахийях помогает понять, что сам человек — причина всех своих трудностей, и нужно взять под контроль внутренние народы, чтобы стать кузнецом своего счастья, а не вести «внешнюю войну».\nОн развивает талант встречать карму и принимать непоколебимость Божественной Справедливости. Внешние события — маяки, указывающие на силы, которыми мы пока не овладели; судить мы можем только собственное поведение. Такая тактика помогает пребывать в атмосфере радости, и Христические семена прорастают быстрее.",
+"Противоположный гений разжигает кровавые войны.",
+"О, Йелахийях, даруй мне талант стойко встречать трудности и помоги уладить все кармические долги. Помоги направить желание восстановить справедливость на борьбу с деструктивными тенденциями в самом себе, научиться жить в атмосфере радости и восхищения, чтобы Божественные семена проросли во мне, и я смог стать активистом Христа!"],
+["Работай со смирением","Господь Двигатель всех вещей","Тиферет – Тиферет","Движущая сила всех вещей","הילאס|Самех Алеф Ламед Йод Хе",
+"Сеалийях следит, чтобы эссенция прожитых опытов была извлечена наиболее гармонично: он обеспечивает непрерывность духовной жизни и связь сознания с каузальным планом, чтобы не было испорченных фруктов и потерянных семян.\nОн разворачивает нас к Солнечному свету, радости, совершенству и гармонии, позволяя переподключиться и встать на путь к Небу; помогает обрести проницательность мысли, энергичность и храбрость, чтобы стать Солнечными Оптимистами.",
+"Противоположный гений приводит всё внутри нас в разбалансированное состояние, чтобы мы не смогли сделать выводы из опытов и получить гармоничные энергии. Также он отвечает за ураганы, потопы и землетрясения.",
+"О, Сеалийях, помоги мне достать эссенцию из моих опытов, чтобы я встал на путь восхождения, чтобы Солнечная гармония установилась во мне и была моей постоянной движущей силой. Не позволь, чтобы мой темперамент выражался чрезмерно, помоги мне действовать в унисон с космическим биением, чтобы я преодолел все трудности и стал достойным сотрудником Неба на земле!"],
+["Мудрость говорит с тобой во сне","Господь, несущий Откровения","Тиферет – Нетцах","Откровения","לאירע|Айн Реш Йод Алеф Ламед",
+"Ариэль приносит план маленьких и больших событий нашей жизни на основе синтеза всех опытов прошлого, связывая наши желания с планом высокой мысли.\nОн даёт откровения через образы, повторяющиеся ситуации и знаки, а если не удаётся днём — во снах. Если мы наполнены желаниями прошлого, новые желания всего Древа Жизни не смогут в нас войти. Важно быть «чистой чашей»: восприимчивым, смиренным, принявшим Господа как хорошего Отца и благодарным Ему.",
+"Противоположный гений забирает энергию, если вместо выполнения плана мы продолжаем идти за эгоистическими, агрессивными желаниями и страстями. Он лишает нас сил и приводит к полному провалу.",
+"О, Ариэль, свяжи мои желания с каузальным планом, планом божественной мудрости. Помоги мне осознать космический план моей жизни и дай мне силы реализовать его. Помоги понять Твои откровения, получаемые через сны, и ниспошли мне вдохновение неустанно благодарить Господа!"],
+["Ты раскрываешь тайну души","Господь Справедливости, Указывающий Истину","Тиферет – Ход","Справедливые планы жизни","הילשע|Айн Шин Ламед Йод Хе",
+"Азалийях, как Божественный почтальон, доставляет посылки с истинными планами нашей жизни, в которых содержится творческая сила Солнца. Он помогает скорректировать личную точку зрения и приносит панорамное видение того, как события располагаются в общем ансамбле бытия.\nЭто видение базируется на двух законах: причины и следствия и реинкарнации. Нужно ежедневно проверять его послания и приводить их к реализации, чтобы старые привычки не остановили движение Духа.",
+"Противоположный гений не даёт нам понять причинно-следственные связи и ведёт к безнравственности, аморальности, отсутствию стыда как возможности одуматься.",
+"О, Азалийях, надели меня справедливым и истинным видением, помоги нейтрализовать старые привычки, чтобы они не смогли замедлять мою эволюцию. Помоги сонастроиться с Божественными законами великой мистической Шестерни Творения, чтобы реализовать Божественный план моей жизни и созерцать пейзажи гармонии, красоты и абсолютной Истины."],
+["Любовь сделает вас плодородными","Господь Помогающий","Тиферет – Иезод","Генерация","לאהימ|Мем Йод Хе Алеф Ламед",
+"Михаэль приходит установить в нас силу, способную породить Божественное творение: пробудить «космическую женственность» как формирующий принцип.\nДля этого внутренняя пара — мужской и женский принципы — должна быть в гармонии, иначе мы останемся стерильны. Внешняя гармония супружества есть отражение гармонии внутренней пары каждого; основная задача — желание создавать «храм для души», принять семена Учителя и дать им прорасти.",
+"Противоположный гений делает стерильным всё, питает неверность.",
+"О, Михаэль, помоги установить во мне гармонию двух принципов, пробуди желание создавать Божественные творения, вдохнови меня стать восприимчивой почвой, чтобы плодоносные семена Учителя прорастали во мне, и я смог помочь реализации Царства Господа на Земле."],
+["Возвышай каждое своё решение","Господь Великий и Возвышенный","Нетцах – Хокма","Величие, Возвышение","לאוהו|Вав Хе Вав Алеф Ламед",
+"Вехуэль приносит семена, пропитанные Любовью и Мудростью Хокмы, — всё, что он передаёт, справедливо. Чтобы они проросли, нужно подготовить новую атмосферу, «духовный кислород», не базироваться на старых опытах, чтобы каждое решение было возможностью возвыситься.\nОн говорит через интуицию: когда мы его слышим, чакры наполняются светом и происходят озарения. С ним мы становимся носителями новых идей, учимся прогнозировать последствия и становимся дипломатами.",
+"Противоположный гений несёт нам ненависть и глупость, стремление принимать неверные решения одно за другим.",
+"О, Вехуэль, помоги создать во мне новую духовную атмосферу, чтобы Твои семена Божественной мысли проросли во мне. Помоги развить мою интуицию, чтобы услышать Тебя. Помоги исправить старые привычки видеть и думать, чтобы все принимаемые мной решения возвышали меня, и я стал достойным имени Человек."],
+["Милосердие вдохновит тебя","Господь Милосердный Судья","Нетцах – Бина","Конденсация «вкуса» Вселенной","לאינד|Далет Нун Йод Алеф Ламед",
+"Даниэль позволяет открыть и идентифицировать себя с великолепием Божественной Матери — наиболее справедливой распространительницы Божественной Любви. Обрести точную оценку себя помогает Божественная милость, которая подталкивает нас расти, прощает и верит в нас.\nВнутри нас существуют два «совета»: совет ночи в сердечной чакре помогает подсознательной работе, совет дня в сахасраре — сознательной. Нужно развить ощущение Священного и чувство Благодарности, чтобы слиться с красотой Глагола Творящего.",
+"Противоположный гений питает ложь и обманы.",
+"О, Даниэль, надели меня чувством священного, чтобы оно уберегло меня от совершения преступления против Божественного закона. Помоги связать моё сознание с Божественным, чтобы Милосердие Господа проявилось через меня. Надели меня нежной справедливостью и научи уважать Божественное во всём внешнем и в себе самом."],
+["Природа научит вас исцелять","Господь Оккультный (Сокрытый)","Нетцах – Хесед","Философский камень","הישהה|Хе Хе Шин Йод Хе",
+"Хахасийях работает в паре с Омаэлем (30) и помогает проникнуть в мистерии Божественной мудрости через поиск внутреннего философского камня — «чистого Света». Чем больше Света, тем лучше мы понимаем структуру Вселенной и причины всех вещей.\nЕго энергии устанавливаются поэтапно: огонь — нервная система — первичный порыв; вода — кровь — желание найти причину; воздух — лёгкие — желание идти на поиски; земля — кости и мышцы — полное принятие. Проникновение Света в четыре стихии означает, что Господь поставил в нас Свою подпись.",
+"Противоположный гений питает непринятие добродетелей, посылает болезни.",
+"О, Хахасийях, помоги мне понять причины любого события, осознать и устранить их. Даруй мне возможность найти философский камень в самом себе и стать алхимиком, способным преображать в золото и свет всё то, что изначально светом не является, чтобы Божественный Мир смог поставить свою подпись во мне."],
+["В путешествиях вы встретите себя","Господь, возвышающийся надо всякой вещью","Нетцах – Гебура","Искупление ошибок и Великое освобождение","היממצ|Айн Мем Мем Йод Хе",
+"Имамийях приносит возможности искупить ошибки прошлого не материальными благами, а чувственными элементами: чистая любовь Нетцах проходит через Гебуру, чтобы проверить, какие отклонения нужно скорректировать. Он работает в паре с Хаамийях (38), который через ритуалы устанавливает в нас ритм Души.\nОн даёт воплотиться рядом с тем, кто максимально резюмирует блокировки наших прошлых жизней. Если мы осознаём себя причиной трудных взаимоотношений, то можем с добрым сердцем оплатить все долги через этого родственника.",
+"Противоположный гений питает в нас осуждение и болезни.",
+"О, Имамийях, даруй мне освобождение от стагнации и позволь искупить ошибки, совершённые в прошлом. Помоги мне расширить сознание, чтобы увидеть все ситуации, подлежащие корректировке. Помоги мне всегда жить в ритме Души и быть подключённым к Божественному миру."],
+["Ты найдёшь свой внутренний свет","Господь, Утихомиривающий горделивых","Нетцах – Тиферет","Экклесия","לאאננ|Нун Нун Алеф Алеф Ламед",
+"Нанаэль приносит возвышенное сознание, ясность и свет, проясняющие все чувства; он работает в паре с Ариэлем (46), раскрывая секреты Природы, и пробуждает потребность в духовном общении с ней.\nМы примем эти энергии, когда созреет потребность вернуться к Отцу — из душного города ближе к природе. Он пробуждает Экклесию — мудрейшее существо в нас, пока находящееся под анестезией удовольствий; когда оно проснётся, мы освободимся от вредных привычек и станем примером для окружающих.",
+"Противоположный гений несёт невежество, отупение, гордыню, тотальную слепоту в стремлении к временным удовольствиям, даже использование духовных знаний для их удовлетворения.",
+"О, Нанаэль, даруй мне возвышенные чувства — ясные, светлые, чистые, утихомирь во мне гордыню, надменность, высокомерие, позволь мне совладать со своими страстями, освободиться от их гнёта, чтобы стать истинным сыном Бога. Научи уважать и любить всё Творение и Божественные законы, установленные Небом."],
+["Восстанови право наследия","Господь Король Небес","Нетцах – Нетцах","Вечное цветение и регенерация","ינתלא|Нун Йод Тав Алеф Ламед",
+"Нитхаэль приносит энергию, позволяющую восстановить истинную Божественную линию — легитимность наследования Царства Божьего. Оно не будет даровано, пока Господь не убедится, что мы готовы и не станем злоупотреблять, а разовьём доброту, терпение и мужество.\nЧем больше мы стремимся к Свету, тем больше нас провоцируют тёмные силы: старые чувства должны умереть. Сначала он устанавливает чувство безопасности и отсутствия страха, затем даёт внутренний огонь и динамизм — и мы можем приступать к конструированию Тела Славы.",
+"Противоположный гений питает узурпаторов, предателей благородных идей, горделивых людей.",
+"О, Нитхаэль, пробуди внутри меня стремление к красоте и истине. Помоги сделать праздничной мою ауру и всю мою жизнь пропитай красотой. Даруй возможность встать на путь легитимности наследования и с достоинством пройти любые испытания, чтобы достичь сознания сына Отца Небесного и Божественной Матери, способного создавать новые Царства."],
+["Оплодотвори мир своей любовью","Господь Вечный","Нетцах – Ход","Интеллектуальная ясность","היהבמ|Мем Бет Хе Йод Хе",
+"Мебахийях берёт энергию, вышедшую из Кетера, обретшую моральную форму в Хокме и чёткую структуру в Бине, и через Нетцах влияет на все пять чувств, которые должны служить только Божественной цели.\nПри корректном использовании его субстанции приходит понимание механизма законов и причин любого события, а также благодарность и ощущение справедливости «до, во время и после». Свет интеллекта, воздействуя на чувства, становится теплотой сердца — и человек может произвести новое Творение.",
+"Противоположный гений держит людей во лжи, запутанности, аморальности, отвержении религии, инверсии ценностей.",
+"О, Мебахийях, озари мой ум Светом, чтобы я обрёл понимание всех причин, обрёл утешение и скорректировал своё поведение согласно высокой цели — получению благословения Отца Небесного. Да прославит Тебя каждый мой шаг. Прими меня строителем Царства Божьего на Земле."],
+["Исполни свою мечту — познай себя","Господь, Поддерживающий всю Вселенную","Нетцах – Иезод","Резюме Любви","לאיופ|Пе Вав Йод Алеф Ламед",
+"Поиэль показывает различные грани Любви как единственной субстанции, формирующей всё во Вселенной. Он приносит образы Любви в совершенстве, поддерживающие внутреннюю философию «жить красиво и возвышенно», которая проявляется в умеренности и сдержанности.\nЕго энергии связаны со свободой воображения: возможно всё, но только при переходе от индивидуального сознания к коллективному. Он резюмирует Любовь на трёх планах: бескорыстная мысль и лёгкость убеждения; точная мера чувств и забота о других; уравновешенность, оптимизм и лёгкость адаптации.",
+"Противоположный гений питает амбиции, гордыню, распространение искажённых духовных практик и мистерий с целью наживы.",
+"О, Поиэль, даруй мне способность хранить и передавать образы Рая в их совершенстве. Обрами мои чувства в надёжные рамки и надели меня магическим могуществом речи, чтобы я мог поддержать моё окружение и дать им надежду на светлое будущее."],
+["Борьба сделает тебя процветающим","Господь Хвалимый","Ход – Хокма","Ментальная ясность образов","היממנ|Нун Мем Мем Хе Йод Хе",
+"Немамийях — первый из Архангелов, которые отвечают за сценарий нашей жизни и ткут её события. Душа перед воплощением проходит Совет 24 Старцев и видит образы будущего согласно законам необходимости, свободы и провидения.\nВыбор страны определяет темперамент, выбор семьи — вероисповедание, социальное положение и возможности развития. Если мы ясно видим и принимаем эти образы, то обретаем мудрость Хокмы, могущество воображения и вкус к жизни; если не принимаем — проекты души не выполняются.",
+"Противоположный гений питает предателей Божественного в нас, недопонимание в отношениях, трусость, малодушие, привлекает к нам тёмных, недостойных людей.",
+"О, Немамийях, Любовь и Красота закона творения — мой щит. Помоги мне ясно видеть образы моей жизни, чтобы я больше никогда не сомневался, смог должным образом сыграть свою пьесу, чтобы я был Вашим сотрудником, служителем для построения Земли обетованной."],
+["Используйте оружие своего интеллекта","Господь, Воплощающий поколения","Ход – Бина","Ментальная сила, предвидение","לאליי|Йод Йод Ламед Алеф Ламед",
+"Йейалэль отвечает за отдельные «акты» сценария нашей жизни, приносит ясное видение основополагающего и второстепенного; знание законов Вселенной даёт ясность образов и предвидение.\nСвет Христической любви затрагивает мысли и смягчает чувства, подготавливая их к Прощению, которое может изменить следующий акт пьесы. Когда мы отказываемся мстить, меняется наше здоровье и здоровье родных; наш «меч» становится символом Солнечного героя, а в современном мире мечом является речь.",
+"Противоположный гений приносит массовые уничтожения без различения, геноцид, производство оружия.",
+"О, Йейалэль, пусть моя идея родиться на Земле обретёт смысл для меня. Помоги мне отказаться от идеи мести, уравновесить всё в себе, следовать за Твоими образами, выполнить все обещания души, чтобы стать достойным сотрудником на службе Мельхиседека, Царя Справедливости и Мира."],
+["Ты выйдешь из бесплодной эпохи","Господь, Знающий всякую вещь","Ход – Хесед","Интеллектуальное богатство","לאהרה|Хе Реш Хе Алеф Ламед",
+"Харахэль приносит естественность, восхищение и творческую энергию в исполнение отведённой нам роли. Если приняты обобщённый сценарий и отдельные акты, мы живём без фальши каждый свой маленький акт, постоянно связываясь с Небом.\nВажно осознавать мотивацию и значимость каждой мысли, жеста и действия — только тогда изобилие проникает во все области. Энергия интеллектуального богатства должна быть разделена с другими, иначе вместо изобилия наступает бесплодность.",
+"Противоположный гений приносит непринятие своего места, непослушание, делая нас стерильными, вытесняя из нас творческую энергию.",
+"О, Харахэль, помоги мне стать истинным учеником Света, полезным элементом в Космической Шестерне, в полной мере приняв и реализовав свою роль в пьесе жизни. Помоги мне принять Твой поток изобилия и процветания, чтобы стать «плодородной смоковницей» и нести творческую энергию в умы окружающих."],
+["Позаботьтесь о своём психическом равновесии","Господь, Утешающий угнетённых","Ход – Гебура","Корректировка психических деструкций","מצלאר|Мем Цаде Реш Алеф Ламед",
+"Митцраэль работает в паре с Рехаэлем (39) и возвращает энергию в Гебуру через почитание Отца: необходимо проявлять любовь к физическому отцу при любых обстоятельствах для сохранения собственного психического здоровья.\nНепослушание из поколения в поколение приводит к «наводнению» в мыслях, фрустрации в желаниях и жестокости в воле. Нужно сознательно прикреплять мысль к Свету, чтобы скорректировать мужской принцип, обрести ясность ума и прийти к желанию гармонично существовать в иерархическом порядке.",
+"Противоположный гений подчиняет себе человека, делая его одержимым жаждой мести и насилия.",
+"О, Митцраэль, помоги мне научиться уважать физического отца и почитать Божественного Отца, чтобы Твои возвышенные энергии могли беспрепятственно циркулировать во мне. Освети все затемнения в моей голове и помоги исцелить все деструкции. Освободи окончательно мой психический и ментальный план от рабства, чтобы я смог стать проводником Божественной гармонии."],
+["Друзья — твой рай","Господь надо всякой вещью","Ход – Тиферет","Радость понимания всего существующего","לאבמו|Вав Мем Бет Алеф Ламед",
+"Умабэль даёт ясное понимание закона аналогии и ментальную стабильность: мы находимся в сродстве со всеми Царствами. Если свет Тиферета проходит без искажений, вся Вселенная становится нашим Другом.\nНужно воспитывать интеллект, отворачивая его от желаний прошлого и направляя к будущему: тогда мы обретаем внутренних друзей, а это условие появления внешних. Если мы несчастны, достаточно включить наблюдение и самонаблюдение; он находит друга для нас на любом конце Вселенной.",
+"Противоположный гений приведёт ко всему, что противоположно естественному порядку, к анархии.",
+"О, Умабэль, помоги подготовить моё внутреннее жилище должным образом, чтобы Ты мог работать через меня. Научи парить надо всякой мыслью, чтобы познать радость понимания всего, что существует. Помоги приобрести дружбу со всем во Вселенной, что живёт в согласии с божественными законами, и научи транспонировать их качества и добродетели на себя."],
+["Отступление оживит ваше сердце","Господь Верховное Существо","Ход – Нетцах","Знание, пропитанное желанием знать истинное","לאההי|Йод Хе Хе Алеф Ламед",
+"Йах-Хэль напоминает, что смысл всего спрятан вокруг нас, в природе: она наставляет учёного, но открывается только мудрецам. Он позволяет проникнуть в суть вещей, продегустировать и ухватить их содержимое.\nДля этого он приводит нас в одиночество — не внешнее, а внутреннее, так как необходимы тишина и концентрация. Он помогает продвигаться по эволюционным ступенькам и подталкивает исполнить обещание, данное невидимому миру: стать посланниками Неба.",
+"Противоположный гений помогает лжецам и жуликам навязывать ложные убеждения красивыми заученными фразами, создаёт тотальную слепоту мысли, приводит к разделению людей, разводам.",
+"О, Йах-Хэль, приведи меня к внутренней концентрации, уединению, чтобы прийти в то состояние, которое позволяет проникнуть в смысл всего и услышать послания Неба. Сделай так, чтобы книга Живой Природы, хранящая наиболее возвышенные Божественные знания, открылась внутри меня."],
+["Ищите космической гармонии","Господь Бесконечно Добрый","Ход – Ход","Единство мысли","לאונע|Айн Нун Вав Алеф Ламед",
+"Анауэль приносит энергию, помогающую сконструировать интеллект согласно Божественным законам и Космическому Разуму; при этом мы ощущаем себя едиными со всей Вселенной, её клеткой, а не отделённым существом.\nБожественная мысль воздействует на чувства, нивелируя персональные желания; чувства питают её семена, а интеллект остаётся «капитаном» с глобальным видением. Он приносит понимание единства с Богом и понятие универсальной религии.",
+"Противоположный гений приводит к недостатку здравого смысла, неразумному поведению, бесконтрольной власти желаний.",
+"О, Анауэль, напитай мой интеллект всем самым наилучшим, наиболее возвышенным, чтобы Божественный порядок установился внутри меня. Сделай так, чтобы я мог ясно видеть, что мы все едины с Богом. Помоги стать примером единства и истинным передатчиком Божественных идей."],
+["Создавайте, чтобы управлять своими инстинктами","Господь, Оживляющий всё","Ход – Иезод","Оживление","לאיהמ|Мем Хе Йод Алеф Ламед",
+"Мехиэль оживляет всё, подготовленное предыдущими архангелами, и следит, чтобы пьеса нашей жизни была сыграна по выбранному сценарию, а все актёры и элементы появлялись в надлежащий момент.\nВсе персонажи — отражение мыслей, чувств и действий, которые мы не смогли трансформировать в прошлом. Нашу пьесу мы начинаем играть ещё ребёнком, и в основу игры должно лечь подчинение и служение Отцу; приняв обстоятельства и преодолев пагубные тенденции, мы становимся режиссёрами своей пьесы.",
+"Противоположный гений покровительствует ложным учёным, сторонникам войн, тиранам, критике, плагиату, порнографии, деформации.",
+"О, Мехиэль, помоги с достоинством встретить всех персонажей в пьесе моей жизни, чтобы в полноте и красоте сыграть её и стать истинным режиссёром. Научи меня трансформировать внутренние тенденции и использовать таланты для проявления Вечных истин Господа."],
+["Вы будете в безопасности от кораблекрушения","Господь Источник Мудрости","Иезод – Хокма","Мудрость без границ","היבמד|Далет Мем Бет Йод Хе",
+"Дамабийях открывает хор Ангелов, которые осуществляют последнюю проверку готового фильма нашей жизни и отвечают за совершенство образов. Он проявляется через Иезод и Хокму, принося совершенный принцип равновесия огня и воды: если в нас остались нечистоты, поднимется буря.\nНужно осознать, какие сокровища спрятаны в нашем внутреннем океане чувств; иначе судьба приведёт к работе с внешней водой. До нисхождения в материю душа проходит «школу» и получает «аттестат ясности образов», чтобы придерживаться программы своей жизни.",
+"Противоположный гений связан с загрязнениями, проституцией, заражениями крови.",
+"О, Дамабийях, открой мне Твой секрет о счастливом союзе огня и воды, помоги открыть сокровища моих чувств. Принеси мне Твою энергию Мудрости без границ, прожитой на опыте, защити меня от страстных бурь. Помоги ежедневно создавать спокойное море внутри меня и во внешнем мире, чтобы в течение всей моей жизни я мог реализовывать программу моей Души и стать проводником альтруистической любви и доброты без границ."],
+["Не вини себя, исправь","Господь, Помогающий всякой вещи и Поддерживающий её","Иезод – Бина","Знание добра и зла","נמקלא|Мем Нун Коф Алеф Ламед",
+"Манакэль даёт знание о позитивных и негативных аспектах — добре и зле — до начала любого жизненного опыта, помогает освободиться от гнёта персональности и действовать в согласии с Божественной индивидуальностью.\nПрекрасные качества тела приобретаются при согласованной работе всех клеток, а души — при подчинении Высшему Я. Приятные черты характера проявятся, когда обузданы противоречивые импульсы, а мысли и чувства станут однонаправленными; он работает и с пробуждением интуиции, в том числе во снах.",
+"Противоположный гений влияет на негативные физические и моральные качества, отрицание любых правил и принципов, когда единственная норма — материальное наслаждение, поиск удовольствий и выгоды во всём.",
+"О, Манакэль, помоги мне понимать ограничения и видеть скрытую суть материальных вещей, различать в каждое мгновение во всех взаимоотношениях, что есть зло или добро. Пробуди мою интуицию, чтобы все мои шаги стали плодами Древа жизни."],
+["Прими Свет перемен","Господь Утешитель детей и взрослых","Иезод – Хесед","Ресуществление","לאעיא|Алеф Йод Айн Алеф Ламед",
+"Основная задача людей — примирение двух «враждебных элементов»: воды и огня, чувства и мысли. Результат их интеграции — плодородие, так как огонь передаёт воде Мудрость, содержащую творческое могущество.\nАйаэль приносит эту субстанцию вместе с плодовитостью, мобилизующей чувства для служения внутреннему Божеству. Он — верховный инструмент Юпитера, отвечающий за все реализации; его философия: «никогда не терять надежду». Истина во внешних вещах появится только тогда, когда она уже существует во внутреннем мире.",
+"Противоположный гений управляет ошибками, предубеждениями и теми, кто распространяет ложную информацию и совершает ошибочные действия на основе общественных предрассудков.",
+"О, Айаэль, научи меня отличать истинное от ложного и помоги проявить Духовные Истины, которые вверил мне Господь. Помоги быть носителем Добра и Гармонии! Наставляй меня беспрестанно, чтобы я смог постичь путь Высокой Науки и был эффективным инструментом Творения на Земле. Покажи мне, как в Истине Христа организовать мою жизнь."],
+["Будь плодороден в детях и урожаях","Господь, Дающий с щедростью","Иезод – Гебура","Внутреннее и внешнее исцеление","היובה|Хе Бет Вав Йод Хе",
+"Хабухийях дарует принципы, сохраняющие доброе здоровье: наделяет способностью регламентировать и упорядочивать желания, сонастраивать их с Божественной динамикой.\nОн не даёт волшебную таблетку, а указывает тон жизни для существования в согласии со всей Вселенной — в этом секрет здоровья. Восстановление на всех планах возможно только при полной интеграции нашего существа в функционирование Космической машины.",
+"Противоположный гений вызывает голод, чуму, инфекционные заболевания, стерильность, влияет на насекомых, которые вредят сельскому хозяйству.",
+"О, Хабухийях, пусть моя вера будет плодородной, а образ жизни позволит жить в согласии со всем Творением и полностью исцелиться. Помоги мне стать возделывателем прекрасного Сада своей души и фонтаном здоровья и радости на трёх планах для окружающих."],
+["Вы найдёте потерянное","Господь, Видящий всё","Иезод – Тиферет","Восстановление, возмещение","לאהאר|Реш Алеф Хе Алеф Ламед",
+"Рахаэль следит за балансом служения и выгоды, которую человек извлекает от других на ментальном, астральном и физическом планах, и пробуждает потребность воздать каждому «актёру» нашей жизни то, что принадлежит ему законно.\nВсё, что мы породили и реализовали, возвращается к источнику первого импульса. Каждая «победа» усиливает соответствующую Сефиру: победа ума усилит Ход, справедливости — Бину, милосердия — Хесед, красоты — Нетцах.",
+"Противоположный гений управляет процессами в ущерб прав законных наследников, провоцирует семейный крах и материальные расходы на судебные процессы, защищает тех, кто присвоил чужое.",
+"О, Рахаэль, дай мне силу оплатить злодеяния прошлого и превратить старую ненависть в бескорыстную любовь. Позволь мне открыть новые измерения моего внутреннего Света, чтобы его живительная сила помогла мне стать выражением Божественной Воли."],
+["Ты будешь заниматься трансмутациями","Господь Глагол, Производящий всякую вещь","Иезод – Нетцах","Алхимия","הימבי|Йод Бет Мем Йод Хе",
+"Йабамийях закладывает золотые семена самых возвышенных творческих сил и помогает трансформировать все металлы нашей внутренней природы в золото.\nКачество материалов в организме важно для эволюции: Высшие Существа могут обитать только в соответствующих им по вибрациям местах. Встав на путь духовности, человек должен проявить волю, чтобы произвести тотальное обновление и стать принципиально иным существом, способным трансформировать не только себя, но и всё общество.",
+"Противоположный гений управляет атеизмом, критикой, учёными диспутами и всеми, кто распространяет опасные писания и «религию денег».",
+"О, Йабамийях, сделай меня алхимиком, способным произвести трансмутацию всех внутренних металлов в золото. Помоги восстановить чистоту, совершить духовное восхождение и стать живым примером строителя внешнего Храма Истины."],
+["Победа дарует мир","Господь Властитель и Хозяин Вселенной","Иезод – Ход","Орудия для битвы","לאייה|Хе Йод Йод Алеф Ламед",
+"Хайаэль помогает разуму обуздать чувства, усмирить ненависть и мудро принять жизненный урок.\nОн даёт орудия для жизни в материальном мире: меч — умение различать, и щит — символ Божественной защиты. Вооружившись ими, мы справедливо продвигаемся по пути реализации плана души и становимся победителями; под его влиянием мы обладаем большими запасами энергии, активностью и смелостью для встречи с внутренними врагами.",
+"Противоположный гений властвует над неверностью собственным идеям, раздором внутренним и внешним, поддерживает предателей, преступников, даёт оружие тем, кто хочет восстать против власти.",
+"О, Хайаэль, помоги очистить самые дальние закоулки моего прошлого. Даруй могущество Алефа, чтобы я смог выражать двойную Истину — физическую и духовную. Помоги мне мудро использовать орудия, данные мне для продвижения, чтобы я мог стать алтарём Всевышнего."],
+["Начинай новый цикл","Господь, Оканчивающий всякую вещь","Иезод – Иезод","Перерождение","הימומ|Мем Вав Мем Йод Хе",
+"Мумийях завершает текущий цикл, преобразует импульсы в конкретные образы на ментальном экране и располагает в нас причины будущих событий; во всём, что заканчивается, помогает возродить жизненную силу.\nПри проживании финальной фазы любого события мы уже видим анонс новой жизни: каждый заключительный этап есть начало нового цикла творения. Он позволяет уловить суть вещей и извлечь главное, но такое вознаграждение приходит только в результате терпеливого и неустанного поиска.",
+"Противоположный гений питает отчаяние, чувство безысходности, вселяет ненависть к собственному существованию, посылает тотальные потери, ставит клеймо несчастья на человека.",
+"О, Мумийях, прошу Тебя, пошли мне Огонь, чтобы мой голод по Свету и чистоте сконденсировался в моей физической структуре. Помоги мне наилучшим образом завершить все начинания во всех планах, чтобы сформировать достойные семена для следующего цикла. Оплодотвори меня более высокой Истиной, чем я являюсь сейчас."]
+];
+
+var SCH=("3-20 19:50|3-21 20:10|3-22 20:10|3-23 20:20|3-24 20:30|3-25 20:50|3-26 21:00|3-27 21:10|3-28 21:30|3-29 21:40|3-30 22:00|3-31 22:20|"+
+"4-1 22:40|4-2 23:00|4-3 23:20|4-4 23:40|4-6 0:10|4-7 0:30|4-8 1:00|4-9 1:20|4-10 1:50|4-11 2:10|4-12 2:40|4-13 3:10|4-14 3:40|4-15 4:10|4-16 4:40|4-17 5:10|4-18 5:40|4-19 6:10|4-20 6:40|4-21 7:20|4-22 7:50|4-23 8:30|4-24 9:10|4-25 9:50|4-26 10:20|4-27 11:00|4-28 11:50|4-29 12:30|4-30 13:10|"+
+"5-1 13:50|5-2 14:40|5-3 15:20|5-4 16:10|5-5 16:50|5-6 17:40|5-7 18:30|5-8 19:20|5-9 20:10|5-10 20:50|5-11 21:40|5-12 22:40|5-13 23:30|5-15 0:20|5-16 1:10|5-17 2:00|5-18 3:00|5-19 3:50|5-20 4:50|5-21 5:40|5-22 6:40|5-23 7:40|5-24 8:30|5-25 9:30|5-26 10:30|5-27 11:30|5-28 12:30|5-29 13:30|5-30 14:30|5-31 15:40|"+
+"6-1 16:40|6-2 17:40|6-3 18:50|6-4 19:50|6-5 20:50|6-6 22:00|6-7 23:00|6-9 0:10|6-10 1:10|6-11 2:20|6-12 3:20|6-13 4:30|6-14 5:40|6-15 6:40|6-16 7:50|6-17 9:00|6-18 10:00|6-19 11:10|6-20 12:20|6-21 13:30|6-22 14:40|6-23 15:50|6-24 17:00|6-25 18:10|6-26 19:20|6-27 20:30|6-28 21:40|6-29 22:50|6-30 23:55|"+
+"7-2 1:10|7-3 2:20|7-4 3:30|7-5 4:40|7-6 5:50|7-7 7:00|7-8 8:10|7-9 9:20|7-10 10:30|7-11 11:40|7-12 12:50|7-13 14:00|7-14 15:10|7-15 16:20|7-16 17:30|7-17 18:40|7-18 19:40|7-19 20:50|7-20 22:00|7-21 23:10|7-23 0:20|7-24 1:30|7-25 2:30|7-26 3:40|7-27 4:50|7-28 6:00|7-29 7:00|7-30 8:10|7-31 9:20|"+
+"8-1 10:20|8-2 11:30|8-3 12:30|8-4 13:40|8-5 14:40|8-6 15:40|8-7 16:50|8-8 17:50|8-9 18:50|8-10 19:50|8-11 20:50|8-12 21:50|8-13 22:50|8-14 23:50|8-16 0:50|8-17 1:50|8-18 2:50|8-19 3:50|8-20 4:50|8-21 5:50|8-22 6:40|8-23 7:40|8-24 8:30|8-25 9:30|8-26 10:20|8-27 11:10|8-28 12:00|8-29 13:00|8-30 13:50|8-31 14:40|"+
+"9-1 15:30|9-2 16:10|9-3 17:00|9-4 17:50|9-5 18:30|9-6 19:20|9-7 20:00|9-8 20:40|9-9 21:20|9-10 22:00|9-11 22:40|9-12 23:10|9-13 23:50|9-15 0:30|9-16 1:10|9-17 1:50|9-18 2:20|9-19 3:00|9-20 3:30|9-21 4:00|9-22 4:40|9-23 5:10|9-24 5:40|9-25 6:10|9-26 6:40|9-27 7:10|9-28 7:40|9-29 8:10|9-30 8:40|"+
+"10-1 9:10|10-2 9:30|10-3 9:50|10-4 10:20|10-5 10:40|10-6 11:00|10-7 11:20|10-8 11:30|10-9 11:50|10-10 12:10|10-11 12:30|10-12 12:40|10-13 13:00|10-14 13:10|10-15 13:20|10-16 13:40|10-17 13:50|10-18 14:00|10-19 14:10|10-20 14:20|10-21 14:30|10-22 14:40|10-23 14:50|10-24 15:00|10-25 15:00|10-26 15:00|10-27 15:10|10-28 15:10|10-29 15:10|10-30 15:10|10-31 15:10|"+
+"11-1 15:10|11-2 15:10|11-3 15:10|11-4 15:10|11-5 15:10|11-6 15:00|11-7 15:00|11-8 14:50|11-9 14:50|11-10 14:50|11-11 14:40|11-12 14:30|11-13 14:20|11-14 14:10|11-15 14:00|11-16 13:40|11-17 13:30|11-18 13:20|11-19 13:10|11-20 12:50|11-21 12:40|11-22 12:30|11-23 12:20|11-24 12:10|11-25 12:00|11-26 11:40|11-27 11:20|11-28 11:00|11-29 10:40|11-30 10:20|"+
+"12-1 10:00|12-2 9:40|12-3 9:20|12-4 9:00|12-5 8:40|12-6 8:20|12-7 8:00|12-8 7:40|12-9 7:10|12-10 6:50|12-11 6:30|12-12 6:00|12-13 5:40|12-14 5:10|12-15 4:50|12-16 4:30|12-17 4:00|12-18 3:40|12-19 3:10|12-20 2:50|12-21 2:20|12-22 2:00|12-23 1:30|12-24 1:00|12-25 0:40|12-26 0:10|12-26 23:50|12-27 23:20|12-28 22:50|12-29 22:30|12-30 22:00|12-31 21:30|"+
+"1-1|1-2|1-3|1-4|1-5|1-6|1-7|1-8|1-9|1-10|1-11|1-12|1-13|1-14|1-15|1-16|1-17|1-18|1-19|1-20|1-21|1-22|1-23|1-24|1-25|1-26|1-27|1-28|1-29|1-30|1-31|"+
+"2-1|2-2|2-3|2-4|2-5|2-6|2-7|2-7|2-8|2-9|2-10|2-11|2-12|2-13|2-14|2-15|2-16|2-17|2-18|2-19|2-20|2-21|2-22|2-23|2-24|2-25|2-26|2-27|2-28|"+
+"3-1|3-2|3-3|3-4|3-5|3-6|3-7|3-8|3-9|3-10|3-11|3-12|3-13|3-14|3-15|3-16|3-17|3-18|3-19").split("|");
+
+/* ═════ ХЕЛПЕРЫ ═════ */
+function pad(n){return (n<10?"0":"")+n;}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+function gcd(a,b){while(b){var t=a%b;a=b;b=t;}return a;}
+function G(n){var d=D[n-1]||[];return{n:n,name:NAMES[n-1]||("№"+n),phrase:d[0]||"",meaning:d[1]||"",sef:d[2]||"",subst:d[3]||"",letters:d[4]||"",desc:d[5]||"",dark:d[6]||"",prayer:d[7]||""};}
+function signOf(n){return Math.floor((n-1)*5/30);}
+function degList(n){var m=(n-1)*5,out=[(m%30)+"–"+(m%30+5)+"° "+SIGNS[Math.floor(m/30)][1]+" (основное)"],k,a;
+for(k=0;k<5;k++){a=(n-1)+72*k;out.push((a%30)+"–"+(a%30+1)+"° "+SIGNS[Math.floor(a/30)][1]);}return out;}
+function timeRange(n){var a=(n-1)*20,b=n*20;return pad(Math.floor(a/60))+":"+pad(a%60)+"–"+pad(Math.floor(b/60)%24)+":"+pad(b%60);}
+function firstPara(s){return String(s||"").split("\n")[0];}
+
+/* ═════ АСТРОНОМИЯ / ЦИКЛЫ ═════ */
+var D2R=Math.PI/180,DAY=86400000,TY=365.2422*DAY;
+function sunLon(ms){var T=(ms/DAY+2440587.5-2451545)/36525,
+L0=280.46646+36000.76983*T+0.0003032*T*T,
+M=(357.52911+35999.05029*T-0.0001537*T*T)*D2R,
+C=(1.914602-0.004817*T-0.000014*T*T)*Math.sin(M)+(0.019993-0.000101*T)*Math.sin(2*M)+0.000289*Math.sin(3*M),
+om=(125.04-1934.136*T)*D2R;
+return ((L0+C-0.00569-0.00478*Math.sin(om))%360+360)%360;}
+function angDiff(a,b){var d=(a-b)%360;if(d>180)d-=360;if(d<-180)d+=360;return d;}
+function solveDeg(t,lo,hi){var a=lo,b=hi,i,m;for(i=0;i<44;i++){m=(a+b)/2;if(angDiff(sunLon(m),t)<0)a=m;else b=m;}return Math.round((a+b)/2/60000)*60000;}
+var BASE=[],BASE_START=0;
+function buildBase(){var y=2026,pm=3,prev="",i,p,md,mo,d,t,hm,ms,key,dup;
+for(i=0;i<SCH.length;i++){p=SCH[i].split(" ");md=p[0].split("-");mo=+md[0];d=+md[1];t=p[1];
+if(mo<pm)y++;pm=mo;ms=null;
+if(t){hm=t.split(":");ms=Date.UTC(y,mo-1,d,+hm[0]-5,+hm[1]);}
+key=mo+"-"+d;dup=(key===prev&&!t);prev=key;
+BASE.push({y:y,mo:mo,d:d,ms:ms,exact:ms!==null,dup:dup});}
+for(i=0;i<BASE.length;i++)if(BASE[i].ms===null){var nom=Date.UTC(BASE[i].y,BASE[i].mo-1,BASE[i].d,12)+(BASE[i].dup?DAY:0);BASE[i].ms=solveDeg(i%360,nom-3*DAY,nom+3*DAY);}
+BASE_START=BASE[0].ms;}
+var CY={};
+function cyc(off){if(CY[off])return CY[off];var sh=off*TY,a=[],i,b;
+for(i=0;i<360;i++){b=BASE[i];a.push({i:i,off:off,start:Math.round(b.ms+sh),exact:(off===0&&b.exact),m:Math.floor(i/5)+1,a:(i%72)+1,mc:TIN[Math.floor(i/5)][i%5],ac:TIN[i%72][Math.floor(i/72)]});}
+for(i=0;i<360;i++)a[i].end=i<359?a[i+1].start:Math.round(BASE_START+(off+1)*TY);
+CY[off]=a;return a;}
+function locate(ms){var o=Math.floor((ms-BASE_START)/TY),k,c,lo,hi,mid,offs=[o,o-1,o+1,o+2];
+for(k=0;k<offs.length;k++){c=cyc(offs[k]);if(ms>=c[0].start&&ms<c[359].end){lo=0;hi=359;while(lo<hi){mid=(lo+hi+1)>>1;if(c[mid].start<=ms)lo=mid;else hi=mid-1;}return{c:c,idx:lo,off:offs[k]};}}
+c=cyc(o);return{c:c,idx:ms<c[0].start?0:359,off:o};}
+function spanOf(c,idx){var gi=Math.floor(idx/5)*5;return{gi:gi,start:c[gi].start,end:c[gi+4].end,day:idx-gi+1};}
+function cycLabel(off){var c=cyc(off);return new Date(c[0].start).getUTCFullYear()+"–"+new Date(c[359].end).getUTCFullYear();}
+
+/* ═════ ВРЕМЯ / НАСТРОЙКИ ═════ */
+var LS={get:function(k,d){try{var v=localStorage.getItem("sd5."+k);return v===null?d:JSON.parse(v);}catch(e){return d;}},set:function(k,v){try{localStorage.setItem("sd5."+k,JSON.stringify(v));}catch(e){}}};
+var autoTZ="UTC";try{autoTZ=Intl.DateTimeFormat().resolvedOptions().timeZone||"UTC";}catch(e){}
+var TZL=[["auto","Моё время ("+autoTZ+")"],["Europe/Moscow","Москва · UTC+3"],["Asia/Yekaterinburg","Пермь / Екатеринбург · UTC+5"],["Europe/Kaliningrad","Калининград · UTC+2"],["Europe/Samara","Самара · UTC+4"],["Asia/Novosibirsk","Новосибирск · UTC+7"],["Asia/Irkutsk","Иркутск · UTC+8"],["Asia/Vladivostok","Владивосток · UTC+10"],["Europe/Kiev","Киев · UTC+2"],["Europe/Minsk","Минск · UTC+3"],["Asia/Almaty","Алматы · UTC+5"],["UTC","UTC"]];
+var tzSet=LS.get("tz","auto"),tz=tzSet==="auto"?autoTZ:tzSet;
+var dark=LS.get("dark",false),big=LS.get("big",false);
+var mode="live",viewMs=Date.now(),tab="today",lastIdx=-1,lastOff=0,held=false;
+var FC={};
+function F(o){var k=tz+JSON.stringify(o);if(!FC[k]){try{FC[k]=new Intl.DateTimeFormat("ru-RU",Object.assign({timeZone:tz},o));}catch(e){FC[k]=new Intl.DateTimeFormat("ru-RU",o);}}return FC[k];}
+function parts(ms){var o={},a=F({year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"}).formatToParts(new Date(ms)),i;
+for(i=0;i<a.length;i++)if(a[i].type!=="literal")o[a[i].type]=a[i].value;
+return{y:+o.year,mo:+o.month,d:+o.day,h:(+o.hour)%24,mi:+o.minute,s:+o.second};}
+function tzOff(ms){var p=parts(ms);return Date.UTC(p.y,p.mo-1,p.d,p.h,p.mi,p.s)-Math.floor(ms/1000)*1000;}
+function fromLocal(y,mo,d,h,mi){var b=Date.UTC(y,mo-1,d,h,mi),x=b,k;for(k=0;k<2;k++)x=b-tzOff(x);return x;}
+var RF={};
+function rawParts(z,ms){if(!RF[z])RF[z]=new Intl.DateTimeFormat("en-GB",{timeZone:z,year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"});
+var o={},a=RF[z].formatToParts(new Date(ms)),i;for(i=0;i<a.length;i++)if(a[i].type!=="literal")o[a[i].type]=a[i].value;
+return{y:+o.year,mo:+o.month,d:+o.day,h:(+o.hour)%24,mi:+o.minute,s:+o.second};}
+function wallToUTC(y,mo,d,h,mi,pl){if(pl.indexOf("off:")===0)return Date.UTC(y,mo-1,d,h,mi)-(+pl.slice(4))*60000;
+var b=Date.UTC(y,mo-1,d,h,mi),x=b,k,p;for(k=0;k<2;k++){p=rawParts(pl,x);x=b-(Date.UTC(p.y,p.mo-1,p.d,p.h,p.mi,p.s)-Math.floor(x/1000)*1000);}return x;}
+function fTime(ms){return F({hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).format(new Date(ms));}
+function fDS(ms){return F({day:"numeric",month:"short"}).format(new Date(ms)).replace(".","");}
+function fFull(ms){return F({day:"numeric",month:"long",year:"numeric"}).format(new Date(ms));}
+function fWeek(ms){return F({weekday:"long"}).format(new Date(ms));}
+function fWS(ms){return F({weekday:"short"}).format(new Date(ms));}
+function fDT(ms){return fDS(ms)+", "+fTime(ms);}
+function dur(ms){ms=Math.max(0,ms);var d=Math.floor(ms/DAY),h=Math.floor(ms%DAY/3600000),m=Math.floor(ms%3600000/60000),s=Math.floor(ms%60000/1000);return (d>0?d+" д ":"")+pad(h)+":"+pad(m)+":"+pad(s);}
+function durS(ms){ms=Math.max(0,ms);var d=Math.floor(ms/DAY),h=Math.floor(ms%DAY/3600000),m=Math.floor(ms%3600000/60000);if(d>0)return d+" д "+h+" ч";if(h>0)return h+" ч "+pad(m)+" мин";return m+" мин";}
+function tzLabel(){var i;for(i=0;i<TZL.length;i++)if(TZL[i][0]===tzSet)return tzSet==="auto"?"моё время":TZL[i][1].split(" · ")[0];return tz;}
+var MON=["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
+function nowMs(){return mode==="live"?Date.now():viewMs;}
+function curOff(){return locate(nowMs()).off;}
+
+
+/* ═════ ГРАФИКА ═════ */
+var MC={},TC={};
+function medal(n){if(MC[n])return MC[n];
+var s=signOf(n),col=ELC[s%4],pts=5+(n%8),st=(n%3===0&&gcd(pts,3)===1)?3:2,g=gcd(pts,st),i,j,k,a,d,p="",rays="",dots="",rn=pts*2,r1;
+for(i=0;i<g;i++){d="";k=i;for(j=0;j<pts/g;j++){a=k/pts*6.2832-1.5708;d+=(j?"L":"M")+(50+31*Math.cos(a)).toFixed(1)+" "+(50+31*Math.sin(a)).toFixed(1);k=(k+st)%pts;}
+p+='<path d="'+d+'Z" fill="none" stroke="'+col+'" stroke-width="1.1" opacity=".85"/>';}
+for(i=0;i<rn;i++){a=i/rn*6.2832;r1=i%2?41:39;rays+='<line x1="'+(50+r1*Math.cos(a)).toFixed(1)+'" y1="'+(50+r1*Math.sin(a)).toFixed(1)+'" x2="'+(50+46*Math.cos(a)).toFixed(1)+'" y2="'+(50+46*Math.sin(a)).toFixed(1)+'" stroke="#B07A16" stroke-width="'+(i%2?.6:1.1)+'" opacity=".8"/>';}
+for(i=0;i<pts;i++){a=i/pts*6.2832-1.5708;dots+='<circle cx="'+(50+31*Math.cos(a)).toFixed(1)+'" cy="'+(50+31*Math.sin(a)).toFixed(1)+'" r="1.6" fill="#B07A16"/>';}
+MC[n]='<svg viewBox="0 0 100 100" role="img" aria-label="Гений №'+n+' '+esc(NAMES[n-1])+'"><rect width="100" height="100" fill="#F7F0E1"/><circle cx="50" cy="50" r="48" fill="#F7F0E1" stroke="#B07A16" stroke-width="1.6"/><circle cx="50" cy="50" r="43.5" fill="none" stroke="'+col+'" stroke-width=".8" opacity=".55" stroke-dasharray="1.4 3.2"/>'+rays+p+dots+'<circle cx="50" cy="50" r="19" fill="#F7F0E1" stroke="#B07A16" stroke-width="1.4"/><circle cx="50" cy="50" r="16" fill="none" stroke="'+col+'" stroke-width=".7" opacity=".6"/><text x="50" y="52" text-anchor="middle" dominant-baseline="central" font-family="Georgia,serif" font-weight="700" font-size="17" fill="#7A5209">'+n+'</text><text x="50" y="15" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="'+col+'">'+SIGNS[s][2]+'\uFE0E</text></svg>';
+return MC[n];}
+function genArt(n,size){
+  var inner='<img src="img/genii/'+pad(n)+'.jpg" data-fb="'+n+'" alt="Гений №'+n+' '+esc(NAMES[n-1])+'" loading="lazy" decoding="async">';
+  return '<span class="art a'+size+(size>=76?" pc":"")+'">'+inner+'</span>';
+}
+function tarSVG(n){if(TC[n])return TC[n];
+var pts=3+(n%9),i,a,d="";for(i=0;i<pts;i++){a=i/pts*6.2832-1.5708;d+=(i?"L":"M")+(110+52*Math.cos(a)).toFixed(1)+" "+(180+52*Math.sin(a)).toFixed(1);}
+TC[n]='<svg viewBox="0 0 220 380" role="img" aria-label="'+esc(TAR[n][0])+'"><rect width="220" height="380" rx="8" fill="#F7F0E1"/><rect x="7" y="7" width="206" height="366" rx="5" fill="none" stroke="#B07A16" stroke-width="2"/><rect x="14" y="14" width="192" height="352" rx="3" fill="none" stroke="#8E2436" opacity=".45"/><text x="110" y="54" text-anchor="middle" font-family="Georgia,serif" font-size="26" fill="#8A5E0B">'+ROM[n]+'</text><circle cx="110" cy="180" r="62" fill="none" stroke="#B07A16" opacity=".45" stroke-dasharray="2 4"/><path d="'+d+'Z" fill="none" stroke="#1F4E8C" stroke-width="2"/><circle cx="110" cy="180" r="16" fill="none" stroke="#8E2436" stroke-width="1.5"/><line x1="40" y1="272" x2="180" y2="272" stroke="#B07A16" opacity=".6"/><text x="110" y="302" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#231A10">'+esc(TAR[n][0].split(" (")[0])+'</text><text x="110" y="330" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#8A7A62">Старший аркан</text><text x="110" y="352" text-anchor="middle" font-family="monospace" font-size="9" fill="#8A7A62">RIDER · WAITE · SMITH 1909</text></svg>';
+return TC[n];}
+function commons(n,w){return "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_"+pad(n)+"_"+TEN[n]+".jpg"+(w?"?width="+w:"");}
+function tarImg(n,cls){var w=cls==="th"?120:420;
+return '<span class="cart '+(cls||"")+'"><img src="'+commons(n,w)+'" data-tar="'+n+'" data-w="'+w+'" data-step="0" alt="'+ROM[n]+'. '+esc(TAR[n][0])+'" loading="lazy" decoding="async"></span>';}
+document.addEventListener("error",function(e){var el=e.target;if(!el||el.tagName!=="IMG")return;
+if(el.getAttribute("data-fb")){var w=el.parentNode;if(w){w.classList.remove("pc");w.innerHTML=medal(+el.getAttribute("data-fb"));}return;}
+if(el.getAttribute("data-tar")){var n=+el.getAttribute("data-tar"),st=+(el.getAttribute("data-step")||0)+1;
+if(st<=1){el.setAttribute("data-step","2");el.src=commons(n,0);return;}
+var p=el.parentNode;if(p)p.innerHTML=tarSVG(n);}
+},true);
+
+/* ═════ ОБЩИЙ UI ═════ */
+var tT=null,undoFn=null;
+function toast(m,act,fn){var t=$("toast");t.innerHTML="";var s=document.createElement("span");s.textContent=m;t.appendChild(s);
+if(act){var b=document.createElement("button");b.type="button";b.textContent=act;b.onclick=function(){t.classList.remove("on");if(fn)fn();};t.appendChild(b);}
+t.classList.add("on");clearTimeout(tT);tT=setTimeout(function(){t.classList.remove("on");},act?7000:2800);}
+function fbCopy(txt,done){var ta=document.createElement("textarea");ta.value=txt;ta.style.cssText="position:fixed;opacity:0;top:0";document.body.appendChild(ta);ta.focus();ta.select();try{document.execCommand("copy");done();}catch(e){toast("Не удалось скопировать");}ta.remove();}
+function copyText(txt,m){var done=function(){toast(m||"Скопировано");};if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(txt).then(done,function(){fbCopy(txt,done);});else fbCopy(txt,done);}
+function shareText(txt){if(navigator.share)navigator.share({title:"Сила дня",text:txt}).catch(function(){});else copyText(txt,"Текст скопирован — вставьте куда нужно");}
+function download(name,content,mime){var b=content instanceof Blob?content:new Blob([content],{type:mime||"text/plain;charset=utf-8"}),a=document.createElement("a");
+a.href=URL.createObjectURL(b);a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(a.href);},6000);}
+var dOpen=false,lastF=null,dState=null;
+function openDrawer(title,html,state){lastF=document.activeElement;dState=state||null;$("dTitle").textContent=title;$("dBody").innerHTML=html;$("dBody").scrollTop=0;
+$("scrim").hidden=false;$("drawer").hidden=false;
+requestAnimationFrame(function(){requestAnimationFrame(function(){$("scrim").classList.add("on");$("drawer").classList.add("on");});});
+document.body.classList.add("lock");dOpen=true;}
+function closeDrawer(){if(!dOpen)return;dOpen=false;dState=null;$("scrim").classList.remove("on");$("drawer").classList.remove("on");document.body.classList.remove("lock");
+setTimeout(function(){$("scrim").hidden=true;$("drawer").hidden=true;},300);if(lastF&&lastF.focus)lastF.focus();}
+function refreshDrawer(){if(!dOpen||!dState)return;
+if(dState.t==="gen")openGenius(dState.n);else if(dState.t==="pray")openPrayer(dState.n);
+else if(dState.t==="card")openCard(dState.n);else if(dState.t==="day")openDay(dState.ms);}
+var TABS=["today","schedule","genii","tarot","natal","help"];
+function setTab(name){if(TABS.indexOf(name)<0)name="today";var v=document.querySelectorAll(".view"),i;tab=name;LS.set("tab",name);
+for(i=0;i<v.length;i++)v[i].classList.toggle("on",v[i].id==="v-"+name);
+var b=document.querySelectorAll("[data-act='tab']");for(i=0;i<b.length;i++)b[i].classList.toggle("on",b[i].getAttribute("data-v")===name);
+window.scrollTo(0,0);
+if(name==="schedule")renderSchedule();if(name==="genii")renderGenii();if(name==="tarot")renderTarot();}
+
+/* ═════ ГЛАВНЫЙ ЭКРАН ═════ */
+function summary(off,idx){var c=cyc(off),p=c[idx],s=spanOf(c,idx),gm=G(p.m),ga=G(p.a);
+return "СИЛА ДНЯ · "+fFull(p.start)+" ("+fWeek(p.start)+")\nДействует с "+fDT(p.start)+" по "+fDT(p.end)+" · "+tzLabel()+"\n\n"+
+"ОСНОВНОЙ ГЕНИЙ №"+p.m+" "+gm.name+" (день "+s.day+" из 5)\n«"+gm.phrase+"»\n"+firstPara(gm.desc)+"\nКарта: "+ROM[p.mc]+". "+TAR[p.mc][0]+" — "+TAR[p.mc][1]+"\n\n"+
+"ДОПОЛНИТЕЛЬНЫЙ ГЕНИЙ №"+p.a+" "+ga.name+"\n«"+ga.phrase+"»\n"+firstPara(ga.desc)+"\nКарта: "+ROM[p.ac]+". "+TAR[p.ac][0]+" — "+TAR[p.ac][1]+"\n\n"+
+"Основной гений правит: "+fDT(s.start)+" — "+fDT(s.end)+"\nСледующая смена: "+fDT(p.end);}
+function panel(kind,p,c,idx){var isM=kind==="m",n=isM?p.m:p.a,cn=isM?p.mc:p.ac,g=G(n),s=spanOf(c,idx),sg=signOf(n);
+var st=isM?s.start:p.start,en=isM?s.end:p.end;
+return '<div class="box pad gp '+(isM?"m":"a")+'">'+
+'<div class="gph"><span class="role">'+(isM?"Основной гений":"Дополнительный гений")+'</span><span class="sub">'+(isM?"правит 5 дней · день "+s.day+" из 5":"гений дня · меняется каждый день")+'</span></div>'+
+'<div class="top">'+genArt(n,isM?96:76)+'<div style="min-width:0"><div class="num">Гений № '+n+' из 72</div><div class="nm">'+esc(g.name)+'</div><div class="mean">'+esc(g.meaning)+'</div>'+
+'<div class="row" style="margin-top:.35rem;gap:.3rem"><span class="chip '+(isM?"g":"b")+'">'+SIGNS[sg][2]+'\uFE0E '+SIGNS[sg][0]+'</span><span class="chip">'+((n-1)*5)+'–'+(n*5)+'°</span><span class="chip v">'+esc(g.subst)+'</span></div></div></div>'+
+'<p class="quote">«'+esc(g.phrase)+'»</p><p class="txt">'+esc(firstPara(g.desc))+'</p>'+
+'<div class="row" style="margin-top:.7rem"><button class="btn sm gold" type="button" data-act="gen" data-v="'+n+'">О гении</button><button class="btn sm blue" type="button" data-act="pray" data-v="'+n+'">Обращение</button></div>'+
+'<div class="rule"></div><div class="tl">'+tarImg(cn,isM?"":"b")+'<div style="min-width:0"><div class="ct">Карта '+(isM?"основного":"дополнительного")+' гения</div><div class="cn">'+ROM[cn]+'. '+esc(TAR[cn][0])+'</div><p class="cm">'+esc(TAR[cn][1])+'</p>'+
+'<div class="row" style="margin-top:.5rem"><button class="btn sm" type="button" data-act="card" data-v="'+cn+'">О карте</button></div></div></div>'+
+'<div class="foot"><span>Правит: <b>'+fDT(st)+'</b> — <b>'+fDT(en)+'</b></span><span class="chip '+(isM?"g":"b")+'" id="'+(isM?"cdM":"cdA")+'">…</span></div></div>';}
+function ladder(c,idx){var s=spanOf(c,idx),h="",k,p,on,d;
+for(k=0;k<5;k++){p=c[s.gi+k];on=p.i===idx;d=parts(p.start);
+h+='<button class="lad'+(on?" on":"")+'" type="button" data-act="goto" data-v="'+(p.start+60000)+'">'+(on?'<span class="badge">'+(mode==="live"?"сейчас":"выбран")+'</span>':"")+
+'<span class="lhead"><span class="ld">'+d.d+'</span><br><span class="lm">'+fDS(p.start).split(" ")[1]+'</span><br><span class="lt mono">'+fTime(p.start)+'</span></span>'+
+'<span class="lmid"><span class="ln">№'+p.a+' '+esc(G(p.a).name)+'</span><br><span class="lt">'+ROM[p.mc]+'. '+esc(TAR[p.mc][0].split(" (")[0])+' · '+ROM[p.ac]+'. '+esc(TAR[p.ac][0].split(" (")[0])+'</span></span>'+
+'<span class="arts"><span class="pair"><div>'+genArt(p.m,40)+genArt(p.a,40)+'</div><span>гении</span></span><span class="pair"><div>'+tarImg(p.mc,"th")+tarImg(p.ac,"th")+'</div><span>таро</span></span></span></button>';}
+return h;}
+function changes(off,idx,count){var h="",k,nx,pv,nm,b;
+for(k=1;k<=count;k++){nx=cyc(off)[idx+k]||cyc(off+1)[(idx+k)-360];pv=cyc(off)[idx+k-1]||cyc(off+1)[(idx+k-1)-360];nm=nx.m!==pv.m;b=[];
+if(nm)b.push('<span class="chip g">Новый основной: №'+nx.m+" "+esc(G(nx.m).name)+'</span>');
+if(nx.a!==pv.a)b.push('<span class="chip b">Гений дня: №'+nx.a+" "+esc(G(nx.a).name)+'</span>');
+if(nx.mc!==pv.mc)b.push('<span class="chip r">Карта осн.: '+ROM[nx.mc]+" "+esc(TAR[nx.mc][0])+'</span>');
+if(nx.ac!==pv.ac)b.push('<span class="chip r">Карта дня: '+ROM[nx.ac]+" "+esc(TAR[nx.ac][0])+'</span>');
+h+='<button class="chg'+(nm?" nm":"")+'" type="button" data-act="goto" data-v="'+(nx.start+60000)+'"><span class="cw"><b>'+fDS(nx.start)+'</b><i class="mono">'+fTime(nx.start)+'</i><em>'+fWS(nx.start)+'</em></span><span class="cb">'+b.join("")+'</span></button>';}
+return h;}
+function band(c,idx,ms){var p=c[idx],fr=Math.min(1,Math.max(0,(ms-p.start)/(p.end-p.start))),deg=idx+fr,sg=Math.floor(deg/30)%12,ins=deg-sg*30,h="",i;
+for(i=0;i<12;i++)h+='<div class="cell'+(i===sg?" on":"")+'"><b>'+SIGNS[i][2]+'\uFE0E</b><span>'+SIGNS[i][0]+'</span></div>';
+return '<div class="band"><div class="sect" style="left:'+((p.m-1)*5/3.6).toFixed(3)+'%;width:'+(5/3.6).toFixed(3)+'%"></div><div class="cells">'+h+'</div><div class="mark" style="left:'+(deg/3.6).toFixed(3)+'%"></div></div>'+
+'<div class="binfo"><span>Солнце: <b>'+Math.floor(ins)+'°'+pad(Math.floor((ins%1)*60))+'′ '+SIGNS[sg][1]+'</b> · '+ELEM[sg%4]+'</span><span>Градус года: <b>'+(idx+1)+' из 360</b> · владение №'+p.m+' ('+((p.m-1)*5)+'–'+(p.m*5)+'°)</span></div>';}
+function renderToday(){var ms=nowMs(),l=locate(ms),c=l.c,idx=l.idx,p=c[idx],s=spanOf(c,idx);
+lastIdx=idx;lastOff=l.off;
+$("hero").innerHTML='<div class="hero mb"><div><div class="hk">'+(mode==="live"?"Сейчас управляют":"Момент просмотра")+'</div><div class="hd">'+fFull(ms)+'</div>'+
+'<div class="hs">'+fWeek(ms)+' · <span id="clock" class="mono">'+fTime(ms)+'</span> · '+tzLabel()+'<br>Сила дня действует с <b>'+fDT(p.start)+'</b> до <b>'+fDT(p.end)+'</b></div>'+
+'<div class="row" style="margin-top:.5rem;gap:.35rem">'+(p.exact?'<span class="chip ok">время по таблице</span>':'<span class="chip w">≈ расчёт времени</span>')+
+(l.off===0?'<span class="chip">цикл '+cycLabel(l.off)+'</span>':'<span class="chip w">цикл '+cycLabel(l.off)+' · предварительно</span>')+
+'</div></div>'+
+'<div><div class="cdl">До ближайшей смены</div><div class="cd mono" id="cdN">…</div><div class="cds" id="cdAt">…</div></div></div>';
+$("todayMain").innerHTML='<div class="panels mb">'+panel("m",p,c,idx)+panel("a",p,c,idx)+'</div>'+
+'<div class="box pad mb"><div class="sec"><i>▤</i><h2>Пять дней основного гения</h2><s></s></div>'+
+'<p class="lead" style="margin-bottom:.75rem">Гений №'+p.m+' '+esc(G(p.m).name)+' управляет с '+fDT(s.start)+' по '+fDT(s.end)+'. Каждый день к нему приходит свой гений дня. Нажмите день, чтобы посмотреть его.</p>'+
+'<div class="ladder">'+ladder(c,idx)+'</div></div>'+
+'<div class="box pad mb"><div class="sec"><i>✧</i><h2>Сила дня — коротко</h2><s></s></div>'+
+'<div class="sum"><div class="sc g"><h3>✦ Гении</h3><p>'+esc(firstPara(G(p.m).desc))+' '+esc(firstPara(G(p.a).desc))+'</p></div>'+
+'<div class="sc r"><h3>❖ Карты</h3><p>'+esc(TAR[p.mc][1])+' '+esc(TAR[p.ac][1])+'</p></div></div>'+
+'<div class="row" style="margin-top:.9rem"><button class="btn gold" type="button" data-act="copyday">Копировать сводку</button><button class="btn blue" type="button" data-act="shareday">Поделиться</button><button class="btn" type="button" data-act="icsday">Напоминание о смене (.ics)</button></div></div>'+
+'<div class="box pad mb"><div class="sec"><i>☉</i><h2>Где сейчас Солнце</h2><s></s></div>'+band(c,idx,ms)+
+'<p class="lead" style="margin:.6rem 0 .8rem">Золотая зона — владение основного гения (5°). Красная отметка — текущий градус.</p>'+
+'<div class="sec"><i>◷</i><h2 style="font-size:1.1rem">Ближайшие смены</h2><s></s></div>'+changes(l.off,idx,3)+
+'<div class="row" style="margin-top:.8rem"><button class="btn sm" type="button" data-act="tab" data-v="schedule">Весь календарь смен →</button></div></div>';
+counters();}
+function counters(){var ms=nowMs(),l=locate(ms),p=l.c[l.idx],s=spanOf(l.c,l.idx),e=$("cdN"),left=p.end-ms;
+if(e){e.textContent=dur(left);e.classList.toggle("soon",left<3600000);}
+var a=$("cdAt");if(a)a.textContent=fDT(p.end)+" · осталось "+durS(left);
+var m=$("cdM");if(m)m.textContent="смена через "+durS(s.end-ms);
+var q=$("cdA");if(q)q.textContent="смена через "+durS(p.end-ms);
+var c=$("clock");if(c&&mode==="live")c.textContent=fTime(ms);}
+function syncCtrl(){var ms=nowMs(),p=parts(ms);
+$("dPick").value=p.y+"-"+pad(p.mo)+"-"+pad(p.d);
+if(!held){$("tRange").value=p.h*60+p.mi;$("tVal").textContent=pad(p.h)+":"+pad(p.mi);}
+$("live").classList.toggle("view",mode==="view");
+$("liveT").textContent=mode==="live"?"в реальном времени":"режим просмотра";
+$("banner").innerHTML=mode==="view"?'<div class="banner"><span>Показан момент: <b>'+fFull(ms)+", "+fTime(ms)+'</b> ('+tzLabel()+')</span><button class="btn gold sm" type="button" data-act="now">Вернуться к сейчас</button></div>':"";}
+function setView(ms){mode="view";viewMs=ms;syncCtrl();renderToday();}
+function goNow(){mode="live";viewMs=Date.now();syncCtrl();renderToday();toast("Показан текущий момент");}
+function shiftDay(d){var p=parts(nowMs());setView(fromLocal(p.y,p.mo,p.d+d,p.h,p.mi));}
+
+/* ═════ КАЛЕНДАРЬ ═════ */
+var SQ="",SM="",SG="",SA=true,SQuick="month",SOff=0;
+function schControls(){var c=cyc(SOff),seen={},mo=[],i,q,k;
+for(i=0;i<360;i++){q=parts(c[i].start);k=q.y+"-"+q.mo;if(!seen[k]){seen[k]=1;mo.push([k,MON[q.mo-1]+" "+q.y]);}}
+var h='<option value="">Все месяцы</option>';for(i=0;i<mo.length;i++)h+='<option value="'+mo[i][0]+'">'+mo[i][1]+'</option>';
+$("schMonth").innerHTML=h;$("schMonth").value=SM;
+h='<option value="">Все гении</option>';for(i=0;i<72;i++)h+='<option value="'+(i+1)+'">№'+(i+1)+" "+esc(NAMES[i])+'</option>';
+$("schGen").innerHTML=h;$("schGen").value=SG;
+var qs=[["month","Текущий месяц"],["week","Ближайшие 7 дней"],["main","Смены основного"],["all","Весь цикл"]];h="";
+for(i=0;i<qs.length;i++)h+='<button class="q'+(SQuick===qs[i][0]?" on":"")+'" type="button" data-act="schquick" data-v="'+qs[i][0]+'">'+qs[i][1]+'</button>';
+$("schQuick").innerHTML=h;}
+function renderSchedule(){var c=cyc(SOff),now=nowMs(),l=locate(now),rows=[],i,p,q,a,nm,isNow,h="";
+for(i=0;i<360;i++){p=c[i];
+if(SQuick==="week"&&!(p.end>now&&p.start<now+7*DAY))continue;
+if(SQuick==="main"&&p.i%5!==0)continue;
+if(SM){a=SM.split("-");q=parts(p.start);if(q.y!==+a[0]||q.mo!==+a[1])continue;}
+if(SG&&p.m!==+SG&&p.a!==+SG)continue;
+if(SQ){var hay=(G(p.m).name+" "+G(p.a).name+" "+TAR[p.mc][0]+" "+TAR[p.ac][0]+" "+fFull(p.start)+" "+p.m+" "+p.a).toLowerCase();if(hay.indexOf(SQ)<0)continue;}
+rows.push(p);}
+if(!SA)rows.reverse();
+$("schCount").textContent="Найдено смен: "+rows.length+" из 360";
+$("schCycle").textContent="Цикл "+cycLabel(SOff)+(SOff===0?" · источник UTC+5":" · предварительный расчёт");
+if(!rows.length){$("schList").innerHTML='<div class="empty"><h3>Ничего не найдено</h3><p>Измените поиск или фильтры.</p></div>';return;}
+for(i=0;i<rows.length;i++){p=rows[i];isNow=(l.off===SOff&&l.idx===p.i);nm=p.i%5===0;
+h+='<button class="sr'+(isNow?" now":"")+(nm?" nm":"")+'" type="button" data-act="day" data-v="'+p.start+'">'+
+'<span class="cw"><b>'+fDS(p.start)+'</b><i class="mono">'+fTime(p.start)+'</i><em>'+fWS(p.start)+(p.exact?"":" ≈")+'</em></span>'+
+'<span class="sb"><span class="sl m"><u>Основной</u><b>№'+p.m+" "+esc(G(p.m).name)+'</b><span>· '+ROM[p.mc]+". "+esc(TAR[p.mc][0])+'</span>'+(nm?'<span class="chip g">новый</span>':"")+(isNow?'<span class="chip ok">сейчас</span>':"")+'</span>'+
+'<span class="sl a"><u>Гений дня</u><b>№'+p.a+" "+esc(G(p.a).name)+'</b><span>· '+ROM[p.ac]+". "+esc(TAR[p.ac][0])+'</span></span></span>'+
+'<span class="row" style="gap:.25rem;flex:none">'+genArt(p.m,40)+genArt(p.a,40)+tarImg(p.mc,"th")+tarImg(p.ac,"th")+'</span></button>';}
+$("schList").innerHTML=h;}
+
+/* ═════ ГЕНИИ / ТАРО ═════ */
+var GQ="",GS="",GA=true;
+function renderGenii(){var off=curOff(),c=cyc(off),list=[],i,x,h="";
+for(i=0;i<72;i++){x=G(i+1);
+if(GS!==""&&signOf(x.n)!==+GS)continue;
+if(GQ){var hay=(x.name+" "+x.phrase+" "+x.meaning+" "+x.subst+" "+x.desc+" "+x.n).toLowerCase();if(hay.indexOf(GQ)<0)continue;}
+list.push(x);}
+if(!GA)list.reverse();
+$("genCount").textContent="Показано: "+list.length+" из 72";
+$("genEmpty").innerHTML=list.length?"":'<div class="empty"><h3>Гений не найден</h3><p>Измените запрос или сбросьте фильтр знака.</p></div>';
+for(i=0;i<list.length;i++){x=list[i];var gi=(x.n-1)*5,sg=signOf(x.n);
+h+='<div class="gc" role="button" tabindex="0" data-act="gen" data-v="'+x.n+'">'+genArt(x.n,88)+
+'<span class="num">Гений № '+x.n+'</span><span class="nm">'+esc(x.name)+'</span><span class="ph">«'+esc(x.phrase)+'»</span>'+
+'<span class="mt">'+SIGNS[sg][2]+'\uFE0E '+SIGNS[sg][0]+' · '+((x.n-1)*5)+'–'+(x.n*5)+'°</span>'+
+'<span class="dt">'+fDS(c[gi].start)+' — '+fDS(c[gi+4].end)+'</span>'+
+'<span class="row" style="justify-content:center;margin-top:.3rem"><button class="btn sm gold" type="button" data-act="gen" data-v="'+x.n+'">О гении</button><button class="btn sm blue" type="button" data-act="pray" data-v="'+x.n+'">Обращение</button></span></div>';}
+$("genGrid").innerHTML=h;}
+var TQ="",TOnly=false;
+function cardCount(off,n){var c=cyc(off),k=0,i;for(i=0;i<360;i++){if(c[i].mc===n)k++;if(c[i].ac===n)k++;}return k;}
+function renderTarot(){var off=curOff(),h="",i,k,cnt=0;
+for(i=0;i<22;i++){if(TQ&&(TAR[i][0]+" "+TAR[i][1]+" "+ROM[i]).toLowerCase().indexOf(TQ)<0)continue;
+k=cardCount(off,i);if(TOnly&&!k)continue;cnt++;
+h+='<button class="tc" type="button" data-act="card" data-v="'+i+'">'+tarImg(i,"")+'<span class="rn">'+ROM[i]+' АРКАН</span><span class="nm">'+esc(TAR[i][0])+'</span><span class="ds">'+esc(TAR[i][1])+'</span><span class="chip'+(k?" g":"")+'">'+(k?"В цикле: "+k+" раз":"В этом цикле не выпадает")+'</span></button>';}
+$("tarCount").textContent="Показано карт: "+cnt+" из 22";
+$("tarGrid").innerHTML=h;
+$("tarEmpty").innerHTML=cnt?"":'<div class="empty"><h3>Карты не найдены</h3><p>Измените запрос.</p></div>';}
+
+/* ═════ КАРТОЧКИ ═════ */
+function openGenius(n){var off=curOff(),c=cyc(off),gi=(n-1)*5,g=G(n),sg=signOf(n),i,p,h="",ad="",t5="",L=g.letters.split("|"),k;
+for(k=0;k<5;k++){p=c[gi+k];
+h+='<button class="chg" type="button" data-act="day" data-v="'+p.start+'"><span class="cw"><b>'+fDS(p.start)+'</b><i class="mono">'+fTime(p.start)+'</i><em>'+fWS(p.start)+'</em></span><span class="cb"><span class="chip b">Гений дня №'+p.a+" "+esc(G(p.a).name)+'</span><span class="chip r">'+ROM[p.mc]+". "+esc(TAR[p.mc][0])+'</span><span class="chip r">'+ROM[p.ac]+". "+esc(TAR[p.ac][0])+'</span></span></button>';}
+for(k=0;k<5;k++){p=c[(n-1)+72*k];
+ad+='<button class="chg" type="button" data-act="day" data-v="'+p.start+'"><span class="cw"><b>'+fDS(p.start)+'</b><i class="mono">'+fTime(p.start)+'</i><em>'+fWS(p.start)+'</em></span><span class="cb"><span class="chip g">Основной №'+p.m+" "+esc(G(p.m).name)+'</span><span class="chip r">Карта дня '+ROM[p.ac]+". "+esc(TAR[p.ac][0])+'</span></span></button>';}
+for(k=0;k<5;k++){var cn=TIN[n-1][k];t5+='<button type="button" data-act="card" data-v="'+cn+'">'+tarImg(cn,"")+'<span>'+ROM[cn]+". "+esc(TAR[cn][0].split(" (")[0])+'</span></button>';}
+var html='<div class="top" style="flex-wrap:wrap">'+genArt(n,132)+'<div style="min-width:0;flex:1"><div class="num">Гений № '+n+' из 72 · хор '+CHOIR[Math.floor((n-1)/8)]+'</div><div class="nm" style="color:var(--goldink)">'+esc(g.name)+'</div><div class="mean">'+esc(g.meaning)+'</div>'+
+'<div class="row" style="margin-top:.4rem;gap:.3rem"><span class="chip g">'+SIGNS[sg][2]+'\uFE0E '+SIGNS[sg][0]+'</span><span class="chip">'+ELEM[sg%4]+'</span><span class="chip p">'+esc(g.sef)+'</span></div>'+
+'</div></div>'+
+'<p class="quote" style="font-size:1.15rem;margin:.8rem 0">«'+esc(g.phrase)+'»</p>'+
+'<div class="kv"><b>Субстанция</b><span>'+esc(g.subst)+'</span><b>Сефира</b><span>'+esc(g.sef)+'</span><b>Минуты суток</b><span class="mono">'+timeRange(n)+'</span><b>Градусы</b><span>'+degList(n).join(" · ")+'</span>'+
+(L.length>1?'<b>Имя в буквах</b><span><span class="heb" dir="rtl">'+esc(L[0])+'</span><br><span style="font:700 .78rem var(--ui);color:var(--ink3)">'+esc(L[1])+'</span></span>':"")+'</div>'+
+'<div class="rule"></div><div class="prose">'+g.desc.split("\n").map(function(x){return "<p>"+esc(x)+"</p>";}).join("")+'</div>'+
+'<div class="dark-b"><h4>⚠ Противоположный гений</h4><p>'+esc(g.dark)+'</p></div>'+
+'<div class="row"><button class="btn blue" type="button" data-act="pray" data-v="'+n+'">Обращение к гению →</button></div>'+
+'<div class="rule"></div><div class="sec"><i>❖</i><h2 style="font-size:1.1rem">Таро в имени</h2><s></s></div><p class="lead" style="margin-bottom:.55rem">Пять букв имени — пять карт пяти градусов; они же карты пяти дней правления.</p><div class="t5">'+t5+'</div>'+
+'<div class="rule"></div><div class="sec"><i>▤</i><h2 style="font-size:1.1rem">Пять дней правления</h2><s></s></div><p class="lead" style="margin-bottom:.55rem">Цикл '+cycLabel(off)+': <b>'+fDT(c[gi].start)+'</b> — <b>'+fDT(c[gi+4].end)+'</b></p>'+h+
+'<div class="rule"></div><div class="sec"><i>✦</i><h2 style="font-size:1.1rem">Дни астрального действия</h2><s></s></div><p class="lead" style="margin-bottom:.55rem">Ещё пять дней в году, когда этот гений — гений дня (одноградусное владение):</p>'+ad+
+'<div class="row" style="margin-top:.8rem"><button class="btn sm" type="button" data-act="gensch" data-v="'+n+'">Все дни в календаре</button></div>'+
+'<div class="dnav"><button class="btn sm" type="button" data-act="gen" data-v="'+((n+70)%72+1)+'">← №'+((n+70)%72+1)+'</button><button class="btn sm" type="button" data-act="gen" data-v="'+(n%72+1)+'">№'+(n%72+1)+' →</button></div>';
+openDrawer("Гений №"+n+" · "+g.name,html,{t:"gen",n:n});}
+function openPrayer(n){var g=G(n);
+openDrawer("Обращение · "+g.name,'<div class="top" style="margin-bottom:.85rem">'+genArt(n,64)+'<div><div class="num">Обращение · гений № '+n+'</div><div class="nm" style="font-size:1.5rem;color:var(--goldink)">'+esc(g.name)+'</div><p class="lead">«'+esc(g.phrase)+'»</p></div></div>'+
+'<div class="prayer">'+esc(g.prayer)+'</div>'+
+'<p class="lead" style="margin-top:.8rem">Минуты ментального правления: <b class="mono">'+timeRange(n)+'</b>. К персональным гениям можно обращаться в любое время, особенно — в периоды их регентства.</p>'+
+'<div class="row" style="margin-top:.85rem"><button class="btn gold" type="button" data-act="copypray" data-v="'+n+'">Копировать обращение</button><button class="btn blue" type="button" data-act="sharepray" data-v="'+n+'">Поделиться</button></div>'+
+'<div class="dnav"><button class="btn sm" type="button" data-act="gen" data-v="'+n+'">← О гении</button></div>',{t:"pray",n:n});}
+function openCard(n){var off=curOff(),c=cyc(off),hits=[],i,list="",x;
+for(i=0;i<360;i++){if(c[i].mc===n)hits.push({p:c[i],r:"основного"});if(c[i].ac===n)hits.push({p:c[i],r:"дополнительного"});}
+for(i=0;i<Math.min(14,hits.length);i++){x=hits[i];var gn=x.r==="основного"?x.p.m:x.p.a;
+list+='<button class="chg" type="button" data-act="day" data-v="'+x.p.start+'"><span class="cw"><b>'+fDS(x.p.start)+'</b><i class="mono">'+fTime(x.p.start)+'</i><em>'+fWS(x.p.start)+'</em></span><span class="cb"><span class="chip '+(x.r==="основного"?"g":"b")+'">Карта '+x.r+' гения</span><span class="chip">№'+gn+" "+esc(G(gn).name)+'</span></span></button>';}
+if(!hits.length)list='<div class="empty"><h3>В этом цикле карта не выпадает</h3><p>В году задействованы не все 22 аркана.</p></div>';
+openDrawer(ROM[n]+". "+TAR[n][0],'<div style="display:flex;justify-content:center;margin-bottom:.9rem">'+tarImg(n,"big")+'</div>'+
+'<div style="text-align:center"><div style="font:800 .78rem var(--ui);letter-spacing:.16em;color:var(--burg)">'+ROM[n]+' СТАРШИЙ АРКАН</div><div class="nm">'+esc(TAR[n][0])+'</div></div>'+
+'<p style="margin-top:.6rem;font-size:1rem;line-height:1.65">'+esc(TAR[n][1])+'</p>'+
+'<div class="rule"></div><div class="sec"><i>◷</i><h2 style="font-size:1.1rem">Дни с этой картой</h2><s></s></div>'+
+'<p class="lead" style="margin-bottom:.55rem">Цикл '+cycLabel(off)+', всего появлений: <b>'+hits.length+'</b>'+(hits.length>14?" · показаны первые 14":"")+'</p>'+list+
+'<p class="lead" style="margin-top:.9rem">В системе Уэйта 21-я буква имени соответствует карте 0 «Шут», 22-я — карте XXI «Мир». Изображение: Rider–Waite–Smith, 1909, общественное достояние.</p>',{t:"card",n:n});}
+function openDay(ms){var l=locate(ms+60000),c=l.c,p=c[l.idx],s=spanOf(c,l.idx);
+openDrawer(fFull(p.start),'<div class="hero mb"><div><div class="hk">Сила дня</div><div class="hd" style="font-size:1.7rem">'+fFull(p.start)+'</div><div class="hs">'+fWeek(p.start)+' · с <b>'+fDT(p.start)+'</b> по <b>'+fDT(p.end)+'</b><br>'+tzLabel()+'</div>'+
+'<div class="row" style="margin-top:.45rem;gap:.3rem">'+(p.exact?'<span class="chip ok">время по таблице</span>':'<span class="chip w">≈ расчёт времени</span>')+'<span class="chip">день '+s.day+' из 5</span></div></div></div>'+
+'<div style="display:grid;gap:1rem">'+panel("m",p,c,l.idx)+panel("a",p,c,l.idx)+'</div>'+
+'<div class="rule"></div><div class="sum"><div class="sc g"><h3>✦ Гении</h3><p>'+esc(firstPara(G(p.m).desc))+" "+esc(firstPara(G(p.a).desc))+'</p></div><div class="sc r"><h3>❖ Карты</h3><p>'+esc(TAR[p.mc][1])+" "+esc(TAR[p.ac][1])+'</p></div></div>'+
+'<div class="row" style="margin-top:.8rem"><button class="btn gold sm" type="button" data-act="copyday2" data-v="'+p.start+'">Копировать</button><button class="btn blue sm" type="button" data-act="shareday2" data-v="'+p.start+'">Поделиться</button><button class="btn sm" type="button" data-act="goto" data-v="'+(p.start+60000)+'">Показать на главном</button></div>'+
+'<div class="dnav"><button class="btn sm" type="button" data-act="day" data-v="'+(l.idx>0?c[l.idx-1].start:cyc(l.off-1)[359].start)+'">← Предыдущий день</button><button class="btn sm" type="button" data-act="day" data-v="'+(l.idx<359?c[l.idx+1].start:cyc(l.off+1)[0].start)+'">Следующий день →</button></div>',{t:"day",ms:ms});}
+
+/* ═════ РАСЧЁТ ═════ */
+var PL=[["Россия и СНГ",[["Asia/Yekaterinburg","Пермь / Екатеринбург (UTC+5)"],["Europe/Moscow","Москва / Санкт-Петербург (UTC+3)"],["Europe/Kaliningrad","Калининград (UTC+2)"],["Europe/Samara","Самара (UTC+4)"],["Asia/Novosibirsk","Новосибирск (UTC+7)"],["Asia/Krasnoyarsk","Красноярск (UTC+7)"],["Asia/Irkutsk","Иркутск (UTC+8)"],["Asia/Vladivostok","Владивосток (UTC+10)"],["Europe/Kiev","Киев (UTC+2)"],["Europe/Minsk","Минск (UTC+3)"],["Asia/Almaty","Алматы / Астана (UTC+5)"],["Asia/Tashkent","Ташкент (UTC+5)"],["Asia/Baku","Баку (UTC+4)"],["Asia/Yerevan","Ереван (UTC+4)"],["Asia/Tbilisi","Тбилиси (UTC+4)"],["Asia/Bishkek","Бишкек (UTC+6)"],["Europe/Chisinau","Кишинёв (UTC+2)"]]],
+["Мир",[["Europe/Berlin","Берлин / Париж / Рим (UTC+1)"],["Europe/London","Лондон (UTC+0)"],["Europe/Riga","Рига / Вильнюс / Таллин (UTC+2)"],["Asia/Jerusalem","Иерусалим (UTC+2)"],["Asia/Dubai","Дубай (UTC+4)"],["Asia/Kolkata","Дели (UTC+5:30)"],["Asia/Bangkok","Бангкок (UTC+7)"],["Asia/Shanghai","Пекин (UTC+8)"],["Asia/Tokyo","Токио (UTC+9)"],["Australia/Sydney","Сидней (UTC+10)"],["America/New_York","Нью-Йорк (UTC−5)"],["America/Los_Angeles","Лос-Анджелес (UTC−8)"]]]];
+function buildPlaces(){var h="",i,j,g;
+for(i=0;i<PL.length;i++){g=PL[i];h+='<optgroup label="'+g[0]+'">';for(j=0;j<g[1].length;j++)h+='<option value="'+g[1][j][0]+'">'+esc(g[1][j][1])+'</option>';h+='</optgroup>';}
+h+='<optgroup label="Другой пояс (вручную)">';for(i=-12;i<=14;i++)h+='<option value="off:'+(i*60)+'">UTC'+(i>=0?"+":"−")+pad(Math.abs(i))+':00</option>';
+h+='</optgroup>';$("bPlace").innerHTML=h;$("bPlace").value="Asia/Yekaterinburg";
+h="";for(i=0;i<PLANETS.length;i++)h+='<option value="'+i+'">'+PLANETS[i][0]+'</option>';$("pPlanet").innerHTML=h;
+h="";for(i=0;i<12;i++)h+='<option value="'+i+'">'+SIGNS[i][2]+'\uFE0E '+SIGNS[i][0]+'</option>';$("pSign").innerHTML=h;}
+function placeName(v){var i,j;for(i=0;i<PL.length;i++)for(j=0;j<PL[i][1].length;j++)if(PL[i][1][j][0]===v)return PL[i][1][j][1];
+if(v.indexOf("off:")===0){var o=+v.slice(4)/60;return "UTC"+(o>=0?"+":"−")+pad(Math.abs(o))+":00";}return v;}
+function natCard(cls,role,n,why,extra){var g=G(n);
+return '<div class="box pad nc '+cls+'"><div class="nr">'+role+'</div><div class="top">'+genArt(n,76)+'<div style="min-width:0"><div class="num">Гений № '+n+'</div><div class="nm" style="font-size:1.4rem">'+esc(g.name)+'</div><p class="quote" style="margin:.2rem 0">«'+esc(g.phrase)+'»</p></div></div>'+
+'<div class="why">'+why+'</div>'+(extra||"")+'<div class="row"><button class="btn sm gold" type="button" data-act="gen" data-v="'+n+'">О гении</button><button class="btn sm blue" type="button" data-act="pray" data-v="'+n+'">Обращение</button></div></div>';}
+var natalTxt="";
+function natal(){var dv=$("bDate").value;if(!dv){toast("Укажите дату рождения");return;}
+var unk=$("bUnk").checked,tv=$("bTime").value||"12:00",pl=$("bPlace").value,a=dv.split("-"),y=+a[0],mo=+a[1],d=+a[2],hm=tv.split(":"),h=+hm[0],mi=+hm[1];
+if(y<1900||y>2100){toast("Точный расчёт: 1900–2100 гг.");return;}
+if(Date.UTC(y,mo-1,d)>Date.now()){toast("Дата рождения ещё не наступила");return;}
+LS.set("birth",{d:dv,t:tv,p:pl,u:unk});
+var utc=wallToUTC(y,mo,d,unk?12:h,unk?0:mi,pl),lon=sunLon(utc),
+ph=Math.floor(lon/5)%72+1,as=Math.floor(lon)%72+1,me=unk?0:Math.floor((h*60+mi)/20)%72+1,
+sg=Math.floor(lon/30),ins=lon-sg*30,sun=Math.floor(ins)+"°"+pad(Math.floor((ins%1)*60))+"′ "+SIGNS[sg][1],
+off=curOff(),c=cyc(off),k,p,ad="";
+for(k=0;k<5;k++){p=c[(as-1)+72*k];
+ad+='<button class="chg" type="button" data-act="day" data-v="'+p.start+'"><span class="cw"><b>'+fDS(p.start)+'</b><i class="mono">'+fTime(p.start)+'</i><em>'+fWS(p.start)+'</em></span><span class="cb"><span class="chip g">Основной №'+p.m+" "+esc(G(p.m).name)+'</span><span class="chip r">'+ROM[p.ac]+". "+esc(TAR[p.ac][0])+'</span></span></button>';}
+$("natOut").innerHTML='<div class="box pad mb" style="background:linear-gradient(140deg,var(--card),var(--goldsoft) 70%,var(--card))"><div class="sec"><i>☉</i><h2>Солнце в момент рождения</h2><s></s></div>'+
+'<p style="font:800 1.6rem var(--disp);color:var(--goldink)">'+SIGNS[sg][2]+'\uFE0E '+sun+'</p>'+
+'<p class="lead" style="margin-top:.3rem">'+d+" "+MON[mo-1]+" "+y+(unk?" · время неизвестно (принят полдень)":", "+pad(h)+":"+pad(mi))+" · "+esc(placeName(pl))+'</p>'+
+'<p class="lead" style="margin-top:.25rem">Владение: '+((ph-1)*5)+'–'+(ph*5)+'° зодиака (основное) и '+(Math.floor(lon)%30)+'–'+(Math.floor(lon)%30+1)+'° '+SIGNS[sg][1]+' (дневное).</p></div>'+
+'<div class="nat mb">'+
+natCard("p","Физический · воля",ph,"Солнце при рождении попало в пятиградусное владение этого гения ("+((ph-1)*5)+"–"+(ph*5)+"°). Он питает вашу волю и задаёт основной мотив жизни. <b>Обращаться можно каждый день.</b>")+
+natCard("a","Астральный · чувства",as,"Точный градус Солнца ("+sun+") — дневное владение этого гения. Его энергиями окрашено чувственное восприятие и проживание обстоятельств. <b>Особенно действует пять раз в год</b> — дни ниже.",'<div style="margin:.4rem 0 .6rem">'+ad+'</div>')+
+(me?natCard("m","Ментальный · мысли",me,"Минуты рождения ("+pad(h)+":"+pad(mi)+") попали в его 20-минутный интервал. Он задаёт образ мыслей и помогает видеть происходящее ясно, без искажений. <b>Обращаться в минуты его правления: <span class='mono'>"+timeRange(me)+"</span></b> (местное время).")
+:'<div class="box pad nc m"><div class="nr">Ментальный · мысли</div><div class="empty" style="padding:1.1rem .8rem"><h3 style="font-size:1.05rem">Нужно время рождения</h3><p style="font-size:.88rem">Ментальный гений определяется минутами рождения: каждый гений управляет 20 минутами суток. Снимите отметку «время неизвестно» и укажите время.</p></div></div>')+
+'</div><div class="row mb"><button class="btn gold" type="button" data-act="copynat">Копировать расчёт</button><button class="btn" type="button" data-act="clearnat">Очистить</button></div>';
+natalTxt="МОИ ТРИ ГЕНИЯ\n"+d+" "+MON[mo-1]+" "+y+(unk?" (время неизвестно)":", "+pad(h)+":"+pad(mi))+", "+placeName(pl)+"\nСолнце при рождении: "+sun+"\n\nФизический (воля): №"+ph+" "+G(ph).name+" — «"+G(ph).phrase+"»\nАстральный (чувства): №"+as+" "+G(as).name+" — «"+G(as).phrase+"»"+(me?"\nМентальный (мысли): №"+me+" "+G(me).name+" — «"+G(me).phrase+"», минуты "+timeRange(me):"");
+$("natOut").scrollIntoView({behavior:"smooth",block:"start"});}
+function planetCalc(){var pi=+$("pPlanet").value,sg=+$("pSign").value,dg=+$("pDeg").value,mn=+$("pMin").value;
+if(isNaN(dg)||dg<0||dg>29){toast("Градус должен быть от 0 до 29");return;}
+if(isNaN(mn)||mn<0||mn>59)mn=0;
+var n=(sg*30+dg)%72+1,g=G(n);
+$("plOut").innerHTML='<div class="box pad"><div class="top">'+genArt(n,76)+'<div style="min-width:0"><div class="num">'+PLANETS[pi][0]+' · '+dg+'°'+pad(mn)+'′ '+SIGNS[sg][1]+'</div><div class="nm" style="font-size:1.4rem;color:var(--goldink)">№'+n+" "+esc(g.name)+'</div><p class="quote" style="margin:.2rem 0">«'+esc(g.phrase)+'»</p></div></div>'+
+'<div class="why"><b>'+PLANETS[pi][0]+'</b> — '+esc(PLANETS[pi][1])+'<br>Гений окрашивает эту сферу своей субстанцией: <b>'+esc(g.subst)+'</b>.</div>'+
+'<p class="txt">'+esc(firstPara(g.desc))+'</p><div class="row" style="margin-top:.6rem"><button class="btn sm gold" type="button" data-act="gen" data-v="'+n+'">О гении</button><button class="btn sm blue" type="button" data-act="pray" data-v="'+n+'">Обращение</button></div></div>';}
+
+
+/* ═════ ICS ═════ */
+function fold(line){var out="",cur="",bytes=0,first=true,i,ch,b,lim;
+for(i=0;i<line.length;i++){ch=line.charAt(i);b=unescape(encodeURIComponent(ch)).length;lim=first?73:72;
+if(bytes+b>lim){out+=(first?"":"\r\n ")+cur;cur=ch;bytes=b;first=false;}else{cur+=ch;bytes+=b;}}
+out+=(first?"":"\r\n ")+cur;return out;}
+function iesc(s){return String(s).replace(/\\/g,"\\\\").replace(/[,;]/g,"\\$&").replace(/\n/g,"\\n");}
+function icsT(ms){return new Date(ms).toISOString().replace(/[-:]/g,"").replace(/\.\d{3}/,"");}
+function ics(kind,idx){var off=curOff(),c=cyc(off),L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Sila Dnya//72//RU","CALSCALE:GREGORIAN","METHOD:PUBLISH","X-WR-CALNAME:Сила дня "+cycLabel(off)],stamp=icsT(Date.now()),i,p;
+function push(p,t,d){L.push("BEGIN:VEVENT","UID:sd-"+off+"-"+p.i+"-"+kind+"@sila-dnya","DTSTAMP:"+stamp,"DTSTART:"+icsT(p.start),"DTEND:"+icsT(p.start+1800000),"SUMMARY:"+iesc(t),"DESCRIPTION:"+iesc(d),"BEGIN:VALARM","ACTION:DISPLAY","DESCRIPTION:Скоро смена силы дня","TRIGGER:-PT15M","END:VALARM","END:VEVENT");}
+if(kind==="one"){p=c[idx];push(p,"Смена силы дня · гений №"+p.a+" "+G(p.a).name,summary(off,idx));}
+else if(kind==="main"){for(i=0;i<360;i+=5){p=c[i];push(p,"Основной гений №"+p.m+" "+G(p.m).name,"«"+G(p.m).phrase+"»\n"+firstPara(G(p.m).desc)+"\nПравит до "+fDT(c[i+4].end)+" ("+tzLabel()+").");}}
+else{for(i=0;i<360;i++){p=c[i];push(p,"Сила дня · №"+p.a+" "+G(p.a).name+" · "+ROM[p.ac]+" "+TAR[p.ac][0],summary(off,i));}}
+L.push("END:VCALENDAR");
+download("sila-dnya-"+cycLabel(off)+"-"+kind+".ics",L.map(fold).join("\r\n")+"\r\n","text/calendar;charset=utf-8");
+toast("Файл календаря сохранён");}
+
+/* ═════ СОБЫТИЯ ═════ */
+document.addEventListener("click",function(e){
+var t=e.target.closest?e.target.closest("[data-act]"):null;if(!t)return;
+var a=t.getAttribute("data-act"),v=t.getAttribute("data-v"),l;
+if(a==="tab"){setTab(v);return;}
+if(a==="gen"){openGenius(+v);return;}
+if(a==="pray"){openPrayer(+v);return;}
+if(a==="card"){openCard(+v);return;}
+if(a==="day"){openDay(+v);return;}
+if(a==="goto"){closeDrawer();setTab("today");setView(+v);return;}
+if(a==="close"){closeDrawer();return;}
+if(a==="now"){goNow();return;}
+if(a==="minus"){shiftDay(-1);return;}
+if(a==="plus"){shiftDay(1);return;}
+if(a==="tonext"){l=locate(nowMs());setView(l.c[l.idx].end+60000);toast("Момент ближайшей смены");return;}
+if(a==="tostart"){l=locate(nowMs());setView(spanOf(l.c,l.idx).start+60000);toast("Начало пятидневного периода");return;}
+if(a==="theme"){dark=!dark;LS.set("dark",dark);applyTheme();return;}
+if(a==="font"){big=!big;LS.set("big",big);applyTheme();toast(big?"Крупный шрифт включён":"Обычный шрифт");return;}
+if(a==="copyday"){l=locate(nowMs());copyText(summary(l.off,l.idx),"Сводка дня скопирована");return;}
+if(a==="shareday"){l=locate(nowMs());shareText(summary(l.off,l.idx));return;}
+if(a==="copyday2"||a==="shareday2"){l=locate(+v+60000);if(a==="copyday2")copyText(summary(l.off,l.idx),"Сводка дня скопирована");else shareText(summary(l.off,l.idx));return;}
+if(a==="icsday"){l=locate(nowMs());ics("one",l.idx);return;}
+if(a==="icsall"){ics("all");return;}
+if(a==="icsmain"){ics("main");return;}
+if(a==="copypray"){var g=G(+v);copyText("Обращение к гению №"+v+" "+g.name+"\n\n"+g.prayer,"Обращение скопировано");return;}
+if(a==="sharepray"){var g2=G(+v);shareText("Обращение к гению №"+v+" "+g2.name+"\n\n"+g2.prayer);return;}
+if(a==="gensch"){closeDrawer();SG=String(v);SQuick="all";SM="";SOff=curOff();schControls();setTab("schedule");return;}
+if(a==="schquick"){SQuick=v;if(v==="month"){var p=parts(nowMs());SM=p.y+"-"+p.mo;}else SM="";schControls();renderSchedule();return;}
+if(a==="schsort"){SA=!SA;$("schSort").textContent=SA?"Сначала ранние ↑":"Сначала поздние ↓";renderSchedule();return;}
+if(a==="gensort"){GA=!GA;$("genSort").textContent=GA?"По номеру ↑":"По номеру ↓";renderGenii();return;}
+if(a==="taronly"){TOnly=!TOnly;$("tarOnly").classList.toggle("on",TOnly);$("tarOnly").setAttribute("aria-pressed",String(TOnly));renderTarot();return;}
+if(a==="calc"){natal();return;}
+if(a==="planet"){planetCalc();return;}
+if(a==="copynat"){copyText(natalTxt,"Расчёт скопирован");return;}
+if(a==="clearnat"){LS.set("birth",null);$("bDate").value="";$("natOut").innerHTML="";natalTxt="";toast("Данные очищены");return;}
+});
+document.addEventListener("keydown",function(e){
+if(e.key==="Escape")closeDrawer();
+if((e.key==="Enter"||e.key===" ")&&e.target.classList&&e.target.classList.contains("gc")){e.preventDefault();openGenius(+e.target.getAttribute("data-v"));}
+});
+$("scrim").addEventListener("click",closeDrawer);
+function applyTheme(){document.documentElement.classList.toggle("dark",dark);document.documentElement.classList.toggle("big",big);
+$("thIco").textContent=dark?"☀":"☾";$("bTheme").classList.toggle("on",dark);$("bFont").classList.toggle("on",big);$("bFont").setAttribute("aria-pressed",String(big));
+var m=document.querySelector('meta[name=theme-color]');if(m)m.setAttribute("content",dark?"#14110C":"#F7F1E3");}
+function bindInputs(){var i,h="";
+for(i=0;i<TZL.length;i++)h+='<option value="'+TZL[i][0]+'">'+esc(TZL[i][1])+'</option>';
+$("tzSel").innerHTML=h;$("tzSel").value=tzSet;
+$("tzSel").addEventListener("change",function(e){tzSet=e.target.value;tz=tzSet==="auto"?autoTZ:tzSet;LS.set("tz",tzSet);FC={};syncCtrl();renderToday();renderSchedule();renderGenii();renderTarot();toast("Часовой пояс: "+tzLabel());});
+$("dPick").addEventListener("change",function(e){if(!e.target.value)return;var a=e.target.value.split("-"),p=parts(nowMs());setView(fromLocal(+a[0],+a[1],+a[2],p.h,p.mi));});
+var r=$("tRange");
+r.addEventListener("input",function(){var p=parts(nowMs()),v=+r.value;$("tVal").textContent=pad(Math.floor(v/60))+":"+pad(v%60);mode="view";viewMs=fromLocal(p.y,p.mo,p.d,Math.floor(v/60),v%60);renderToday();syncCtrl();});
+r.addEventListener("pointerdown",function(){held=true;});
+window.addEventListener("pointerup",function(){held=false;});
+r.addEventListener("keydown",function(){held=true;setTimeout(function(){held=false;},1200);});
+var sq=null;$("schQ").addEventListener("input",function(e){clearTimeout(sq);sq=setTimeout(function(){SQ=e.target.value.trim().toLowerCase();renderSchedule();},140);});
+$("schMonth").addEventListener("change",function(e){SM=e.target.value;SQuick=SM?"month":"all";schControls();renderSchedule();});
+$("schGen").addEventListener("change",function(e){SG=e.target.value;renderSchedule();});
+var gq=null;$("genQ").addEventListener("input",function(e){clearTimeout(gq);gq=setTimeout(function(){GQ=e.target.value.trim().toLowerCase();renderGenii();},140);});
+h='<option value="">Все знаки</option>';for(i=0;i<12;i++)h+='<option value="'+i+'">'+SIGNS[i][2]+'\uFE0E '+SIGNS[i][0]+'</option>';
+$("genSign").innerHTML=h;
+$("genSign").addEventListener("change",function(e){GS=e.target.value;renderGenii();});
+var tq=null;$("tarQ").addEventListener("input",function(e){clearTimeout(tq);tq=setTimeout(function(){TQ=e.target.value.trim().toLowerCase();renderTarot();},140);});
+$("bUnk").addEventListener("change",function(e){$("bTime").disabled=e.target.checked;});
+document.addEventListener("visibilitychange",function(){if(!document.hidden&&mode==="live"){renderToday();syncCtrl();}});}
+function tick(){if(mode!=="live")return;var ms=Date.now(),l=locate(ms);
+if(l.idx!==lastIdx||l.off!==lastOff){renderToday();syncCtrl();toast("Смена: гений дня №"+l.c[l.idx].a+" "+G(l.c[l.idx].a).name);if(tab==="schedule")renderSchedule();return;}
+counters();var p=parts(ms);if(!held){$("tRange").value=p.h*60+p.mi;$("tVal").textContent=pad(p.h)+":"+pad(p.mi);}}
+function rerender(){renderToday();renderSchedule();renderGenii();renderTarot();refreshDrawer();}
+
+/* ═════ СТАРТ ═════ */
+try{
+buildBase();
+if(BASE.length!==360)throw new Error("таблица смен повреждена ("+BASE.length+")");
+if(D.length!==72||NAMES.length!==72||TIN.length!==72)throw new Error("данные гениев повреждены");
+applyTheme();buildPlaces();bindInputs();
+SOff=curOff();var pp=parts(nowMs());SM=pp.y+"-"+pp.mo;schControls();
+syncCtrl();rerender();
+var st=LS.get("tab","today");if(st&&st!=="today")setTab(st);
+var sb=LS.get("birth",null);
+if(sb&&sb.d){$("bDate").value=sb.d;$("bTime").value=sb.t||"12:00";if(sb.p)$("bPlace").value=sb.p;$("bUnk").checked=!!sb.u;$("bTime").disabled=!!sb.u;natal();}
+setInterval(tick,1000);
+}catch(err){fatal(err&&err.message?err.message:String(err));}
+})();
+</script>
+</body>
+</html>
